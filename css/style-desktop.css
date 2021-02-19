@@ -1,0 +1,106 @@
+/*
+	Ex Machina by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+body
+{
+}
+
+body,input,textarea,select
+{
+	font-size: 11pt;
+}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+#banner, #banner_discipl, #banner_prof, #banner_uchi, #banner_fonct, #banner_galerie, #banner_pratique, #banner_ados
+{
+	padding: 10em 0em;
+}
+
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+#page
+{
+	padding: 2em 0em 6em 0em;
+}
+
+.homepage #page
+{
+	padding: 6em 0em;
+}
+
+#main
+{
+	margin-top: 3em;
+	padding-top: 2em;
+	border-top: none;
+}
+
+.homepage #main
+{
+	margin-top: 6em;
+	padding-top: 6em;
+}
+
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+#footer
+{
+	padding: 0em 0em 4em 0em;
+}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+#featured
+{
+	padding: 4em 0em;
+}
+
+
+#featured .divider
+{
+	padding: 2em 0em;
+}
+
+#video {
+	height: 303px;
+	width: auto;
+}
+
+/**
+VIDEO BANNER
+*/
+#videoDiv {
+	width: 100%;
+	height: 240px;
+	position: relative;
+	margin-top: 30px;
+}
+#videoBlock {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#videoBlock :hover {
+	cursor: crosshair;
+}
