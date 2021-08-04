@@ -1,0 +1,32 @@
+- uses: actions/checkout@v2
+- name: Vercel Action
+    id: vercel_action
+    uses: amondnet/vercel-action@v20
+    with:
+      vercel-token: ${{ secrets.VERCEL_TOKEN }}
+      github-token: ${{ secrets.GITHUB_TOKEN }}
+      vercel-org-id: ${{ secrets.ORG_ID}}
+      vercel-project-id: ${{ secrets.PROJECT_ID}}
+
+- name: Audit URLs using Lighthouse
+    id: lighthouse_audit
+    uses: treosh/lighthouse-ci-action@v7
+    with:
+      urls: |
+        ${{ steps.vercel_action.outputs.preview-url }}
+        ${{ steps.vercel_action.outputs.preview-url }}/blog
+      budgetPath: '.github/lighthouse/budget.json'
+      uploadArtifacts: true
+      temporaryPublicStorage: true
+      runs: 3
+
+
+- name: Add comment to PR
+    id: loading_lighthouse_comment_to_pr
+    uses: marocchino/sticky-pull-request-comment@v2
+    with:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      number: ${{ github.event.pull_request.number }}
+      header: lighthouse
+      message: |
+        🚦 Running Lighthouse audit...
