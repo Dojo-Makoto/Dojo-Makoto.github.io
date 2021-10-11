@@ -11,8 +11,7 @@
 		<meta name="description" content="Dojo d'Aikido Makoto - André Palmeri, 6ème dan - Marseille - Galerie" />
 		<meta name="keywords" content="" />
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
-		<!--[if lte IE 8]>
-        <script src="site/js/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
@@ -23,11 +22,9 @@
 			<link rel="stylesheet" href="css/style-desktop.css" />
             <link rel="stylesheet" href="css/makoto.css" />
 		</noscript>
-		<!--[if lte IE 8]>
-        <link rel="stylesheet" href="site/css/ie/v8.css"/><![endif]-->
-		<!--[if lte IE 9]>
-        <link rel="stylesheet" href="site/css/ie/v9.css"/><![endif]-->
-        <link rel="stylesheet" href="../libs/flexslider/flexslider.css" type="text/css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+        <link rel="stylesheet" href="libs/flexslider/flexslider.css" type="text/css" />
 		<style type="text/css">
         .flexslider .slides img{
             width: auto; /* undo width: 100%  in flexslider.css*/
@@ -44,7 +41,7 @@
 	<body class="left-sidebar">
 
 <!-- FlexSlider config -->
-  	<script defer src="../libs/flexslider/jquery.flexslider.js"></script>
+  	<script defer src="libs/flexslider/jquery.flexslider.js"></script>
 
   	<script charset="utf-8" type="text/javascript">
    	$(window).load(function() {
@@ -66,33 +63,31 @@
 					</div>
 				
 				<!-- Nav -->
-                <nav id="nav">
+                 <nav id="nav">
 						<ul>
 							<li><a href="index.php">Accueil</a></li>
                             <li><a href="discipline.html">La discipline</a></li>
-							<li><a href="#">L'enseignement</a>
+							<li><a href="galerie.html#">Le Dojo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                             	<ul class="hidden">
                                 	<li><a href="professeur.html">Le professeur</a></li>
                                     <li><a href="uchi.html">Les uchi deshi</a></li>
+                                	<li><a href="fonctionnement.html">Le Dojo</a></li>
+                                   <li><a href="zen.html">Meditation</a></li>
+                                    <li class="active"><a href="galerie.html">Galerie</a></li>
+                                    <li><a href="actualite.html">Actualités</a></li>
                                 </ul>
                             </li>
-							<li><a href="#">Le Dojo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                            	<ul class="hidden">
-                                	<li><a href="fonctionnement.html">Fonctionnement</a></li>
-                                   <li><a href="ados.html">Ados</a></li>
-                                    <li  class="active"><a href="galerie.html">Galerie</a></li>
-                                </ul>
-                            </li>
-							<li><a href="#">Infos Pratiques</a>
+                            <li><a href="ados.html">Ados</a></li>
+							<li><a href="galerie.html#">Infos Pratiques</a>
                             	<ul class="hidden">
                                 	<li><a href="pratique.html#horaires">Horaires</a></li>
                                       <li><a href="pratique.html#acces">Accès</a></li>
+                                      <li><a href="pratique.html#covid">COVID</a></li>
                                       <li><a href="pratique.html#inscriptions">Inscriptions</a></li>
                                       <li><a href="pratique.html#tarifs">Tarifs</a></li>
 <!--                                      <li><a href="pratique.html#horaires">Ados</a></li>-->
                                       <li><a href="pratique.html#visiteurs">Visiteurs</a></li>
                                       <li><a href="pratique.html#contact">Contact</a></li>
-                                      <li><a href="actualite.html">Actualités</a></li>
                                 </ul>
                             </li>
                             <li><a href="galerie_en.html"><img src="images/englishflag.png" alt="EN"></a><a href="https://www.facebook.com/pages/Dojo-dAikido-Makoto/249274268454884"><img src="images/facebook-logo.jpg" alt="Makoto Facebook"></a></li>
@@ -228,7 +223,7 @@
      
      <!-- Vidéos 2010 -->
       <p class="style5"><span class="style4">Vid&eacute;o</span> (Makoto 2010)</p>
-          <p class="style5"><center><video controls preload="auto" poster="images/makoto2010.png" src = "images/makoto%202010-H.264%20-%20Diffusion%20web.mov" style="width:100%; height:auto; max-height:360; max-width:640;"> Dojo Makoto 2010</video></center></p>
+          <p class="style5"><center><video controls preload="auto" poster="images/makoto2010.png" src = "images/makoto&#32;2010-H.264&#32;-&#32;Diffusion&#32;web.mov" style="width:100%; height:auto; max-height:360; max-width:640;"> Dojo Makoto 2010</video></center></p>
           <p class="style5"><center class="Style6 Style6">Version <a href="https://www.youtube.com/watch?v=Xd9v704hI7E">Youtube</a></center>
           </p>
           <br />
@@ -236,7 +231,7 @@
   <!-- Vidéos 2009 -->
 	  <hr width="50%" />
       <p class="style5"><span class="style4">Vid&eacute;o</span> (Makoto 2009 - Démonstration Japan Expo)</p>
-          <p class="style5"><center><video controls preload="auto" poster="images/makoto2009.png" src = "images/projet%20internet.mp4" style="width:100%; height:auto; max-height:428; max-width:768;"> Dojo Makoto 2009</video></center></p>
+          <p class="style5"><center><video controls preload="auto" poster="images/makoto2009.png" src = "images/projet&#32;internet.mp4" style="width:100%; height:auto; max-height:428; max-width:768;"> Dojo Makoto 2009</video></center></p>
           <p class="style5"><center>
             <span class="Style6 Style6 Style6">Version <a href="https://www.youtube.com/watch?v=ekcGpvIw4ZY">Youtube</a></span>
       </center></p><br />

@@ -11,8 +11,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
-		<!--[if lte IE 8]>
-        <script src="site/js/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
@@ -34,11 +33,9 @@
 			<link rel="stylesheet" href="css/style-desktop.css" />
             <link rel="stylesheet" href="css/makoto.css" />
 		</noscript>
-		<!--[if lte IE 8]>
-    <link rel="stylesheet" href="site/css/ie/v8.css"/><![endif]-->
-		<!--[if lte IE 9]>
-    <link rel="stylesheet" href="site/css/ie/v9.css"/><![endif]-->
-		<link rel="stylesheet" href="../libs/flexslider/flexslider.css" type="text/css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<link rel="stylesheet" href="libs/flexslider/flexslider.css" type="text/css" />
 		<style type="text/css">
         .flexslider .slides img{
             width: auto; /* undo width: 100%  in flexslider.css*/
@@ -54,7 +51,7 @@
 	</head>
 	<body class="left-sidebar">
 	<!-- FlexSlider config -->
-  	<script defer="defer" src="../libs/flexslider/jquery.flexslider.js"></script>
+  	<script defer="defer" src="libs/flexslider/jquery.flexslider.js"></script>
 
   	<script charset="utf-8" type="text/javascript">
    	$(window).load(function() {
@@ -76,36 +73,34 @@
 					</div>
 				
 				<!-- Nav -->
-					<nav id="nav">
+					 <nav id="nav">
 						<ul>
 							<li><a href="index.php">Accueil</a></li>
                             <li><a href="discipline.html">La discipline</a></li>
-							<li><a href="#">L'enseignement</a>
+							<li><a href="ados.html#">Le Dojo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                             	<ul class="hidden">
                                 	<li><a href="professeur.html">Le professeur</a></li>
                                     <li><a href="uchi.html">Les uchi deshi</a></li>
-                                </ul>
-                            </li>
-							<li><a href="#">Le Dojo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                            	<ul class="hidden">
-                                	<li><a href="fonctionnement.html">Fonctionnement</a></li>
-                                   <li class="active"><a href="ados.html">Ados</a></li>
+                                	<li><a href="fonctionnement.html">Le Dojo</a></li>
+                                   <li><a href="zen.html">Meditation</a></li>
                                     <li><a href="galerie.html">Galerie</a></li>
+                                    <li><a href="actualite.html">Actualités</a></li>
                                 </ul>
                             </li>
-							<li><a href="#">Infos Pratiques</a>
+                            <li class="active"><a href="ados.html">Ados</a></li>
+							<li><a href="ados.html#">Infos Pratiques</a>
                             	<ul class="hidden">
                                 	<li><a href="pratique.html#horaires">Horaires</a></li>
                                       <li><a href="pratique.html#acces">Accès</a></li>
+                                      <li><a href="pratique.html#covid">COVID</a></li>
                                       <li><a href="pratique.html#inscriptions">Inscriptions</a></li>
                                       <li><a href="pratique.html#tarifs">Tarifs</a></li>
 <!--                                      <li><a href="pratique.html#horaires">Ados</a></li>-->
                                       <li><a href="pratique.html#visiteurs">Visiteurs</a></li>
                                       <li><a href="pratique.html#contact">Contact</a></li>
-                                      <li><a href="actualite.html">Actualités</a></li>
                                 </ul>
                             </li>
-                            <li><a href="galerie_en.html"><img src="images/englishflag.png" alt="EN"></a><a href="https://www.facebook.com/pages/Dojo-dAikido-Makoto/249274268454884"><img src="images/facebook-logo.jpg" alt="Makoto Facebook"></a></li>
+                            <li><a href="ados.html"><img src="images/englishflag.png" alt="EN"></a><a href="https://www.facebook.com/pages/Dojo-dAikido-Makoto/249274268454884"><img src="images/facebook-logo.jpg" alt="Makoto Facebook"></a></li>
 						</ul>
 
 					</nav>
@@ -136,14 +131,13 @@
 						<section>
 							<header>
 								<h2>SECTION ADOS<br>						
-                            </h2></header>
+                            </h2>
+                            </header>
 						
                         
                         <!-- flexslider -->
 			
-            <!-- <div class="flexslider" id="slideshow" style="width:892;height:300px;margin:auto">-->
-            <!-- <div class="flexslider" id="slideshow" style="width:100%;height:auto;margin:auto">-->
-            <div class="flexslider" id="slideshow" style="width:100%;height:auto;margin:auto">
+        <!--    <div class="flexslider" id="slideshow" style="width:100%;height:auto;margin:auto">
                 <ul class="slides">
                     <li>
                         <img src="images/slider_ados/ados1.jpg" />
@@ -167,7 +161,19 @@
                         <img src="images/slider_ados/ados7.jpg" />
                     </li>
                 </ul>
-	</div><!-- flexslider -->
+				</div>-->
+               <!-- flexslider -->
+                      <!--Video-->
+			<div id="videoDiv">
+				<div id="videoBlock">
+					<video preload="auto" playsinline id="video" autoplay loop muted>
+						<source src="images/videos/SiteMakoto2019_Ados.mov" type="video/mp4">
+						<source src="images/videos/SiteMakoto2019_Ados.webm" type="video/webm">
+						<source src="images/videos/SiteMakoto2019_Ados.ogv" type="video/ogg">
+					</video>
+				</div>
+			</div>
+		<!--/Video-->
                        <br>
                        <br>
                         
@@ -194,6 +200,7 @@
                         </p>
                         
                         <p align="center">Venir 1/4 d'heure à l'avance.&nbsp;</p>
+                        <p align="center"><span class="style2">Merci de prendre connaissance de la section <a href="pratique.html#covid">COVID</a>.</span></p>
                         <p align="right"><strong>Bienvenue !</strong></p>
                         </section>
                         
@@ -213,6 +220,9 @@
                               </tr>
                               </table>
                               </div>
+                              <br>
+                              <p align="center">Notre Dojo est partenaire du dispositif <a href="https://www.collegiendeprovence.fr/articles/A102CE98-1679-4D0E-8CC0-C74C009C814D">collégiens de provence</a></p>
+                              <p align="center"><img src="images/logo_collegiens.png" alt="Collégiens de Provence"></p>
   </section>
 				  </div>
 			  </div>
@@ -238,4 +248,13 @@
 
 
 	</body>
+<script type="text/javascript">
+	// Safari 3.0+ "[object HTMLElementConstructor]"
+	var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+
+	if (isSafari) {
+		document.getElementById('video').setAttribute('src', 'images/videos/SiteMakoto2019_Ados.mov');
+	}
+</script>
 </html>

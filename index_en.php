@@ -61,7 +61,7 @@ Kids" />
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-        <link rel="stylesheet" href="../libs/flexslider/flexslider.css" type="text/css" />
+        <link rel="stylesheet" href="libs/flexslider/flexslider.css" type="text/css" />
 		<style type="text/css">
         .flexslider .slides img{
             width: auto; /* undo width: 100%  in flexslider.css*/
@@ -82,7 +82,7 @@ Kids" />
   	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>-->
 
   	<!-- FlexSlider config -->
-  	<script defer="defer" src="../libs/flexslider/jquery.flexslider.js"></script>
+  	<script defer="defer" src="libs/flexslider/jquery.flexslider.js"></script>
 
   	<script charset="utf-8" type="text/javascript">
    	$(window).load(function() {
@@ -110,28 +110,26 @@ Kids" />
 						<ul>
 							<li class="active"><a href="index_en.php">Homepage</a></li>
                             <li><a href="discipline_en.html">The discipline</a></li>
-							<li><a href="#">The teaching</a>
+							<li><a href="index_en.php#">The Dojo</a>
                             	<ul class="hidden">
                                 	<li><a href="professeur_en.html">The teacher</a></li>
                                     <li><a href="uchi_en.html">The uchi deshi</a></li>
-                                </ul>
-                            </li>
-							<li><a href="#">The Dojo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                            	<ul class="hidden">
-                                	<li><a href="fonctionnement_en.html">Functioning</a></li>
+                                    <li><a href="fonctionnement_en.html">The Dojo</a></li>
+                                    <li><a href="zen_en.html">Meditation</a></li>
                                     <li><a href="galerie_en.html">Gallery</a></li>
+                                    <li><a href="actualite_en.html">News</a></li>
                                 </ul>
                             </li>
-							<li><a href="#">Join us</a>
+							<li><a href="pratique_en.html#horaires">Youths</a></li>
+							<li><a href="index_en.php#">Join us</a>
                             	<ul class="hidden">
                                 	<li><a href="pratique_en.html#horaires">Classes</a></li>
                                       <li><a href="pratique_en.html#acces">Access</a></li>
+                                      <li><a href="pratique_en.html#covid">COVID</a></li>
                                       <li><a href="pratique_en.html#inscriptions">Registration</a></li>
                                       <li><a href="pratique_en.html#contributions">Contributions</a></li>
-                                      <li><a href="pratique_en.html#horaires">Youths</a></li>
                                       <li><a href="pratique_en.html#visitors">Visitors</a></li>
                                       <li><a href="pratique_en.html#contact">Contact</a></li>
-                                      <li><a href="actualite_en.html">News</a></li>
                                 </ul>
                             </li>
                             <li><a href="index.php"><img src="images/frenchflag.png" alt="EN"></a><a href="https://www.facebook.com/pages/Dojo-dAikido-Makoto/249274268454884"><img src="images/facebook-logo.jpg" alt="Makoto Facebook"></a></li>
@@ -146,9 +144,7 @@ Kids" />
 		<div id="banner">
         	<!-- flexslider -->
 			
-            <!-- <div class="flexslider" id="slideshow" style="width:900px;height:427px;margin:auto">-->
-            <!-- <div class="flexslider" id="slideshow" style="width:100%;height:auto;margin:auto">-->
-            <div class="flexslider" id="slideshow" style="width:100%;height:auto;margin:auto">
+            <!--<div class="flexslider" id="slideshow" style="width:100%;height:auto;margin:auto">
                 <ul class="slides">
                     <li>
                         <img src="images/slider/zafu.jpg" />
@@ -184,8 +180,19 @@ Kids" />
                       <img src="images/slider/arbre.jpg" />
                     </li>
                 </ul>
-	</div><!-- flexslider -->
-			
+	</div>-->
+	<!-- flexslider -->
+	<!--Video-->
+		<div id="videoDiv">
+			<div id="videoBlock">
+				<video preload="auto" playsinline id="video" autoplay="true" loop muted>
+					<source src="images/videos/SiteMakoto2019.mov" type="video/mp4" />
+					<source src="images/videos/SiteMakoto2019.webm" type="video/webm" />
+					<source src="images/videos/SiteMakoto2019.ogv" type="video/ogg" />
+				</video>
+			</div>
+		</div>
+		<!--/Video-->
 		</div>
 	<!-- /Banner -->
 
@@ -193,7 +200,15 @@ Kids" />
 		<div id="page">
 
 			<!-- Extra -->
-			<div id="marketing" class="container">
+			<section>
+			<div align="center">
+				<strong>Our intention is to create and support an Aikido Dojo, welcome on this web site for a first overview.
+				</strong>
+			</div>
+			</section>
+			<br>
+			
+			<div id="rubriques" class="container">
 				<div class="row">
                 	<div class="2u">
                     <!-- <div id="aikido_kanji"> -->
@@ -206,9 +221,10 @@ Kids" />
 								<h2>Aikido</h2>
 							</header>
 
-							<p class="subtitle" style="height:10em;">We are members of the FFAB (French Aikido and Budo Federation) and of the current Aikikai, founded and developed in France by <strong>Tamura Sensei</strong>. 
+							<p class="subtitle" style="height:10em;">We practice Aikido following the teaching transmitted in France by <strong>Tamura Sensei</strong>. 
                            <br>
-                           <a href="https://youtu.be/nG7Tno7yv9U" target="_blank">Few images...</a> </p>
+                           You will find in our Dojo a place for effort, calm, research and sharing.
+                           </p>
 						  <p><a href="discipline_en.html"><img src="images/photo_sensei_small.jpg" alt=""></a></p>
 						  <a href="discipline_en.html" class="button" >More</a>
 						</section>
@@ -228,7 +244,7 @@ Kids" />
 					<div class="3u">
 						<section>
 							<header>
-								<h2>The teacher</h2>
+								<h2>teacher</h2>
 							</header>
 							<p class="subtitle" style="height:10em;"><strong>André Palmeri</strong> - 6th dan, National Coaching Qualification.
                             
