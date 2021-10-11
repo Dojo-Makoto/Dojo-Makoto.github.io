@@ -48,7 +48,7 @@ else if ($tableau_chemin[1] == "english")
   {
     switch ($relatif) {
     case "/english/ados.html":
-      $dest = "index_en.php" ;
+      $dest = "index_en.html" ;
       break ;
     case "/english/aikido.html":
       $dest = "discipline_en.html" ;
@@ -72,7 +72,7 @@ else if ($tableau_chemin[1] == "english")
       $dest = "uchi_en.html" ;
       break ;
     default:
-      $dest = "index_en.php" ;
+      $dest = "index_en.html" ;
       break ;
     }
   }
