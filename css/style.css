@@ -1,12 +1,11 @@
+@charset "UTF-8";
 /*
 	Ex Machina by TEMPLATED
     templated.co @templatedco
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
-@charset 'UTF-8';
-
-@font-face{font-family:'FontAwesome';src:url('http://makoto.dojo.free.fr/css/font/fontawesome-webfont.eot?v=4.0.1');src:url('http://makoto.dojo.free.fr/css/font/fontawesome-webfont.eot?') format('embedded-opentype'),url('http://makoto.dojo.free.fr/css/font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('http://makoto.dojo.free.fr/css/font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('http://makoto.dojo.free.fr/css/font/fontawesome-webfont.svg?v=4.0.1') format('svg');font-weight:normal;font-style:normal}
+/*@font-face{font-family:'FontAwesome';src:url('./css/font/fontawesome-webfont.eot?v=4.0.1');src:url('http://www.aikido-marseille-makoto.info/css/font/fontawesome-webfont.eot?') format('embedded-opentype'),url('http://www.aikido-marseille-makoto.info/css/font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('http://www.aikido-marseille-makoto.info/css/font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('http://www.aikido-marseille-makoto.info/css/font/fontawesome-webfont.svg?v=4.0.1') format('svg');font-weight:normal;font-style:normal}*/
 
 /*********************************************************************************/
 /* Basic                                                                         */
@@ -1011,7 +1010,7 @@
                     color: #FFF;
                 }
 
-                /*séparation*/
+                /*sï¿½paration*/
                 ul ul ul li.clear {
                     clear: both;
                 }
@@ -1044,7 +1043,7 @@
 	
 	#banner_uchi
 	{
-		background: url(http://makoto.dojo.free.fr/images/photo_uchi.jpg) no-repeat center;
+		background: url(../images/photo_uchi.jpg) no-repeat center;
 		background-size: cover;
 	}
 	
