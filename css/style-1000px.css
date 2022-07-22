@@ -5,23 +5,22 @@
 */
 
 
-#logo
-	{
-	/* Alex */
-	position: absolute;
-	left: -10px;
-	top: 2em;
-	padding: 3em 8em;
-	background: url(../images/logo_makoto_med.png) no-repeat center;
-	background-size: 100%;
-	/* -- Alex */
-	
-	/* Nico
-		position: absolute;
+#logo {
+    /* Alex */
+    position: absolute;
+    left: -10px;
+    top: 2em;
+    padding: 3em 8em;
+    background: url(../images/logo_makoto_med.png) no-repeat center;
+    background-size: 100%;
+    /* -- Alex */
+
+    /* Nico
+        position: absolute;
         left: -10px;
         top: 1em;
         width: 456px;
         height: 104px;
-	-- Nico */
-		
+    -- Nico */
+
 }

@@ -1,5 +1,5 @@
 name: PR Deploy and Audit
-on: [pull_request]
+on: [ pull_request ]
 jobs:
   deploy_and_audit:
     runs-on: ubuntu-latest
