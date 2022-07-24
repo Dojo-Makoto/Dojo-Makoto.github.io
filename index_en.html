@@ -248,10 +248,63 @@ Kids"/>
                     <header>
                         <h2>News</h2>
                     </header>
+                    <script type="text/javascript">
+                        function Defilant(id, pos_init, pos_min, pos_max, delta, direction) {
+                            this.id = id;
+                            this.element = document.getElementById(id);
+                            this.pos_init = pos_init;
+                            this.pos_min = pos_min;
+                            this.pos_max = pos_max;
+                            this.pos_current = pos_init;
+                            this.delta = delta;
+                            this.direction = direction;
+                        }
 
-                    <p class="subtitle" style="height:10em;">Latest news of the Dojo, agenda, events&nbsp;...
+                        Defilant.prototype.defile = function () {
+                            if (!this.element) {
+                                this.element = document.getElementById(this.id);
+                            }
+                            if (this.element) {
+                                if (this.direction == "vertical") {
+                                    if (this.pos_current < (this.pos_min - this.element.offsetHeight)) {
+                                        this.pos_current = this.pos_init;
+                                    } else if (this.pos_current > this.pos_max) {
+                                        this.pos_current = this.pos_init - this.element.offsetHeight;
+                                    } else {
+                                        this.pos_current += this.delta;
+                                    }
+                                    this.element.style.top = this.pos_current + "px";
+                                } else if (this.direction == 'horizontal') {
+                                    if (this.pos_current < (this.pos_min - this.element.offsetWidth)) {
+                                        this.pos_current = this.pos_init;
+                                    } else if (this.pos_current > this.pos_max) {
+                                        this.pos_current = this.pos_init - this.element.offsetWidth;
+                                    } else {
+                                        this.pos_current += this.delta;
+                                    }
+                                    this.element.style.left = this.pos_current + "px";
+                                }
+                            }
+                        }
+                    </script>
+
+                    <div style="position:relative; overflow:hidden; height:7em;">
+			<span id="defileH1"
+                  style="position:absolute; background-color:#d77b62; height:14em;"
+                  onMouseover="defileH_1.delta=0"
+                  onMouseout="defileH_1.delta=deltaH1"><font
+                    style="color:#FFFFFF; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;"><b>Reopening</b></font><br>
+		      <font style="color:#FFFFFF; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;">Classes will start on September 1st 2022. Compulsory daily vaccines. <a
+                      href="actualite_en.html#rentree22">En savoir plus</a></font><br><br></span></div>
+                    <script type="text/javascript">
+                        var deltaH1 = -1;
+                        var defileH_1 = new Defilant("defileH1", 100, 0, 200, deltaH1, "vertical");
+                        setInterval("defileH_1.defile()", 40);
+                    </script>
+                    <p class="subtitle" style="height:3em; text-align: justify">
+                        Latest news of the Dojo, agenda, events&nbsp;...
                     </p>
-                    <p><a href="actualite_en.html"><img src="images/photo_actu_small.jpg" alt=""></a></p>
+                    <p><a href="actualite_en.html"><img style="width: 282px; " src="images/photo_actu_small.jpg" alt=""></a></p>
                     <a href="actualite_en.html" class="button">More</a>
                 </section>
             </div>
