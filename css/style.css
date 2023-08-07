@@ -163,6 +163,12 @@ article:last-child {
 
 /* Lists */
 
+.list {
+    margin-left: 17px;
+    padding: 0;
+    list-style: circle;
+}
+
 ul.default {
     margin: 0;
     padding: 0;
