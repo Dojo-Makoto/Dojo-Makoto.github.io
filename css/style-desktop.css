@@ -23,6 +23,11 @@ body, input, textarea, select {
     padding: 10em 0em;
 }
 
+.image-container {
+    max-width: 100%;
+    height: auto;
+}
+
 .homepage #banner {
     padding: 1px 0em;
     background: #000;

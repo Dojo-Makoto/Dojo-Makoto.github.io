@@ -38,6 +38,11 @@ article:first-child {
     margin-top: 0 !important;
 }
 
+.image-container {
+    width: 100%;
+    height: auto;
+}
+
 .container {
     padding: 0em 1em;
 }
