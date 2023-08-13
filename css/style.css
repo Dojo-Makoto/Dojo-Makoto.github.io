@@ -161,6 +161,10 @@ article:last-child {
     width: auto;
 }
 
+.image-center {
+    text-align: center;
+}
+
 /* Lists */
 
 .list {
@@ -2444,4 +2448,57 @@ blockquote {
 
 .balloon strong {
     color: #333 !important;
+}
+
+/*YOUTUBE IFRAME*/
+.video-embarquee {
+    position: relative;
+    width: 70%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-left: 15%;
+}
+
+.video-embarquee iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-title {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#video-container {
+    display: none;
+}
+
+#loading-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.loading-circle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #007bff;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
