@@ -132,7 +132,46 @@ Jeunes" name="keywords"/>
 				<img alt="Aikido" src="images/aikido-kanji.gif">
 				<!-- </div> -->
 			</div>
-			<div class="3u">
+            <div class="9u skel-cell-important" style="background-color:rgb(235,235, 235);">
+                <br>
+                <section>
+                    <header>
+                        <h2>Actualités</h2>
+                    </header>
+                    
+                    <a name="rentree23"></a>
+                    <h2>
+                        <span class="byline"><strong>Reprise des cours le 2 septembre 2023</strong></span>
+                    </h2>
+
+                    <table style="width: 100%">
+                        <colgroup>
+                               <col span="1" style="width: 75%;">
+                               <col span="1" style="width: 25%;">
+                            </colgroup>
+                        <tr>
+                            <td >Reprise par une matinée de pratique (stage ouvert à tous). <a href="actualite.html">Plus d'informations ...</a>
+                            </td>
+                            <td><a href="images/reprise_septembre_2023.png" alt="Reprise Septembre 2023"/>Affiche du stage</a></td>
+                        </tr>
+                    </table>
+                    <p align="center"><a class="button" href="actualite.html">En savoir +</a></p>
+                    
+                    <br>
+                    
+                </section>
+            </div>
+        </div>
+        
+        <div class="row">
+        
+            
+            <div class="2u">
+                <!-- <div id="aikido_kanji"> -->
+                &nbsp;
+                <!-- </div> -->
+            </div>
+            <div class="3u">
 				<section>
 					<header>
 						<h2>L'Aïkido</h2>
@@ -141,79 +180,11 @@ Jeunes" name="keywords"/>
 					<p class="subtitle" style="height:10em;">Nous pratiquons l'Aïkido au sein de la FFAB (Fédération
 						Française d'Aïkido et de Budo) et nous appartenons au courant Aïkikaï, conduit en France par
 						<strong>Tamura Senseï</strong>. <br>
-						<a href="https://youtu.be/nG7Tno7yv9U" target="_blank">Quelques images ...</a></p>
 					<p><a href="discipline.html"><img alt="" src="images/photo_sensei_small.jpg"></a></p>
 					<a class="button" href="discipline.html">En savoir +</a>
 				</section>
 			</div>
-			<div class="3u">
-				<section>
-					<header>
-						<h2>Actualités</h2>
-					</header>
-					<script type="text/javascript">
-						function Defilant(id, pos_init, pos_min, pos_max, delta, direction) {
-							this.id = id;
-							this.element = document.getElementById(id);
-							this.pos_init = pos_init;
-							this.pos_min = pos_min;
-							this.pos_max = pos_max;
-							this.pos_current = pos_init;
-							this.delta = delta;
-							this.direction = direction;
-						}
 
-						Defilant.prototype.defile = function () {
-							if (!this.element) {
-								this.element = document.getElementById(this.id);
-							}
-							if (this.element) {
-								if (this.direction == "vertical") {
-									if (this.pos_current < (this.pos_min - this.element.offsetHeight)) {
-										this.pos_current = this.pos_init;
-									} else if (this.pos_current > this.pos_max) {
-										this.pos_current = this.pos_init - this.element.offsetHeight;
-									} else {
-										this.pos_current += this.delta;
-									}
-									this.element.style.top = this.pos_current + "px";
-								} else if (this.direction == 'horizontal') {
-									if (this.pos_current < (this.pos_min - this.element.offsetWidth)) {
-										this.pos_current = this.pos_init;
-									} else if (this.pos_current > this.pos_max) {
-										this.pos_current = this.pos_init - this.element.offsetWidth;
-									} else {
-										this.pos_current += this.delta;
-									}
-									this.element.style.left = this.pos_current + "px";
-								}
-							}
-						}
-					</script>
-
-					<div style="position:relative; overflow:hidden; height:7em;">
-			<span id="defileH1"
-				  onMouseout="defileH_1.delta=deltaH1"
-				  onMouseover="defileH_1.delta=0"
-				  style="position:absolute; background-color:#d77b62; height:14em;"><font
-					style="color:#FFFFFF; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;"><b>Vid&eacute;o</b></font><br>
-		      <font style="color:#FFFFFF; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;"><a
-					  href="images/Makoto2018_30M.mp4">Nouvelle vid&eacute;o</a> en ligne dans la galerie !</font><br><br><font
-						style="color:#FFFFFF; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;"><b>Nouveau</b></font><br>
-		      <font style="color:#FFFFFF; font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif;">Ouverture d'un cours matinal ouvert &agrave; tous (lundi matin 6h30 - 7h30)</font><br><br></span>
-					</div>
-					<script type="text/javascript">
-						var deltaH1 = -1;
-						var defileH_1 = new Defilant("defileH1", 100, 0, 200, deltaH1, "vertical");
-						setInterval("defileH_1.defile()", 40);
-					</script>
-					<p class="subtitle" style="height:3em;">Toute l'actualité du Dojo, calendrier, évènements ...
-
-					</p>
-					<p><a href="actualite.html"><img alt="" src="images/photo_actu_small.jpg"></a></p>
-					<a class="button" href="actualite.html">En savoir +</a>
-				</section>
-			</div>
 			<div class="3u">
 				<section>
 					<header>
@@ -227,6 +198,19 @@ Jeunes" name="keywords"/>
 					<a class="button" href="professeur.html">En savoir +</a>
 				</section>
 			</div>
+            
+            <div class="3u">
+                <section>
+                    <header>
+                        <h2>Le Dojo</h2>
+                    </header>
+                    <p class="subtitle" style="height:10em;">Le <strong>Dojo Makoto</strong> est un lieu et un groupe dédiés à l'Aïkido. <br>
+                    <i>"L'Aïkido ne s'explique pas, il se pratique."</i> <br>
+                    Donc le mieux est de venir essayer ...</p>
+                    <p><a href="professeur.html"><img alt="" src="images/photo_dojo_small.jpg"></a></p>
+                    <a class="button" href="fonctionnement.html">En savoir +</a>
+                </section>
+            </div>
 
 		</div>
 	</div>
