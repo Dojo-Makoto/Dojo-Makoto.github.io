@@ -106,4 +106,7 @@ body, input, textarea, select {
 #featured .divider {
     padding: 2em 0em;
 }
-	
+
+.hero-actuality {
+    margin-left: 3%;
+}

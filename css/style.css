@@ -2174,6 +2174,7 @@ li ul li {
     border-radius: 4px;
     cursor: pointer;
     text-align: left;
+    margin-bottom: 15px;
 }
 
 /*Prevent text wrapping*/
