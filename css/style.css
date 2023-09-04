@@ -85,6 +85,11 @@ header h2 {
     color: #CD0000;
 }
 
+header h3 {
+    font-size: 1.5em;
+    color: #CD0000;
+}
+
 header .byline {
     display: block;
     margin: 0.5em 0 0 0;
