@@ -57,229 +57,223 @@ Jeunes" name="keywords"/>
     <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
     <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
     <link href="/site.webmanifest" rel="manifest">
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('skel-panels-defaultWrapper').style = '';
+
+            var vid = document.getElementById("video");
+
+            function vidFade() {
+                vid.classList.add("stopfade");
+            }
+
+            vid.addEventListener('ended', function () {
+                // only functional if "loop" is removed
+                vid.pause();
+                // to capture IE10
+                vidFade();
+            });
+            vid.addEventListener("click", function () {
+                vid.classList.toggle("stopfade");
+                if (vid.paused) {
+                    vid.play();
+                } else {
+                    vid.pause();
+                }
+            });
+        });
+    </script>
 </head>
 <body class="homepage">
 
-<!-- Header -->
-<div id="header">
-    <div class="container">
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
 
-        <!-- Logo -->
-        <div id="logo">
-            <!-- <h1><a href="#"><img src="images/logo_makoto.png" alt="Dojo d'Aïkido Makoto"></a></h1> -->
-        </div>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <ul>
-                <li class="active"><a href="index.html">Accueil</a></li>
-                <li><a href="discipline.html">La discipline</a></li>
-                <li><a href="#">L'enseignement</a>
-                    <ul class="hidden">
-                        <li><a href="professeur.html">Le professeur</a></li>
-                        <li><a href="uchi.html">Les uchi deshi</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Le Dojo</a>
-                    <ul class="hidden">
-                        <li><a href="fonctionnement.html">Fonctionnement</a></li>
-                        <li><a href="ados.html">Ados</a></li>
-                        <li><a href="galerie.html">Galerie</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Infos Pratiques</a>
-                    <ul class="hidden">
-                        <li><a href="pratique.html#horaires">Horaires</a></li>
-                        <li><a href="pratique.html#acces">Accès</a></li>
-                        <li><a href="pratique.html#cours-essais">Cours d'essais</a></li>
-                        <li><a href="pratique.html#tarifs">Inscription - tarifs</a></li>
-                        <li><a href="pratique.html#visiteurs">Visiteurs</a></li>
-                        <li><a href="pratique.html#contact">Contact</a></li>
-                        <li><a href="actualite.html">Actualités</a></li>
-                    </ul>
-                </li>
-                <li><a href="index_en.html"><img alt="EN" src="images/englishflag.png"></a><a
-                        href="https://www.facebook.com/pages/Dojo-dAikido-Makoto/249274268454884"><img
-                        alt="Makoto Facebook" src="images/facebook-logo.jpg"></a>
-                    <a href="https://www.youtube.com/@MakotoDojoAikidoMarseille"><img style="width: 20px; height: auto" src="https://cdn-icons-png.flaticon.com/512/3128/3128307.png" /> </a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
-<div id="banner">
-    <div id="videoDiv">
-        <div id="videoBlock">
-            <video autoplay id="video" loop muted preload="auto">
-                <source src="images/video/SiteMakoto2019.webm" type="video/webm">
-                <source src="images/video/SiteMakoto2019.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-</div>
-<!--		</div>-->
-<!-- /Banner -->
-
-<!-- Main -->
-<div id="page">
-
-    <!-- Extra -->
-    <section>
-        <div align="center">
-            <a href="https://www.facebook.com/pages/Dojo-dAikido-Makoto/249274268454884"><img
-                    src="images/facebook-logo.jpg" alt="Makoto Facebook"></a>&nbsp;&nbsp;
-            <a href="https://www.youtube.com/@MakotoDojoAikidoMarseille"><img
-                    src="images/logo_youtube.jpg" alt="Chaîne Youtube Makoto"></a>&nbsp;&nbsp;
-            <a href="https://www.instagram.com/dojo.makoto/"><img src="images/logo_instagram.png"
-                                                                  alt="Makoto Instagram"></a>
-            <br>
-            <strong>Notre but est de faire vivre un Dojo d'Aïkido, bienvenue sur ce site pour une première découverte.
-            </strong>
-        </div>
-    </section>
-    <br>
-
-    <div class="container" id="marketing">
-        <div class="row">
-            <div class="2u">
-                <!-- <div id="aikido_kanji"> -->
-                <img alt="Aikido" src="images/aikido-kanji.gif">
-                <!-- </div> -->
+            <!-- Logo -->
+            <div id="logo">
+                <!-- <h1><a href="#"><img src="images/logo_makoto.png" alt="Dojo d'Aïkido Makoto"></a></h1> -->
             </div>
-            <div class="9u skel-cell-important hero-actuality" style="background-color:rgb(235,235, 235);">
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li><a href="discipline.html">La discipline</a></li>
+                    <li><a href="#">L'enseignement</a>
+                        <ul class="hidden">
+                            <li><a href="professeur.html">Le professeur</a></li>
+                            <li><a href="uchi.html">Les uchi deshi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Le Dojo</a>
+                        <ul class="hidden">
+                            <li><a href="fonctionnement.html">Fonctionnement</a></li>
+                            <li><a href="ados.html">Ados</a></li>
+                            <li><a href="galerie.html">Galerie</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Infos Pratiques</a>
+                        <ul class="hidden">
+                            <li><a href="pratique.html#horaires">Horaires</a></li>
+                            <li><a href="pratique.html#acces">Accès</a></li>
+                            <li><a href="pratique.html#cours-essais">Cours d'essais</a></li>
+                            <li><a href="pratique.html#tarifs">Inscription - tarifs</a></li>
+                            <li><a href="pratique.html#visiteurs">Visiteurs</a></li>
+                            <li><a href="pratique.html#contact">Contact</a></li>
+                            <li><a href="actualite.html">Actualités</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index_en.html"><img alt="EN" src="images/englishflag.png"></a><a
+                            href="https://www.facebook.com/pages/Dojo-dAikido-Makoto/249274268454884"><img
+                            alt="Makoto Facebook" src="images/facebook-logo.jpg"></a>
+                        <a href="https://www.youtube.com/@MakotoDojoAikidoMarseille"><img style="width: 20px; height: auto"
+                                                                                          src="https://cdn-icons-png.flaticon.com/512/3128/3128307.png"/>
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="banner">
+        <div id="videoDiv">
+            <div id="videoBlock">
+                <video autoplay id="video" loop muted preload="auto">
+                    <source src="images/video/SiteMakoto2019.webm" type="video/webm">
+                    <source src="images/video/SiteMakoto2019.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div id="page">
+        <section>
+            <div align="center">
+                <a href="https://www.facebook.com/pages/Dojo-dAikido-Makoto/249274268454884"><img
+                        src="images/facebook-logo.jpg" alt="Makoto Facebook"></a>&nbsp;&nbsp;
+                <a href="https://www.youtube.com/@MakotoDojoAikidoMarseille"><img
+                        src="images/logo_youtube.jpg" alt="Chaîne Youtube Makoto"></a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/dojo.makoto/"><img src="images/logo_instagram.png"
+                                                                      alt="Makoto Instagram"></a>
                 <br>
-                <section>
-                    <header>
-                        <h2>Actualités</h2>
-                    </header>
+                <strong>Notre but est de faire vivre un Dojo d'Aïkido, bienvenue sur ce site pour une première découverte.
+                </strong>
+            </div>
+        </section>
+        <br>
 
-                    <a name="portes_ouvertes23"></a>
-                    <h2>
-                        <span class="byline"><strong>En novembre : semaine découverte sans engagement pendant les vacances scolaires.</strong></span>
-                    </h2>
+        <div class="container" id="marketing">
+            <div class="row">
+                <div class="2u">
+                    <!-- <div id="aikido_kanji"> -->
+                    <img alt="Aikido" src="images/aikido-kanji.gif">
+                    <!-- </div> -->
+                </div>
+                <div class="9u skel-cell-important hero-actuality" style="background-color:rgb(235,235, 235);">
+                    <br>
+                    <section>
+                        <header>
+                            <h2>Actualités</h2>
+                        </header>
 
-                    <table style="width: 100%;">
-                        <colgroup>
-                            <col span="1" style="width: 75%;">
-                            <col span="1" style="width: 25%;">
-                        </colgroup>
-                        <tr>
-                            <td >C'est l'occasion de découvrir l’Aïkido et notre Dojo … <a href="actualite.html">Plus d'informations ...</a>
-                            </td>
-                            <td><a href="images/actualite/portes_ouvertes_nov.pdf" target="_blank" alt="Semaine d'essai en novembre"/>Affiche</a></td>
-                        </tr>
-                    </table>
-                    <br />
-                </section>
+                        <a name="portes_ouvertes23"></a>
+                        <h2>
+                            <span class="byline"><strong>En novembre : semaine découverte sans engagement pendant les vacances scolaires.</strong></span>
+                        </h2>
+
+                        <table style="width: 100%;">
+                            <colgroup>
+                                <col span="1" style="width: 75%;">
+                                <col span="1" style="width: 25%;">
+                            </colgroup>
+                            <tr>
+                                <td>C'est l'occasion de découvrir l’Aïkido et notre Dojo … <a href="actualite.html">Plus
+                                    d'informations ...</a>
+                                </td>
+                                <td><a href="images/actualite/portes_ouvertes_nov.pdf" target="_blank"
+                                       alt="Semaine d'essai en novembre"/>Affiche</a></td>
+                            </tr>
+                        </table>
+                        <br/>
+                    </section>
+                </div>
+            </div>
+
+            <div class="row">
+
+
+                <div class="2u">
+                    <!-- <div id="aikido_kanji"> -->
+                    &nbsp;
+                    <!-- </div> -->
+                </div>
+                <div class="3u">
+                    <section>
+                        <header>
+                            <h2>L'Aïkido</h2>
+                        </header>
+
+                        <p class="subtitle" style="height:10em;">Nous pratiquons l'Aïkido dans le courant fondé en France
+                            par
+                            <strong>Tamura Senseï</strong>. <br>
+                            L’Aïkido est une Voie martiale. [.../...]
+                        <p><a href="discipline.html"><img alt="" src="images/photo_sensei_small.jpg"></a></p>
+                        <a class="button" href="discipline.html">En savoir +</a>
+                    </section>
+                </div>
+
+                <div class="3u">
+                    <section>
+                        <header>
+                            <h2>Le professeur</h2>
+                        </header>
+                        <p class="subtitle" style="height:10em;"><strong>André Palmeri</strong> - 6ème dan, Brevet d'Etat.
+
+                            André Palmeri début l'Aïkido dans les années 70. Elève de Claude Pellerin, il suit
+                            l'enseignement de Tamura Senseï et Chiba Senseï.</p>
+                        <p><a href="professeur.html"><img alt="" src="images/photo_andre_small.jpg"></a></p>
+                        <a class="button" href="professeur.html">En savoir +</a>
+                    </section>
+                </div>
+
+                <div class="3u">
+                    <section>
+                        <header>
+                            <h2>Le Dojo</h2>
+                        </header>
+                        <p class="subtitle" style="height:10em;">Le <strong>Dojo Makoto</strong> est un lieu et un groupe
+                            dédiés à l'Aïkido. <br>
+                            <i>"L'Aïkido ne s'explique pas, il se pratique."</i> <br>
+                            Donc le mieux est de venir essayer ...</p>
+                        <p><a href="fonctionnement.html"><img alt="" src="images/photo_dojo_small.jpg"></a></p>
+                        <a class="button" href="fonctionnement.html">En savoir +</a>
+                    </section>
+                </div>
+
             </div>
         </div>
+        <br>
+        <hr>
+        <br>
+        <div id="soutien" class="container">
 
-        <div class="row">
 
+            <p align="center">Avec le soutien de la Ville de Marseille</p>
+            <p align="center"><a href="https://www.marseille.fr/"><img src="images/logo_vdm.png"
+                                                                       alt="Ville de Marseille"></a></p>
 
-            <div class="2u">
-                <!-- <div id="aikido_kanji"> -->
-                &nbsp;
-                <!-- </div> -->
-            </div>
-            <div class="3u">
-                <section>
-                    <header>
-                        <h2>L'Aïkido</h2>
-                    </header>
-
-                    <p class="subtitle" style="height:10em;">Nous pratiquons l'Aïkido dans le courant fondé en France par
-                        <strong>Tamura Senseï</strong>. <br>
-                        L’Aïkido est une Voie martiale. [.../...]
-                    <p><a href="discipline.html"><img alt="" src="images/photo_sensei_small.jpg"></a></p>
-                    <a class="button" href="discipline.html">En savoir +</a>
-                </section>
-            </div>
-
-            <div class="3u">
-                <section>
-                    <header>
-                        <h2>Le professeur</h2>
-                    </header>
-                    <p class="subtitle" style="height:10em;"><strong>André Palmeri</strong> - 6ème dan, Brevet d'Etat.
-
-                        André Palmeri début l'Aïkido dans les années 70. Elève de Claude Pellerin, il suit
-                        l'enseignement de Tamura Senseï et Chiba Senseï.</p>
-                    <p><a href="professeur.html"><img alt="" src="images/photo_andre_small.jpg"></a></p>
-                    <a class="button" href="professeur.html">En savoir +</a>
-                </section>
-            </div>
-
-            <div class="3u">
-                <section>
-                    <header>
-                        <h2>Le Dojo</h2>
-                    </header>
-                    <p class="subtitle" style="height:10em;">Le <strong>Dojo Makoto</strong> est un lieu et un groupe dédiés à l'Aïkido. <br>
-                        <i>"L'Aïkido ne s'explique pas, il se pratique."</i> <br>
-                        Donc le mieux est de venir essayer ...</p>
-                    <p><a href="fonctionnement.html"><img alt="" src="images/photo_dojo_small.jpg"></a></p>
-                    <a class="button" href="fonctionnement.html">En savoir +</a>
-                </section>
-            </div>
 
         </div>
-    </div>
-    <br>
-    <hr>
-    <br>
-    <div id="soutien" class="container">
+        <!-- /Extra -->
 
+        <!-- Main -->
 
-        <p align="center">Avec le soutien de la Ville de Marseille</p>
-        <p align="center"><a href="https://www.marseille.fr/"><img src="images/logo_vdm.png"
-                                                                   alt="Ville de Marseille"></a></p>
-
+        <!-- Main -->
 
     </div>
-    <!-- /Extra -->
+    <!-- /Main -->
 
-    <!-- Main -->
-
-    <!-- Main -->
-
-</div>
-<!-- /Main -->
-
-<!-- Featured -->
-
-<!-- /Featured -->
-
-<!-- Footer -->
-
-<!-- /Footer -->
-
-<!-- Copyright -->
-<div class="container" id="copyright">
-    Dojo d'Aïkido Makoto - 47, av. de Lattre de Tassigny, 13009 Marseille - <a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a>
-</div>
-
-
+    <!-- Copyright -->
+    <div class="container" id="copyright">
+        Dojo d'Aïkido Makoto - 47, av. de Lattre de Tassigny, 13009 Marseille - <a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a>
+    </div>
 </body>
-<script type="text/javascript">
-    var vid = document.getElementById("video");
-
-    function vidFade() {
-        vid.classList.add("stopfade");
-    }
-
-    vid.addEventListener('ended', function () {
-        // only functional if "loop" is removed
-        vid.pause();
-        // to capture IE10
-        vidFade();
-    });
-    vid.addEventListener("click", function () {
-        vid.classList.toggle("stopfade");
-        if (vid.paused) {
-            vid.play();
-        } else {
-            vid.pause();
-        }
-    });
-</script>
 </html>
