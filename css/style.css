@@ -205,7 +205,7 @@ ul.default {
 
 ul.default li {
     display: block;
-    padding: 2em 0em 1.25em 0em;
+    padding: 2em 0 1.25em 0;
     border-top: 1px solid #303030;
 }
 
@@ -2587,11 +2587,10 @@ blockquote {
 .wrapper-index {
     display: grid;
     max-width: 1200px;
-    margin: 10px auto;
     padding: 0 20px;
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(0, 295px));
     grid-gap: 1em;
     grid-auto-rows: minmax(100px, auto);
-    margin-top: 2em;
+    margin: 2em auto 10px;
 }
