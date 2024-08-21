@@ -19,17 +19,70 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-  
-  <section class="relative h-screen flex flex-col items-center justify-center text-center text-white py-0 px-3">
-    <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
-      <video class="px-72 object-cover" src="videos/header_video.mp4" type="video/mp4" autoplay muted loop></video>
+
+  <section class="h-screen flex flex-col items-center justify-center text-center text-white py-3 px-3">
+    <div class="video-docker absolute inset-0 w-full h-full overflow-hidden z-0">
+      <video
+        class="min-w-full min-h-full w-auto h-auto max-w-none max-h-none object-cover"
+        src="videos/SiteMakoto2019.webm"
+        type="video/webm"
+        autoplay
+        muted
+        loop
+      ></video>
     </div>
-    <div class="video-content space-y-2">
+    <div class="video-content space-y-2 relative z-10">
       <h1 class="font-light text-6xl"></h1>
       <h3 class="font-light text-3xl"></h3>
     </div>
   </section>
-  
+
+
+  <div class="wrapper-index">
+  <div>
+    <section>
+      <header>
+        <h2>L'Aïkido</h2>
+      </header>
+
+      <p class="subtitle" style="height:10em;">Nous pratiquons l'Aïkido dans le courant fondé en France
+        par
+        <strong>Tamura Senseï</strong>. <br>
+        L’Aïkido est une Voie martiale. [.../...]
+      <p><a href="discipline.html"><img alt="" src="images/photo_sensei_small.jpg"></a></p>
+      <a class="button" href="discipline.html">En savoir +</a>
+    </section>
+  </div>
+
+  <div>
+    <section>
+      <header>
+        <h2>Le professeur</h2>
+      </header>
+      <p class="subtitle" style="height:10em;"><strong>André Palmeri</strong> - 6ème dan, Brevet d'Etat.
+
+        André Palmeri début l'Aïkido dans les années 70. Elève de Claude Pellerin, il suit
+        l'enseignement de Tamura Senseï et Chiba Senseï.</p>
+      <p><a href="professeur.html"><img alt="" src="images/photo_andre_small.jpg"></a></p>
+      <a class="button" href="professeur.html">En savoir +</a>
+    </section>
+  </div>
+
+  <div>
+    <section>
+      <header>
+        <h2>Le Dojo</h2>
+      </header>
+      <p class="subtitle" style="height:10em;">Le <strong>Dojo Makoto</strong> est un lieu et un groupe
+        dédiés à l'Aïkido. <br>
+        <i>"L'Aïkido ne s'explique pas, il se pratique."</i> <br>
+        Donc le mieux est de venir essayer ...</p>
+      <p><a href="fonctionnement.html"><img alt="" src="images/photo_dojo_small.jpg"></a></p>
+      <a class="button" href="fonctionnement.html">En savoir +</a>
+    </section>
+  </div>
+
+  </div>
 
   <!-- Features2 Widget ************** -->
 
