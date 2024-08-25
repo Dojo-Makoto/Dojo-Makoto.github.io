@@ -2592,5 +2592,5 @@ blockquote {
     grid-template-columns: repeat(auto-fill, minmax(0, 295px));
     grid-gap: 1em;
     grid-auto-rows: minmax(100px, auto);
-    margin: 2em auto 10px;
+    margin: 2em auto 10px 15%;
 }
