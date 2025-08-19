@@ -32,7 +32,7 @@
     <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
     <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
     <link href="/site.webmanifest" rel="manifest">
-    <style type="text/css">
+    <style>
         .map-container {
             position: relative;
             padding-bottom: 56.25%; /* ratio 16/9 */
@@ -51,7 +51,6 @@
             border: 0;
         }
 
-        /* Titres */
         #horaires {
             margin: 2rem 0;
             text-align: left;
@@ -69,7 +68,6 @@
             margin-bottom: 2rem;
         }
 
-        /* Tableau */
         .horaires-wrapper {
             overflow-x: auto;
         }
@@ -99,7 +97,6 @@
             background: #f8f9fa;
         }
 
-        /* Étiquettes */
         .tag {
             display: inline-block;
             margin-top: 0.3rem;
@@ -111,11 +108,11 @@
         }
 
         .tag.armes {
-            background: #cd0000; /* orange */
+            background: #cd0000;
         }
 
         .tag.tout-niveau {
-            background: #2980b9; /* bleu */
+            background: #2980b9;
         }
 
         /* Mobile → affichage en cartes */
@@ -159,7 +156,6 @@
             }
         }
 
-        /* Notes */
         .notes {
             margin-top: 1.5rem;
             text-align: left;
@@ -170,24 +166,6 @@
             color: #444;
         }
 
-        /*!* cellules avec plusieurs créneaux (jeudi soir) *!*/
-        /*.slots {*/
-        /*    list-style: none;*/
-        /*    padding: 0;*/
-        /*    margin: 0;*/
-        /*}*/
-        /*.slots li {*/
-        /*    display: flex;*/
-        /*    gap: .5rem;*/
-        /*    justify-content: center;*/
-        /*    align-items: center;*/
-        /*    margin: .2rem 0;*/
-        /*}*/
-
-        /*!* sur mobile, aligner à gauche pour la lisibilité *!*/
-        /*@media (max-width: 768px) {*/
-        /*    .slots li { justify-content: flex-start; }*/
-        /*}*/
         /* Cacher/montrer selon support */
         .desktop-only { display: block; }
         .mobile-only { display: none; }
@@ -226,19 +204,13 @@
 <!-- Header -->
 <div id="header">
     <div class="container">
-
-        <!-- Logo -->
-        <div id="logo">
-            <!-- <h1><a href="#"><img src="images/logo_makoto.png" alt="Dojo d'Aïkido Makoto"></a></h1> -->
-        </div>
-
         <nav id="nav">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="discipline.html">La discipline</a></li>
                 <li><a href="#">L'enseignement</a>
                     <ul class="hidden">
-                        <li><a href="professeur.html">Le professeur</a></li>
+                        <li><a href="professeur.html">Le professeur</a></li>Contactez nous
                         <li><a href="uchi.html">Les uchi deshi</a></li>
                     </ul>
                 </li>
