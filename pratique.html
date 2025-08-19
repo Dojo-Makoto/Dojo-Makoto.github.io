@@ -50,6 +50,175 @@
             height: 100%;
             border: 0;
         }
+
+        /* Titres */
+        #horaires {
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        #horaires h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #cd0000;
+        }
+
+        #horaires .intro {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        /* Tableau */
+        .horaires-wrapper {
+            overflow-x: auto;
+        }
+
+        .horaires-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .horaires-table thead {
+            background: #2c3e50;
+            color: #fff;
+        }
+
+        .horaires-table th,
+        .horaires-table td {
+            padding: 1rem;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .horaires-table tbody tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        /* Étiquettes */
+        .tag {
+            display: inline-block;
+            margin-top: 0.3rem;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 6px;
+            color: #fff;
+        }
+
+        .tag.armes {
+            background: #cd0000; /* orange */
+        }
+
+        .tag.tout-niveau {
+            background: #2980b9; /* bleu */
+        }
+
+        /* Mobile → affichage en cartes */
+        @media (max-width: 768px) {
+            .horaires-table thead {
+                display: none;
+            }
+
+            .horaires-table,
+            .horaires-table tbody,
+            .horaires-table tr,
+            .horaires-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .horaires-table tr {
+                margin-bottom: 1.5rem;
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                padding: 1rem;
+            }
+
+            .horaires-table td {
+                text-align: left;
+                padding: 0.5rem 0;
+                border-bottom: 1px solid #eee;
+            }
+
+            .horaires-table td:last-child {
+                border-bottom: none;
+            }
+
+            .horaires-table td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                margin-bottom: 0.2rem;
+                color: #2c3e50;
+            }
+        }
+
+        /* Notes */
+        .notes {
+            margin-top: 1.5rem;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        /*!* cellules avec plusieurs créneaux (jeudi soir) *!*/
+        /*.slots {*/
+        /*    list-style: none;*/
+        /*    padding: 0;*/
+        /*    margin: 0;*/
+        /*}*/
+        /*.slots li {*/
+        /*    display: flex;*/
+        /*    gap: .5rem;*/
+        /*    justify-content: center;*/
+        /*    align-items: center;*/
+        /*    margin: .2rem 0;*/
+        /*}*/
+
+        /*!* sur mobile, aligner à gauche pour la lisibilité *!*/
+        /*@media (max-width: 768px) {*/
+        /*    .slots li { justify-content: flex-start; }*/
+        /*}*/
+        /* Cacher/montrer selon support */
+        .desktop-only { display: block; }
+        .mobile-only { display: none; }
+
+        @media (max-width: 768px) {
+            .desktop-only { display: none; }
+            .mobile-only { display: block; }
+        }
+
+        /* Style cartes par jour */
+        .horaires-cards .day {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .horaires-cards h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .horaires-cards p {
+            margin: 0.3rem 0;
+            font-size: 0.95rem;
+        }
+
     </style>
 </head>
 <body class="left-sidebar">
@@ -122,101 +291,79 @@
             </div>
 
             <div class="9u skel-cell-important">
-                <section>
-                    <a name="horaires"></a>
-                    <header>
-                        <h2>Horaires</h2>
-                        <br>
-                    </header>
-                    <p align="center">Venir 1/4 d'heure &agrave; l'avance.</p>
+                <section id="horaires">
+                    <h2>Horaires des cours</h2>
+                    <p class="intro">Merci de vous présenter <strong>15 minutes avant le début du cours</strong>.</p>
 
-
-                    <!-- Horaires COVID -->
-                    <div align="center">
-                        <table align="center" border="1" width="100%">
+                    <!-- Version Desktop -->
+                    <div class="horaires-wrapper desktop-only">
+                        <table class="horaires-table">
+                            <thead>
+                            <tr>
+                                <th>Période</th>
+                                <th>Lundi</th>
+                                <th>Mardi</th>
+                                <th>Mercredi</th>
+                                <th>Jeudi</th>
+                                <th>Vendredi</th>
+                                <th>Samedi</th>
+                            </tr>
+                            </thead>
                             <tbody>
                             <tr>
-                                <th valign="middle" bgcolor="#cccccc" scope="col">&nbsp;</th>
-                                <th valign="middle" bgcolor="#cccccc" scope="col"><strong>Lundi</strong></th>
-                                <th valign="middle" bgcolor="#cccccc" scope="col"><strong>Mardi</strong></th>
-                                <th valign="middle" bgcolor="#cccccc" scope="col"><strong>Mercredi</strong></th>
-                                <th valign="middle" bgcolor="#cccccc" scope="col"><strong>Jeudi</strong></th>
-                                <th valign="middle" bgcolor="#cccccc" scope="col"><strong>Vendredi</strong></th>
-                                <th valign="middle" bgcolor="#cccccc" scope="col"><strong>Samedi</strong></th>
-                            </tr>
-                            <tr align="center" valign="middle">
-                                <td rowspan="2" valign="middle" bgcolor="#cccccc">
-                                    <strong>Matin</strong></td>
-                                <td align="center" valign="middle" bgcolor="#EF324F">6h30 - 7h30<br>
-                                    Cours d'armes
-                                </td>
-                                <td align="center" valign="middle" bgcolor="#F2F2F2">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#F2F2F2">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#F2F2F2">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#F2F2F2">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#F2F2F2">&nbsp;</td>
+                                <td>Matin</td>
+                                <td>06:30 – 07:30<br><span class="tag armes">Armes</span></td>
+                                <td>—</td><td>—</td><td>—</td><td>—</td>
+                                <td>09:30 – 11:00<br><span class="tag tout-niveau">Tous niveaux</span></td>
                             </tr>
                             <tr>
-                                <td valign="middle" bgcolor="#F2F2F2">&nbsp;</td>
-                                <td valign="middle" bgcolor="#F2F2F2">&nbsp;</td>
-                                <td valign="middle" bgcolor="#F2F2F2">&nbsp;</td>
-                                <td valign="middle" bgcolor="#F2F2F2">&nbsp;</td>
-                                <td valign="middle" bgcolor="#F2F2F2">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#CECEF9">9h30 - 11h <br>
-                                    Tous niveaux
+                                <td>Soir</td>
+                                <td>—</td>
+                                <td>18:00 – 19:30<br><span class="tag tout-niveau">Tous niveaux</span></td>
+                                <td>—</td>
+                                <td>
+                                    18:00 – 19:00 <span class="tag tout-niveau">Tous niveaux</span><br>
+                                    19:00 – 20:00 <span class="tag tout-niveau">Tous niveaux</span>
                                 </td>
-                            </tr>
-                            <tr align="center" valign="middle">
-                                <td rowspan="3" valign="middle" bgcolor="#BCBCBC"><strong>Soir</strong></td>
-
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <!--                                <td align="center" valign="middle" bgcolor="#C9EFD4">14h30 - 15h30 <br>-->
-                                <!--                                    Ados-->
-                                <!--                                </td>-->
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                            </tr>
-                            <tr align="center" valign="middle">
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <td align="center" bgcolor="#CECEF9" rowspan="2" valign="middle">18h - 19h30<br>
-                                    Tous niveaux
-                                </td>
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#CECEF9">18h-19h<br>
-                                    Tous niveaux
-                                </td>
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <!--                                <td align="center" valign="middle" bgcolor="#C9EFD4">18h30 - 19h30 <br>-->
-                                <!--                                    Ados-->
-                                <!--                                </td>-->
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                            </tr>
-                            <tr align="center" valign="middle">
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#CECEF9">19h - 20h <br>
-                                    Tous niveaux
-                                </td>
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
-                                <td align="center" valign="middle" bgcolor="#eaeaea">&nbsp;</td>
+                                <td>—</td><td>—</td>
                             </tr>
                             </tbody>
                         </table>
-                        <p>
-
-                        </p>
-                        <p>
-                        <p>
-                            <strong> Pour la section ados: Veuillez consulter la rubrique correspondante</strong>
-                            <br/>
-                            <a class="button" style="margin-left: 2%" href="ados.html">Plus d'info sur la section
-                                ados</a>
-                        </p>
                     </div>
+
+                    <!-- Version Mobile -->
+                    <div class="horaires-cards mobile-only">
+                        <div class="day">
+                            <h3>Lundi</h3>
+                            <p>06:30 – 07:30 <span class="tag armes">Armes</span></p>
+                        </div>
+                        <div class="day">
+                            <h3>Mardi</h3>
+                            <p>18:00 – 19:30 <span class="tag tout-niveau">Tous niveaux</span></p>
+                        </div>
+                        <div class="day">
+                            <h3>Jeudi</h3>
+                            <p>18:00 – 19:00 <span class="tag tout-niveau">Tous niveaux</span></p>
+                            <p>19:00 – 20:00 <span class="tag tout-niveau">Tous niveaux</span></p>
+                        </div>
+                        <div class="day">
+                            <h3>Samedi</h3>
+                            <p>09:30 – 11:00 <span class="tag tout-niveau">Tous niveaux</span></p>
+                        </div>
+                    </div>
+
+                    <ul class="notes">
+                        <li><span class="tag armes">Armes</span> : Bokken, Jo</li>
+                    </ul>
+
+                    <p style="margin-left: 20%">
+                        <strong> Pour la section ados: Veuillez consulter la rubrique correspondante</strong>
+                        <br>
+                        <a class="button" style="margin-left: 10%" href="ados.html">Infos sur la section
+                            ados</a>
+                    </p>
                 </section>
+
 
                 <section>
                     <a name="contact"></a>
