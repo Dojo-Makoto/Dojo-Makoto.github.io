@@ -57,9 +57,15 @@ Jeunes" name="keywords"/>
 <link href="/site.webmanifest" rel="manifest"/>
 <!-- Original font -->
 <link href="css/font-google.css" rel="stylesheet" type="text/css"/>
+<!-- CSS de Plyr -->
+<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+<!-- JS de Plyr -->
+<script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 
 
-<script type="application/ld+json">
+
+    <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@graph": [
@@ -558,9 +564,13 @@ img[src="images/aikido-kanji.gif"] {
 </header>
 <!-- Banner : poster with play — opens modal lightbox -->
 <section aria-label="Bannière vidéo" id="banner" role="region">
-<div aria-label="Vignette vidéo du Dojo" class="video-vignette" id="videoVignette">
-<div aria-label="Lire la vidéo du Dojo" class="video-poster" id="videoPoster" role="button" style="background-image:url('images/photo_accueil.jpg');" tabindex="0">
-<div aria-hidden="false" class="play-overlay" id="playBtn">▶︎</div>
+<!--<div aria-label="Vignette vidéo du Dojo" class="video-vignette" id="videoVignette">-->
+<!--<div aria-label="Lire la vidéo du Dojo" class="video-poster" id="videoPoster" role="button" style="background-image:url('images/photo_accueil.jpg');" tabindex="0">-->
+<!--<div aria-hidden="false" class="play-overlay" id="playBtn">▶︎</div>-->
+<video id="player" playsinline autoplay muted loop poster="images/photo_accueil.jpg">
+    <source src="images/video/SiteMakoto2019.mp4" type="video/mp4" />
+    <source src="images/video/SiteMakoto2019.webm" type="video/webm" />
+</video>
 </div>
 </div>
 </section>
@@ -754,6 +764,19 @@ img[src="images/aikido-kanji.gif"] {
         if(e.key === 'Escape'){ if(modal.classList.contains('open')) closeModal(); setNavOpen(false); Array.from(document.querySelectorAll('#main-nav > li.open')).forEach(function(li){ li.classList.remove('open'); li.querySelector('a')?.setAttribute('aria-expanded','false'); }); }
       });
     })();
+    document.addEventListener("DOMContentLoaded", () => {
+        const player = new Plyr("#player", {
+            autoplay: true,
+            muted: true,
+            loop: { active: true },
+            controls: [], // cache les boutons si tu veux juste un fond vidéo
+        });
+
+        // Sécurité : forcer le play si le navigateur bloque l’autoplay
+        player.play().catch(() => {
+            console.log("Autoplay bloqué, afficher un bouton Play si besoin.");
+        });
+    });
   </script>
 </body>
 </html>
