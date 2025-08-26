@@ -6,129 +6,562 @@
 	<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
 	<meta content="Dojo d'Aikido Makoto - André Palmeri, 6ème dan - Marseille - Le professeur" name="description"/>
 	<meta content="" name="keywords"/>
-	<link href='css/font-google.css' rel='stylesheet' type='text/css'>
-	<!--[if lte IE 8]>
-    <script src="js/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-panels.min.js"></script>
-	<script src="js/init.js"></script>
-	<noscript>
-		<link href="css/skel-noscript.css" rel="stylesheet"/>
-		<link href="css/style.css" rel="stylesheet"/>
-		<link href="css/style-desktop.css" rel="stylesheet"/>
-		<link href="css/makoto.css" rel="stylesheet"/>
-	</noscript>
-	<!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/ie/v8.css"/><![endif]-->
-	<!--[if lte IE 9]>
-    <link rel="stylesheet" href="css/ie/v9.css"/><![endif]-->
-	<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-	<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-	<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-	<link href="/site.webmanifest" rel="manifest">
+	<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- Favicon / Touch -->
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<!-- Original font -->
+<link href="css/font-google.css" rel="stylesheet" type="text/css"/>
+<style>
+    :root{
+      --page-bg: #ffffff;
+      --header-bg: #ffffff;
+      --link-color: #111111;
+      --accent: #c0392b;
+      --container-max: 1200px;
+      --header-padding-vertical: 1.2rem; /* header height preserved */
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Helvetica Neue", Arial, sans-serif;
+      color:#111;
+      line-height:1.45;
+      background:var(--page-bg);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    a{color:var(--link-color)}
+    .container{
+      width:90%;
+      max-width:var(--container-max);
+      margin:0 auto;
+      padding:1rem 0;
+    }
+
+    section.container {
+      margin-bottom: 1rem; /* espace standard entre sections */
+    }
+  
+    /* H2: rouge en majuscule */
+    h2 { color: var(--accent); text-transform: uppercase; letter-spacing:.03em; margin:0 0 .6rem 0; }
+    h3 { margin:0.4rem 0; }
+
+    /* HEADER */
+    #header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:var(--header-bg);
+      box-shadow:0 1px 6px rgba(0,0,0,0.06);
+    }
+
+    /* header height doubled (kept) */
+    #header .container{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      padding:var(--header-padding-vertical) 0.75rem;
+    }
+
+    /* logo: smaller size but header tall */
+    #logo{flex:0 0 auto; display:flex; align-items:center;}
+    #logo img{
+      height:112px; /* reduced logo height as requested */
+      width:auto;
+      display:block;
+    }
+
+    /* nav layout */
+    nav#nav{flex:1 1 auto; display:flex; align-items:center;}
+    nav#nav ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      align-items:center;
+      gap:0.25rem;
+      width:100%;
+    }
+    nav#nav li{position:relative; display:flex; align-items:center;}
+    nav#nav > ul > li{margin:0;}
+    nav#nav a{
+      color:var(--link-color);
+      text-decoration:none;
+      display:block;
+      padding:0.55rem 0.75rem;
+      font-weight:600;
+    }
+    nav#nav a:hover, nav#nav a:focus { color:var(--accent); outline:none; }
+
+    /* socials aligned right, smaller icons */
+    .socials{
+      display:flex;
+      gap:0.45rem;
+      align-items:center;
+      margin-left:auto;
+      padding-left:0.5rem;
+    }
+    .socials a img{
+      height:20px; /* smaller social icons */
+      width:auto;
+      display:block;
+    }
+
+    /* submenu */
+    nav#nav ul li ul.hidden{
+      position:absolute; left:0; top:100%;
+      background:var(--header-bg);
+      border:1px solid rgba(0,0,0,0.06);
+      display:none; min-width:220px; border-radius:4px;
+      box-shadow:0 8px 18px rgba(0,0,0,0.08);
+    }
+    nav#nav ul li:focus-within>ul.hidden,
+    nav#nav ul li:hover>ul.hidden{ display:block; }
+    nav#nav ul li ul.hidden li a{ padding:0.6rem 0.9rem; white-space:nowrap; color:var(--link-color); }
+    nav#nav ul li ul.hidden li a:hover { color:var(--accent); }
+
+    /* hamburger: ensure black and visible on white header */
+    .menu-toggle{
+      display:none;
+      background:transparent;
+      border:1px solid transparent;
+      color:var(--link-color);
+      font-size:1.25rem;
+      padding:0.4rem 0.6rem;
+      border-radius:6px;
+      cursor:pointer;
+    }
+    .menu-toggle:focus{ outline:2px solid rgba(192,57,43,0.18); }
+
+    /* Banner / lightbox trigger */
+    #banner{width:100%; display:flex; justify-content:center; align-items:center; overflow:hidden; padding:1rem 0;}
+    .video-vignette{
+      width:100%;
+      max-width:1200px;
+      border-radius:8px;
+      overflow:hidden;
+      position:relative;
+      box-shadow:0 6px 20px rgba(0,0,0,0.12);
+      background:#000;
+      margin:0 auto;
+    }
+    .video-poster{
+      display:block;
+      width:100%;
+      cursor:pointer;
+      background-size:cover;
+      background-position:center center;
+      min-height:250px;
+    }
+    .play-overlay{
+      position:absolute;
+      left:50%; top:50%;
+      transform:translate(-50%,-50%);
+      background:rgba(0,0,0,0.48);
+      border-radius:50%;
+      width:84px; height:84px;
+      display:flex; align-items:center; justify-content:center;
+      font-size:2rem; color:#fff;
+      box-shadow:0 6px 18px rgba(0,0,0,0.3);
+      cursor:pointer;
+    }
+
+    /* modal lightbox */
+    .modal-overlay{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.75);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:2000;
+      padding:1.5rem;
+    }
+    .modal-overlay.open{ display:flex; }
+    .modal-content{
+      max-width:1000px;
+      width:100%;
+      border-radius:10px;
+      background:#000;
+      position:relative;
+      box-shadow:0 12px 40px rgba(0,0,0,0.6);
+    }
+    .modal-close{
+      position:absolute; right:8px; top:8px;
+      background:#fff; color:#111;
+      border:none; padding:0.35rem 0.6rem; border-radius:6px;
+      cursor:pointer; z-index:10; font-weight:600;
+    }
+    .modal-video{ width:100%; height:auto; display:block; max-height:80vh; }
+
+    /* content */
+    #page{background:var(--page-bg); padding:1rem 0 3rem;}
+    
+.hero-actuality {
+    background-color: #fbfbfb;
+    border: 1px solid #ccc; /* cadre gris léger */
+    border-radius: 10px; /* bords carrés */
+    padding: 1.2rem;
+}
+
+    .byline{font-size:1.05rem; color:#222}
+    .marketing-row{display:grid; grid-template-columns:70px 1fr; gap:1rem; align-items:start;}
+    .wrapper-index{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin-top:1rem;}
+    .card{background:#fff; padding:1rem; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.04);}
+
+    table.responsive{ width:100%; border-collapse:collapse; }
+    table.responsive td{ vertical-align:top; padding:0.25rem 0.5rem; }
+
+  /* Logo Kanji dans la section accueil */
+.kanji-logo {
+  height: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustements mobiles */
+@media (max-width: 768px) {
+  .kanji-logo {
+    height: 105px; /* réduit sur petits écrans */
+    margin-bottom: 0rem;
+  }
+}
+  
+
+  /* Footer */
+  
+  footer {
+  padding: 0rem;
+  text-align: center;   /* centrage du texte */
+  font-size: 0.95rem;
+  color: #444;
+  border-top: 1px solid #ddd;
+}
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+  
+  
+    /* boutons "En savoir +" : hover -> grisé */
+    .button{
+      display:inline-block;
+      padding:0.45rem 0.7rem;
+      border-radius:6px;
+      background:#777777;       /* gris assez foncé */
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      border:1px solid rgba(0,0,0,0.06);
+      transition: background-color .18s ease, color .18s ease, transform .06s ease;
+    }
+    .button:hover, .button:focus{
+      background:#c0392b;    /* rouge au survol */
+      color:#fff;
+      transform:translateY(-1px);
+    }
+
+    /* Responsive logo scaling */
+    @media (max-width:1200px){
+      #logo img{height:84px;}
+    }
+    @media (max-width:900px){
+      #logo img{height:64px;}
+    }
+    @media (max-width:768px){
+      #header .container{ padding:0.4rem 0.6rem; }
+      #logo img{height:72px;}
+      .menu-toggle{ display:block; color:var(--link-color); }
+      nav#nav{ position:fixed; inset:66px 0 0 0; background:var(--header-bg); transform:translateY(-100%); transition:transform .22s ease; overflow:auto; z-index:1500;}
+      nav#nav.open{ transform:translateY(0); }
+      nav#nav ul{ flex-direction:column; padding:0.5rem; }
+      nav#nav ul li ul.hidden{ position:static; box-shadow:none; background:transparent; display:none; border:0; }
+      nav#nav ul li.open>ul.hidden{ display:block; }
+      nav#nav a{ padding:0.9rem 1rem; border-bottom:1px solid rgba(0,0,0,0.04); }
+      .video-poster{ min-height:160px; }
+    }
+
+    /* accessibility helpers */
+    .sr-only{ position:absolute!important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+  
+
+img[src="images/aikido-kanji.gif"] {
+    margin-right: 10px; /* Espacement à droite du logo */
+}
+
+.professeur-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap; /* pour que ça passe bien en mobile */
+}
+
+/* Bloc professeur */
+.professeur-bloc {
+  flex: 2; 
+  min-width: 300px;
+}
+
+.professeur-flex {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.professeur-photo img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+.professeur-texte {
+  flex: 1;
+  min-width: 240px;
+}
+
+/* Kanji */
+.professeur-kanji {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.professeur-kanji img {
+  max-width: 150px;
+  height: auto;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    width: 100%;
+    max-width: inherit; /* Aligne le texte à la largeur de l'image */
+}
+
+
+
+}
+
+
+
+}
+
+
+.card {
+    margin-bottom: 10px !important;
+    padding-bottom: 5px !important;
+}
+
+.card p {
+    margin-bottom: 5px !important;
+}
+
+
+
+/* Correctif mobile : logo et burger toujours visibles + menu panneau latéral corrigé */
+@media (max-width: 768px) {
+  #header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #logo {
+    z-index: 2001;
+  }
+  .menu-toggle {
+    display: block;
+    color: #111;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    z-index: 2001;
+  }
+  nav#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 68%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.2);
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+    overflow-y: auto;
+    z-index: 1500;
+  }
+  nav#nav.open {
+    transform: translateX(0);
+  }
+  nav#nav ul {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  nav#nav a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #111;
+    border-bottom: 1px solid #eee;
+  }
+  /* Sous-menus affichés en colonne sous leur titre */
+  nav#nav ul li ul.hidden {
+    position: static;
+    display: none;
+    background: #f0f0f0;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+  nav#nav ul li ul.hidden li a {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  nav#nav ul li ul.hidden li:last-child a {
+    border-bottom: none;
+  }
+  nav#nav ul li.open > ul.hidden {
+    display: block;
+  }
+}
+
+	#banner_prof {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem 0;
+  background: #fff; /* fond neutre */
+}
+#banner_prof img {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+	
+</style>
 </head>
 <body class="left-sidebar">
 
 <!-- Header -->
-<div id="header">
-	<div class="container">
-
-		<!-- Logo -->
-		<div id="logo">
-			<!-- <h1><a href="#"><img src="images/logo_makoto.png" alt="Dojo d'Aïkido Makoto"></a></h1> -->
-		</div>
-
-		<nav id="nav">
-			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="discipline.html">La discipline</a></li>
-				<li class="active"><a href="#">L'enseignement</a>
-					<ul class="hidden">
-						<li><a href="professeur.html">Le professeur</a></li>
-						<li><a href="uchi.html">Les uchi deshi</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Le Dojo</a>
-					<ul class="hidden">
-						<li><a href="fonctionnement.html">Fonctionnement</a></li>
-						<li><a href="ados.html">Ados</a></li>
-						<li><a href="galerie.html">Galerie</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Infos Pratiques</a>
-					<ul class="hidden">
-						<li><a href="pratique.html#horaires">Horaires</a></li>
-						<li><a href="pratique.html#acces">Accès</a></li>
-						<li><a href="pratique.html#cours-essais">Cours d'essais</a></li>
-						<li><a href="pratique.html#tarifs">Inscription - tarifs</a></li>
-						<li><a href="pratique.html#visiteurs">Visiteurs</a></li>
-						<li><a href="pratique.html#contact">Contact</a></li>
-						<li><a href="actualite.html">Actualités</a></li>
-					</ul>
-				</li>
-				<li><a href="professeur_en.html"><img alt="EN" src="images/englishflag.png"></a><a
-						href="https://www.facebook.com/pages/Dojo-dAikido-Makoto/249274268454884"><img
-						alt="Makoto Facebook" src="images/facebook-logo.jpg"></a>
-					<a href="https://www.youtube.com/@MakotoDojoAikidoMarseille"><img style="width: 20px; height: auto" src="https://cdn-icons-png.flaticon.com/512/3128/3128307.png" /> </a></li>
-			</ul>
-		</nav>
-
-	</div>
+<header aria-label="En-tête du site" id="header" role="banner">
+<div class="container">
+<!-- Logo (no srcset because no higher-res provided) -->
+<div aria-hidden="false" id="logo">
+<a href="index.html" title="Dojo Makoto">
+<img alt="Dojo d'Aikido Makoto" decoding="async" height="56" loading="lazy" src="images/logo_makoto_300dpi.png" width="280"/>
+</a>
 </div>
+<!-- mobile toggle (visible on small screens) -->
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Ouvrir le menu" class="menu-toggle">☰</button>
+<!-- Nav -->
+<nav aria-label="Menu principal" id="nav" role="navigation">
+<ul id="main-nav">
+<li class="active"><a href="index.html" title="Accueil du Dojo Makoto">Accueil</a></li>
+<li><a href="discipline.html" title="La discipline - Aïkido">La discipline</a></li>
+<li>
+<a aria-expanded="false" aria-haspopup="true" href="#">L'enseignement ▾</a>
+<ul aria-label="Sous-menu L'enseignement" class="hidden">
+<li><a href="professeur.html" title="Le professeur André Palmeri">Le professeur</a></li>
+<li><a href="uchi.html" title="Les uchi deshi">Les uchi deshi</a></li>
+</ul>
+</li>
+<li>
+<a aria-expanded="false" aria-haspopup="true" href="#">Le Dojo ▾</a>
+<ul aria-label="Sous-menu Le Dojo" class="hidden">
+<li><a href="fonctionnement.html" title="Fonctionnement du Dojo">Fonctionnement</a></li>
+<li><a href="ados.html" title="Cours pour ados">Ados</a></li>
+<li><a href="galerie.html" title="Galerie photos">Galerie</a></li>
+</ul>
+</li>
+<li>
+<a aria-expanded="false" aria-haspopup="true" href="#">Infos Pratiques ▾</a>
+<ul aria-label="Sous-menu Infos Pratiques" class="hidden">
+<li><a href="pratique.html#horaires" title="Horaires des cours">Horaires</a></li>
+<li><a href="pratique.html#acces" title="Accès au Dojo">Accès</a></li>
+<li><a href="pratique.html#cours-essais" title="Cours d'essai">Cours d'essais</a></li>
+<li><a href="pratique.html#tarifs" title="Tarifs et inscription">Inscription - tarifs</a></li>
+<li><a href="pratique.html#visiteurs" title="Règles pour visiteurs">Visiteurs</a></li>
+<li><a href="pratique.html#contact" title="Contact">Contact</a></li>
+<li><a href="actualite.html" title="Actualités du Dojo">Actualités</a></li>
+</ul>
+</li>
+<!-- socials aligned right -->
+<li style="display:flex; align-items:center;">
+<div aria-hidden="false" class="socials">
+<a href="index_en.html" title="English version"><img alt="EN" src="images/englishflag.png"/></a>
+<!--<a href="https://www.facebook.com/pages/Dojo-dAikido-Makoto/249274268454884" title="Page Facebook du Dojo"><img alt="Facebook Makoto" src="images/facebook-logo.jpg"/></a>
+<a href="https://www.youtube.com/@MakotoDojoAikidoMarseille" title="Chaîne YouTube"><img alt="YouTube Makoto" src="images/logo_youtube.jpg"/></a>-->
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</header>
 <!-- Header -->
 
 <!-- Banner -->
-<div id="banner_prof">
-	<div class="container"></div>
-</div>
+<section id="banner_prof" role="region" aria-label="Bannière professeur">
+  <div class="container">
+    <img src="images/photo_professeur.jpg" alt="André Palmeri - Aïkido" style="width:100%; height:auto; border-radius:8px; box-shadow:0 6px 20px rgba(0,0,0,0.15);">
+  </div>
+</section>
 <!-- /Banner -->
 
 <!-- Main -->
-<div id="page">
+<main id="page" role="main">
+  <section class="professeur-section container">
+    <div class="professeur-wrapper">
+      
+      <!-- Colonne gauche : Kanji -->
+      <div class="professeur-kanji">
+        <img src="images/aikido-kanji.gif" alt="Kanji Aïkido">
+      </div>
 
-	<!-- Main -->
-	<div class="container" id="main">
-		<div class="row">
+      <!-- Colonne droite : contenu professeur -->
+      <div class="professeur-bloc">
+        <h2>Le professeur</h2>
+		<h1>André Palmeri - 6ème dan (BE)</h1>
+	<div class="professeur-flex">
+          <div class="professeur-photo">
+            <img src="images/photo_andre.jpg" alt="André Palmeri">
+          </div>
+          <div class="professeur-texte">
+            <p><strong>André Palmeri</strong> débute l'Aïkido dans les années 70. 
+              Élève de Claude Pellerin, il suit l’enseignement de Tamura Shihan et de Chiba Shihan.</p>
+            <p>À partir de 1985, il se consacre à l’enseignement de l’Aïkido en créant le Dojo Makoto. 
+              Ce nom témoigne de son intention : imprimer, dans la mesure de ses moyens, 
+              une orientation la plus traditionnelle possible au Dojo.</p>
+          </div>
+        </div>
+      </div>
 
-			<div class="2u">
-				<img alt="Aikido" src="images/aikido-kanji.gif">
-			</div>
-
-			<div class="9u skel-cell-important">
-				<section>
-					<header>
-						<h2>Le professeur</h2>
-						<br>
-						<span class="byline">André Palmeri - 6ème dan (BE)</span>
-					</header>
-
-				</section>
-				<div class="row">
-					<div class="6u">
-						<section>
-							<img alt="André Palmeri" src="images/photo_andre.jpg"
-								 style="box-shadow: 8px 8px 12px #aaa; max-width:500; max-height:575; width:100%; height:auto;"/>
-						</section>
-					</div><!-- 5u -->
-
-					<div class="6u">
-						<section>
-							<p align="justify">André Palmeri débute l'Aïkido dans les années 70. Elève de Claude
-								Pellerin, il suit l'enseignement de Tamura Shihan et de Chiba Shihan.</p>
-							<p align="justify">A partir de 1985, il se consacre à l'enseignement de l'Aïkido en créant
-								le Dojo Makoto. Ce nom témoigne de son intention : imprimer, dans la mesure de ses
-								moyens, une orientation la plus traditionnelle possible au Dojo. </p>
-						</section>
-					</div> <!-- 4u -->
-				</div> <!-- row -->
-			</div> <!-- 9u -->
-
-		</div> <!-- row -->
-
-
-	</div>
-</div>
+    </div>
+  </section>
+</main>
 <!-- Main -->
 
 </div>
@@ -139,14 +572,100 @@
 <!-- /Featured -->
 
 <!-- Footer -->
-
+<footer aria-label="Informations légales" class="container" id="copyright" role="contentinfo">
+    Dojo d'Aïkido Makoto - 47, av. de Lattre de Tassigny, 13009 Marseille - <a href="mailto:makoto.dojo@free.fr" title="Envoyer un mail">makoto.dojo@free.fr</a>
+</footer>
 <!-- /Footer -->
 
 <!-- Copyright -->
-<div class="container" id="copyright">
-	Dojo d'Aïkido Makoto - 47, av. de Lattre de Tassigny, 13009 Marseille - <a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a>
-</div>
 
 
+<script>
+    (function(){
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('#nav');
+      const poster = document.getElementById('videoPoster');
+      const playBtn = document.getElementById('playBtn');
+      const modal = document.getElementById('videoModal');
+      const modalInner = document.getElementById('modalInner');
+      const modalClose = document.getElementById('modalClose');
+
+      function setNavOpen(open){
+        if(open){
+          nav.classList.add('open');
+          menuToggle.setAttribute('aria-expanded','true');
+          nav.querySelectorAll('a')[0]?.focus();
+        } else {
+          nav.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded','false');
+        }
+      }
+      menuToggle && menuToggle.addEventListener('click', function(){
+        setNavOpen(!nav.classList.contains('open'));
+      });
+      document.addEventListener('click', function(e){
+        if(window.innerWidth <= 768){
+          if(!nav.contains(e.target) && !menuToggle.contains(e.target)) setNavOpen(false);
+        }
+      });
+
+      Array.from(document.querySelectorAll('#main-nav > li')).forEach(function(li){
+        const trigger = li.querySelector('a');
+        const submenu = li.querySelector('ul.hidden');
+        if(submenu){
+          trigger.setAttribute('role','button');
+          trigger.setAttribute('aria-expanded','false');
+          trigger.addEventListener('click', function(ev){
+            if(window.innerWidth <= 768){
+              ev.preventDefault();
+              li.classList.toggle('open');
+              trigger.setAttribute('aria-expanded', li.classList.contains('open') ? 'true' : 'false');
+            }
+          });
+          trigger.addEventListener('keydown', function(ev){
+            if(ev.key === 'Enter' || ev.key === ' '){ ev.preventDefault(); trigger.click(); }
+            if(ev.key === 'Escape'){ li.classList.remove('open'); trigger.setAttribute('aria-expanded','false'); trigger.focus(); }
+          });
+        }
+      });
+
+      function openModalWithVideo(){
+        if(modalInner.querySelector('video')) return;
+        const video = document.createElement('video');
+        video.className = 'modal-video';
+        video.setAttribute('controls','');
+        video.setAttribute('playsinline','');
+        video.setAttribute('autoplay','');
+        video.setAttribute('preload','auto');
+        video.innerHTML = '<source src="images/video/SiteMakoto2019.webm" type="video/webm"><source src="images/video/SiteMakoto2019.mp4" type="video/mp4">Votre navigateur ne supporte pas la vidéo.';
+        modalInner.appendChild(video);
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+        video.play().catch(()=>{/* autoplay may be blocked */});
+        modalClose.focus();
+      }
+
+      function closeModal(){
+        const v = modalInner.querySelector('video');
+        if(v){ try{ v.pause(); v.removeAttribute('src'); }catch(e){} v.remove(); }
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden','true');
+        document.body.style.overflow = '';
+        poster.focus();
+      }
+
+      [poster, playBtn].forEach(function(node){
+        node && node.addEventListener('click', openModalWithVideo);
+        node && node.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModalWithVideo(); } });
+      });
+
+      modalClose.addEventListener('click', closeModal);
+      modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape'){ if(modal.classList.contains('open')) closeModal(); setNavOpen(false); Array.from(document.querySelectorAll('#main-nav > li.open')).forEach(function(li){ li.classList.remove('open'); li.querySelector('a')?.setAttribute('aria-expanded','false'); }); }
+      });
+    })();
+  </script>
 </body>
 </html>
