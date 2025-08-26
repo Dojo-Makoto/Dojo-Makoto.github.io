@@ -450,23 +450,19 @@ img[src="images/aikido-kanji.gif"] {
     display: block;
   }
 }
+#banner_prof {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;   /* évite les débordements */
+}
 
-	#banner_prof {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  padding: 1rem 0;
-  background: #fff; /* fond neutre */
-}
 #banner_prof img {
-  max-width: 1200px;
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 320px;      /* ou une valeur en vh */
+  object-fit: cover;  /* recadre sans déformer */
+  display: block;
 }
-	
 </style>
 </head>
 <body class="left-sidebar">
@@ -530,9 +526,7 @@ img[src="images/aikido-kanji.gif"] {
 
 <!-- Banner -->
 <section id="banner_prof" role="region" aria-label="Bannière professeur">
-  <div class="container">
     <img src="images/photo_professeur.jpg" alt="André Palmeri - Aïkido" style="width:100%; height:auto; border-radius:8px; box-shadow:0 6px 20px rgba(0,0,0,0.15);">
-  </div>
 </section>
 <!-- /Banner -->
 
