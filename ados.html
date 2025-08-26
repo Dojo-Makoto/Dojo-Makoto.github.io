@@ -272,18 +272,36 @@
 
 /* Ajustements mobiles */
 @media (max-width: 768px) {
-  .kanji-logo {
-    height: 105px; /* réduit sur petits écrans */
-    margin-bottom: 0rem;
+  .professeur-wrapper {
+    flex-direction: column;   /* empile verticalement */
+    align-items: center;      /* centre horizontalement */
+  }
+
+  
+  .professeur-kanji {
+    display: flex;            /* transforme le bloc en flex container */
+    justify-content: center;  /* centre horizontalement son contenu */
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .professeur-kanji img {
+    max-width: 150px;         /* adapte la taille sur mobile */
+    height: auto;
+  }
+
+  .professeur-bloc {
+    width: 100%;
+    min-width: auto;
   }
 }
   
-@media (max-width: 768px) {
-  .professeur-kanji img {
-    max-width: 80px;  /* taille réduite sur mobile */
-    height: auto;
-  }
-}
+  
+  
+  
+  
+  
+  
   /* Footer */
   
   footer {
