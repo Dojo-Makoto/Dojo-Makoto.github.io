@@ -21,7 +21,7 @@
             margin-right: auto;
             margin-top: 0px;
             margin-bottom: 0px;
-            max-height: 500px; /* Augmenté pour de meilleures images */
+            max-height: 450px; /* Augmenté pour de meilleures images */
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
@@ -36,9 +36,9 @@
 
         /* Navigation améliorée du slider */
         .flex-direction-nav a {
-            width: 50px;
-            height: 50px;
-            background: rgba(192,57,43,0.8);
+            width: 25px;
+            height: 25px;
+            background: #666;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -52,7 +52,7 @@
         }
 
         .flex-direction-nav a:hover {
-            background: rgba(192,57,43,1);
+            background: rgb(155, 96, 90);
             transform: scale(1.1);
         }
 
@@ -67,7 +67,7 @@
         /* Ajouter des flèches CSS à la place du texte */
         .flex-direction-nav .flex-prev::before {
             content: '‹';
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             text-indent: 0;
             color: white;
@@ -75,7 +75,7 @@
 
         .flex-direction-nav .flex-next::before {
             content: '›';
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             text-indent: 0;
             color: white;
@@ -282,10 +282,10 @@
         /* YouTube link styling */
         .youtube-link {
             display: inline-block;
-            background: linear-gradient(135deg, #ff0000, #cc0000);
+            background: linear-gradient(135deg, #f0f0f0, rgba(0,0,0,0.15));
             padding: 1.5rem 3rem;
             border-radius: 50px;
-            color: white;
+            color: #111;
             text-decoration: none;
             font-weight: 600;
             font-size: 1.1rem;
@@ -399,6 +399,35 @@
             min-width: 300px;
         }
 
+        
+       /* Ajustements mobiles */
+@media (max-width: 768px) {
+  .professeur-wrapper {
+    flex-direction: column;   /* empile verticalement */
+    align-items: center;      /* centre horizontalement */
+  }
+
+  
+  .professeur-kanji {
+    display: flex;            /* transforme le bloc en flex container */
+    justify-content: center;  /* centre horizontalement son contenu */
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .professeur-kanji img {
+    max-width: 150px;         /* adapte la taille sur mobile */
+    height: auto;
+  }
+
+  .professeur-bloc {
+    width: 100%;
+    min-width: auto;
+  }
+} 
+        
+        
+        
         /* Banner */
         #banner_prof {
             width: 100%;
@@ -505,6 +534,7 @@
                 color: #111;
                 border-bottom: 1px solid #eee;
             }
+/*
 
             .professeur-wrapper {
                 flex-direction: column;
@@ -518,6 +548,7 @@
             .professeur-kanji img {
                 max-width: 80px;
             }
+            */
 
             .social-grid {
                 grid-template-columns: 1fr;
@@ -612,7 +643,7 @@
                     <div id="video-container" style="display: none;">
                         <section class="gallery-section">
                             <header>
-                                <span class="byline">Photos du Dojo et Événements</span>
+                                <span class="byline";>Photos du Dojo et Événements</span>
                             </header>
 
                             <h2>Dojo Makoto</h2>
