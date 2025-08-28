@@ -567,10 +567,11 @@ img[src="images/aikido-kanji.gif"] {
 <!--<div aria-label="Vignette vidéo du Dojo" class="video-vignette" id="videoVignette">-->
 <!--<div aria-label="Lire la vidéo du Dojo" class="video-poster" id="videoPoster" role="button" style="background-image:url('images/photo_accueil.jpg');" tabindex="0">-->
 <!--<div aria-hidden="false" class="play-overlay" id="playBtn">▶︎</div>-->
-<video id="player" playsinline autoplay muted loop poster="images/photo_accueil.jpg">
-    <source src="images/video/SiteMakoto2019.mp4" type="video/mp4" />
-    <source src="images/video/SiteMakoto2019.webm" type="video/webm" />
-</video>
+    <video id="player" playsinline autoplay muted loop webkit-playsinline
+           poster="images/photo_accueil.jpg">
+        <source src="images/video/SiteMakoto2019.mp4" type="video/mp4" />
+        <source src="images/video/SiteMakoto2019.webm" type="video/webm" />
+    </video>
 </div>
 </div>
 </section>
@@ -775,6 +776,14 @@ img[src="images/aikido-kanji.gif"] {
         // Sécurité : forcer le play si le navigateur bloque l’autoplay
         player.play().catch(() => {
             console.log("Autoplay bloqué, afficher un bouton Play si besoin.");
+        });
+    });
+
+    const video = document.getElementById('player');
+    video.addEventListener('loadeddata', () => {
+        video.play().catch(e => {
+            console.log('Autoplay failed:', e);
+            // Afficher l'image poster à la place
         });
     });
   </script>
