@@ -694,6 +694,332 @@ Jeunes" name="keywords"/>
             }
         }
 
+        
+    
+
+        /* Slider Bandeau Styles */
+        #photo-slider {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            background: #000;
+            margin: 1rem 0;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 370px; /* Hauteur du bandeau */
+        }
+
+        .slider-wrapper {
+            display: flex;
+            width: 600%; /* 6 photos × 100% */
+            height: 100%;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .slide {
+            width: 16.666%; /* 100% / 6 photos */
+            height: 100%;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Overlay avec titre sur chaque photo */
+        .slide-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+            padding: 2rem 1.5rem 1.5rem;
+            transform: translateY(60px);
+            transition: transform 0.4s ease;
+        }
+
+        .slide.active .slide-overlay {
+            transform: translateY(0);
+        }
+
+        .slide-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: 0.02em;
+        }
+
+        .slide-description {
+            font-size: 1rem;
+            margin: 0;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        /* Navigation */
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: #111;
+            transition: all 0.3s ease;
+            z-index: 10;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .slider-nav:hover {
+            background: var(--accent);
+            color: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .slider-nav:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 20px;
+        }
+
+        /* Indicateurs */
+        .slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.dot {
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.dot.active {
+    background: var(--accent);
+    width: 28px;
+    box-shadow: 0 0 8px rgba(192, 57, 43, 0.4);
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.7);
+    width: 24px;
+}
+
+
+        /* Animation de progression */
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            background: var(--accent);
+            width: 0%;
+            transition: width 0.1s linear;
+            z-index: 10;
+        }
+
+        /* Auto-play pause button */
+        .play-pause {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+            z-index: 10;
+        }
+
+        .play-pause:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .slider-container {
+                height: 250px;
+            }
+
+            .slide-title {
+                font-size: 1.4rem;
+            }
+
+            .slide-description {
+                font-size: 0.9rem;
+            }
+
+            .slider-nav {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+                opacity: 0.8;
+            }
+
+            .prev {
+                left: 15px;
+            }
+
+            .next {
+                right: 15px;
+            }
+
+            .slide-overlay {
+                padding: 1.5rem 1rem 1rem;
+                transform: translateY(40px);
+            }
+            
+           .slider-dots {
+        gap: 6px;
+    }
+    
+    .dot {
+        width: 16px;
+        height: 2px;
+    }
+    
+    .dot.active {
+        width: 22px;
+    }
+    
+    .dot:hover {
+        width: 18px;
+    }
+        }
+
+        @media (max-width: 480px) {
+            .slider-container {
+                height: 220px;
+            }
+
+            .slide-title {
+                font-size: 1.2rem;
+            }
+
+            .slide-description {
+                font-size: 0.8rem;
+            }
+
+            .slider-nav {
+                width: 32px;
+                height: 32px;
+                font-size: 0.85rem;
+                opacity: 0.7;
+            }
+
+            .prev {
+                left: 10px;
+            }
+
+            .next {
+                right: 10px;
+            }
+             .slider-dots {
+        gap: 5px;
+        bottom: 15px;
+    }
+    
+    .dot {
+        width: 14px;
+        height: 1.5px;
+    }
+    
+    .dot.active {
+        width: 20px;
+    }
+    
+    .dot:hover {
+        width: 16px;
+    }
+        }
+
+        /* Animation d'entrée */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #photo-slider {
+            animation: slideIn 0.8s ease-out;
+        }
+
+        /* Titre de section */
+        h2 {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: .03em;
+            margin: 0 0 .6rem 0;
+            text-align: center;
+        }
+
+        /* Effets de transition pour les slides */
+        .slide {
+            transition: opacity 0.3s ease;
+        }
+
+        .slide:not(.active) {
+            opacity: 0.7;
+        }
+
+        /* Style pour le focus (accessibilité) */
+        .slider-nav:focus,
+        .dot:focus,
+        .play-pause:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+        
+        
+        
+        
+        
+        
+        
     </style>
 </head>
 <body class="homepage">
@@ -754,21 +1080,89 @@ Jeunes" name="keywords"/>
         </nav>
     </div>
 </header>
-<!-- Banner : poster with play — opens modal lightbox -->
-<section aria-label="Bannière vidéo" id="banner" role="region">
-    <!--<div aria-label="Vignette vidéo du Dojo" class="video-vignette" id="videoVignette">-->
-    <!--<div aria-label="Lire la vidéo du Dojo" class="video-poster" id="videoPoster" role="button" style="background-image:url('images/photo_accueil.jpg');" tabindex="0">-->
-    <!--<div aria-hidden="false" class="play-overlay" id="playBtn">▶︎</div>-->
-    <video id="player" playsinline autoplay muted loop webkit-playsinline
-           preload="metadata" poster="images/photo_accueil.jpg">
-        <source src="images/video/SiteMakoto2019_new.mp4" type="video/mp4"/>
-        <source src="images/video/SiteMakoto2019_new.webm" type="video/webm"/>
-        <source src="images/video/SiteMakoto2019.ogv" type="video/ogg; codecs='theora, vorbis'"/>
-        Votre navigateur ne supporte pas la vidéo HTML5.
-    </video>
-<!--    </div>-->
-<!--    </div>-->
-</section>
+<section class="container">
+            
+            <!-- Photo Slider -->
+            <div id="photo-slider">
+                <div class="slider-container">
+                    <div class="slider-wrapper" id="sliderWrapper">
+                        <!-- Slide 1 -->
+                        <div class="slide active">
+                            <img src="images/slider_0.jpg" alt="Dojo Aikido Makoto - Intérieur" loading="lazy">
+                            <div class="slide-overlay">
+                                <h3 class="slide-title">Notre Dojo</h3>
+                                <p class="slide-description">Un espace traditionnel dédié à la pratique de l'Aïkido dans le respect des traditions japonaises.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <img src="images/slider_2.png" alt="Entraînement Aikido" loading="lazy">
+                            <div class="slide-overlay">
+                                <h3 class="slide-title">Entraînement</h3>
+                                <p class="slide-description">Cours réguliers pour tous niveaux, dans une ambiance bienveillante et studieuse.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="slide">
+                            <img src="images/slider_3.png" alt="Techniques Aikido" loading="lazy">
+                            <div class="slide-overlay">
+                                <h3 class="slide-title">Techniques</h3>
+                                <p class="slide-description">Apprentissage des techniques traditionnelles selon l'enseignement de Tamura Senseï.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="slide">
+                            <img src="images/slider_4.png" alt="Groupe d'élèves" loading="lazy">
+                            <div class="slide-overlay">
+                                <h3 class="slide-title">Communauté</h3>
+                                <p class="slide-description">Un groupe soudé d'aikidokas partageant les mêmes valeurs et la passion de l'art martial.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="slide">
+                            <img src="images/slider_5.png" alt="Démonstration Aikido" loading="lazy">
+                            <div class="slide-overlay">
+                                <h3 class="slide-title">Démonstrations</h3>
+                                <p class="slide-description">Participations aux événements et démonstrations pour faire découvrir l'Aïkido.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 6 -->
+                        <div class="slide">
+                            <img src="images/slider_6.png" alt="André Palmeri Sensei" loading="lazy">
+                            <div class="slide-overlay">
+                                <h3 class="slide-title">Le Professeur</h3>
+                                <p class="slide-description">André Palmeri, 6ème dan, transmet son savoir avec pédagogie et authenticité.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <button class="slider-nav prev" id="prevBtn" aria-label="Photo précédente">‹</button>
+                    <button class="slider-nav next" id="nextBtn" aria-label="Photo suivante">›</button>
+
+                    <!-- Play/Pause -->
+                    <button class="play-pause" id="playPauseBtn" aria-label="Pause/Lecture automatique">⏸️</button>
+
+                    <!-- Indicateurs -->
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                    </div>
+
+                    <!-- Barre de progression -->
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+        </section>
 <!-- Modal lightbox (hidden by default) -->
 <div aria-hidden="true" aria-label="Fenêtre vidéo" aria-modal="true" class="modal-overlay" id="videoModal"
      role="dialog">
@@ -1032,5 +1426,207 @@ Jeunes" name="keywords"/>
         });
     });
 </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = {
+                wrapper: document.getElementById('sliderWrapper'),
+                slides: document.querySelectorAll('.slide'),
+                dots: document.querySelectorAll('.dot'),
+                prevBtn: document.getElementById('prevBtn'),
+                nextBtn: document.getElementById('nextBtn'),
+                playPauseBtn: document.getElementById('playPauseBtn'),
+                progressBar: document.getElementById('progressBar'),
+                currentSlide: 0,
+                totalSlides: 6,
+                isPlaying: true,
+                autoPlayInterval: null,
+                progressInterval: null
+            };
+
+            // Initialiser le slider
+            function init() {
+                updateSlider();
+                startAutoPlay();
+                bindEvents();
+            }
+
+            // Mettre à jour l'affichage du slider
+            function updateSlider() {
+                const translateX = -slider.currentSlide * (100 / slider.totalSlides);
+                slider.wrapper.style.transform = `translateX(${translateX}%)`;
+
+                // Mettre à jour les classes actives
+                slider.slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === slider.currentSlide);
+                });
+
+                slider.dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === slider.currentSlide);
+                });
+            }
+
+            // Aller au slide suivant
+            function nextSlide() {
+                slider.currentSlide = (slider.currentSlide + 1) % slider.totalSlides;
+                updateSlider();
+                resetProgress();
+            }
+
+            // Aller au slide précédent
+            function prevSlide() {
+                slider.currentSlide = slider.currentSlide === 0 ? slider.totalSlides - 1 : slider.currentSlide - 1;
+                updateSlider();
+                resetProgress();
+            }
+
+            // Aller à un slide specific
+            function goToSlide(slideIndex) {
+                slider.currentSlide = slideIndex;
+                updateSlider();
+                resetProgress();
+            }
+
+            // Démarrer la lecture automatique
+            function startAutoPlay() {
+                if (slider.isPlaying) {
+                    slider.autoPlayInterval = setInterval(nextSlide, 5000);
+                    startProgress();
+                    slider.playPauseBtn.textContent = '⏸️';
+                    slider.playPauseBtn.setAttribute('aria-label', 'Mettre en pause');
+                }
+            }
+
+            // Arrêter la lecture automatique
+            function stopAutoPlay() {
+                if (slider.autoPlayInterval) {
+                    clearInterval(slider.autoPlayInterval);
+                    slider.autoPlayInterval = null;
+                }
+                stopProgress();
+                slider.playPauseBtn.textContent = '▶️';
+                slider.playPauseBtn.setAttribute('aria-label', 'Reprendre la lecture');
+            }
+
+            // Basculer play/pause
+            function toggleAutoPlay() {
+                slider.isPlaying = !slider.isPlaying;
+                if (slider.isPlaying) {
+                    startAutoPlay();
+                } else {
+                    stopAutoPlay();
+                }
+            }
+
+            // Barre de progression
+            function startProgress() {
+                let progress = 0;
+                slider.progressInterval = setInterval(() => {
+                    progress += 2; // 2% toutes les 100ms = 5 secondes pour 100%
+                    slider.progressBar.style.width = progress + '%';
+                    if (progress >= 100) {
+                        progress = 0;
+                    }
+                }, 100);
+            }
+
+            function stopProgress() {
+                if (slider.progressInterval) {
+                    clearInterval(slider.progressInterval);
+                    slider.progressInterval = null;
+                }
+            }
+
+            function resetProgress() {
+                slider.progressBar.style.width = '0%';
+                if (slider.isPlaying) {
+                    stopProgress();
+                    startProgress();
+                }
+            }
+
+            // Gestion des événements
+            function bindEvents() {
+                slider.nextBtn.addEventListener('click', () => {
+                    nextSlide();
+                    if (slider.isPlaying) {
+                        stopAutoPlay();
+                        startAutoPlay();
+                    }
+                });
+
+                slider.prevBtn.addEventListener('click', () => {
+                    prevSlide();
+                    if (slider.isPlaying) {
+                        stopAutoPlay();
+                        startAutoPlay();
+                    }
+                });
+
+                slider.playPauseBtn.addEventListener('click', toggleAutoPlay);
+
+                slider.dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        goToSlide(index);
+                        if (slider.isPlaying) {
+                            stopAutoPlay();
+                            startAutoPlay();
+                        }
+                    });
+                });
+
+                // Navigation au clavier
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowRight') nextSlide();
+                    if (e.key === 'ArrowLeft') prevSlide();
+                    if (e.key === ' ') {
+                        e.preventDefault();
+                        toggleAutoPlay();
+                    }
+                });
+
+                // Pause au survol
+                const sliderContainer = document.querySelector('.slider-container');
+                sliderContainer.addEventListener('mouseenter', () => {
+                    if (slider.isPlaying && slider.autoPlayInterval) {
+                        stopProgress();
+                    }
+                });
+
+                sliderContainer.addEventListener('mouseleave', () => {
+                    if (slider.isPlaying && slider.autoPlayInterval) {
+                        startProgress();
+                    }
+                });
+
+                // Support du swipe sur mobile
+                let startX = null;
+                sliderContainer.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                });
+
+                sliderContainer.addEventListener('touchend', (e) => {
+                    if (!startX) return;
+                    const endX = e.changedTouches[0].clientX;
+                    const diff = startX - endX;
+
+                    if (Math.abs(diff) > 50) { // Seuil minimum pour le swipe
+                        if (diff > 0) {
+                            nextSlide();
+                        } else {
+                            prevSlide();
+                        }
+                        if (slider.isPlaying) {
+                            stopAutoPlay();
+                            startAutoPlay();
+                        }
+                    }
+                    startX = null;
+                });
+            }
+
+            // Démarrer le slider
+            init();
+        });
+    </script>
 </body>
 </html>
