@@ -14,7 +14,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     popup.addEventListener('click', function(event) {
-        if (event.target === popup) {
+        if (event.target === popup || event.target === closeBtn) {
+            popup.style.display = 'none';
+        }
+    });
+
+    popupContent.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+
+    ctaBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 12000);
+
+    document.body.addEventListener('click', function(event) {
+        if (event.target === document.body && event.target !== closeBtn) {
+            popup.style.display = 'none';
+        }
+    });
+
+    document.body.addEventListener('click', function(event) {
+        if (event.target === document.body) {
             popup.style.display = 'none';
         }
     });
