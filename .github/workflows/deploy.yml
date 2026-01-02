@@ -1,0 +1,37 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches-ignore:
+      - main # Ignore les déploiements sur la branche principale
+  workflow_dispatch: # Permet de déclencher manuellement le workflow depuis l'interface GitHub
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.6 # Choisis la version Node.js adaptée à ton projet
+
+      - name: Change directory to ./astro
+        run: cd ./astro
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./astro
+
+      - name: Build the project
+        run: npm run build
+        working-directory: ./astro
+
+      - name: Deploy to Vercel
+        run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} --dev --scope dojo-makoto --confirm
+        working-directory: ./astro
+
+
