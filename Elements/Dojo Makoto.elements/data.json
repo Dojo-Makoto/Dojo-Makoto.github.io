@@ -1,96 +1,55 @@
 {
+  "social" : {
+    "useSocialTags" : true
+  },
+  "images" : {
+    "webIcons" : {
+      "large" : {
+        "type" : 0,
+        "autoGenerate" : false
+      },
+      "medium" : {
+        "type" : 1,
+        "autoGenerate" : false
+      },
+      "faviconSmall" : {
+        "type" : 6,
+        "autoGenerate" : false
+      },
+      "pinnedTab" : {
+        "type" : 3,
+        "autoGenerate" : false
+      },
+      "faviconLarge" : {
+        "type" : 4,
+        "autoGenerate" : false
+      },
+      "faviconMedium" : {
+        "type" : 5,
+        "autoGenerate" : false
+      },
+      "small" : {
+        "type" : 2,
+        "autoGenerate" : false
+      }
+    },
+    "logoAltText" : ""
+  },
   "publishing" : {
-    "publishSettingsConfigured" : false,
     "publishingDestinations" : [
 
-    ]
+    ],
+    "publishSettingsConfigured" : false
+  },
+  "identifier" : "2A987E57-D371-46FE-A613-45727708CB70",
+  "privacy" : {
+    "anonymiseThirdPartyRequests" : false
   },
   "theme" : {
-    "borderRadius" : [
+    "page" : {
 
-    ],
-    "baseThemeIdentifier" : "com.realmacsoftware.themes.system",
-    "textShadows" : [
-
-    ],
-    "spacing" : [
-
-    ],
+    },
     "fontStyle" : [
-
-    ],
-    "screens" : [
-      {
-        "maxContainerWidth" : 0,
-        "units" : "auto",
-        "classPrefix" : "2xl",
-        "sfIcon" : "desktopcomputer",
-        "pixels" : 1536,
-        "enabled" : false,
-        "id" : "D709EE6D-C8E4-4BE2-9DD9-8F6FD04D256D",
-        "name" : "2xl",
-        "description" : ""
-      },
-      {
-        "maxContainerWidth" : 0,
-        "units" : "auto",
-        "classPrefix" : "xl",
-        "sfIcon" : "laptopcomputer",
-        "pixels" : 1280,
-        "enabled" : false,
-        "id" : "0D1B18AD-D7CC-4E69-B20B-C52B7B1587DF",
-        "name" : "xl",
-        "description" : ""
-      },
-      {
-        "maxContainerWidth" : 0,
-        "units" : "auto",
-        "classPrefix" : "lg",
-        "sfIcon" : "ipad.landscape",
-        "pixels" : 1024,
-        "enabled" : true,
-        "id" : "6E5A831B-A315-4D89-A3DF-F981BD338BB2",
-        "name" : "lg",
-        "description" : ""
-      },
-      {
-        "maxContainerWidth" : 0,
-        "units" : "auto",
-        "classPrefix" : "md",
-        "sfIcon" : "ipad",
-        "pixels" : 768,
-        "enabled" : true,
-        "id" : "34D244B0-1086-4E0F-AF9C-BFE29FA594E0",
-        "name" : "md",
-        "description" : "This breakpoint is for tablets and small laptop screens. It usually encompasses widths from 600 pixels to 1023 pixels."
-      },
-      {
-        "maxContainerWidth" : 0,
-        "units" : "auto",
-        "classPrefix" : "sm",
-        "sfIcon" : "iphone.landscape",
-        "pixels" : 640,
-        "enabled" : true,
-        "id" : "73C07C9F-BEDB-467A-91B9-FFD9B65E41F5",
-        "name" : "sm",
-        "description" : "This breakpoint targets devices with small sceens like smartphones. The resolution width varies but typically starts from 320 pixels and below 600 pixels."
-      },
-      {
-        "maxContainerWidth" : 0,
-        "units" : "auto",
-        "classPrefix" : "",
-        "sfIcon" : "iphone",
-        "pixels" : 0,
-        "enabled" : true,
-        "id" : "DD799EED-A074-4A3F-902D-B9D44539FB4B",
-        "name" : "mobile",
-        "description" : ""
-      }
-    ],
-    "colors" : [
-
-    ],
-    "fontFamily" : [
 
     ],
     "shadows" : [
@@ -99,70 +58,834 @@
     "typographies" : [
 
     ],
+    "spacing" : [
+
+    ],
+    "screens" : [
+      {
+        "description" : "",
+        "sfIcon" : "desktopcomputer",
+        "id" : "D709EE6D-C8E4-4BE2-9DD9-8F6FD04D256D",
+        "classPrefix" : "2xl",
+        "pixels" : 1536,
+        "enabled" : false,
+        "units" : "auto",
+        "maxContainerWidth" : 0,
+        "name" : "2xl"
+      },
+      {
+        "description" : "",
+        "sfIcon" : "laptopcomputer",
+        "id" : "0D1B18AD-D7CC-4E69-B20B-C52B7B1587DF",
+        "classPrefix" : "xl",
+        "pixels" : 1280,
+        "enabled" : false,
+        "units" : "auto",
+        "maxContainerWidth" : 0,
+        "name" : "xl"
+      },
+      {
+        "description" : "",
+        "sfIcon" : "ipad.landscape",
+        "id" : "6E5A831B-A315-4D89-A3DF-F981BD338BB2",
+        "classPrefix" : "lg",
+        "pixels" : 1024,
+        "enabled" : true,
+        "units" : "auto",
+        "maxContainerWidth" : 0,
+        "name" : "lg"
+      },
+      {
+        "description" : "This breakpoint is for tablets and small laptop screens. It usually encompasses widths from 600 pixels to 1023 pixels.",
+        "sfIcon" : "ipad",
+        "id" : "34D244B0-1086-4E0F-AF9C-BFE29FA594E0",
+        "classPrefix" : "md",
+        "pixels" : 768,
+        "enabled" : true,
+        "units" : "auto",
+        "maxContainerWidth" : 0,
+        "name" : "md"
+      },
+      {
+        "description" : "This breakpoint targets devices with small sceens like smartphones. The resolution width varies but typically starts from 320 pixels and below 600 pixels.",
+        "sfIcon" : "iphone.landscape",
+        "id" : "73C07C9F-BEDB-467A-91B9-FFD9B65E41F5",
+        "classPrefix" : "sm",
+        "pixels" : 640,
+        "enabled" : true,
+        "units" : "auto",
+        "maxContainerWidth" : 0,
+        "name" : "sm"
+      },
+      {
+        "description" : "",
+        "sfIcon" : "iphone",
+        "id" : "DD799EED-A074-4A3F-902D-B9D44539FB4B",
+        "classPrefix" : "",
+        "pixels" : 0,
+        "enabled" : true,
+        "units" : "auto",
+        "maxContainerWidth" : 0,
+        "name" : "mobile"
+      }
+    ],
+    "colors" : [
+
+    ],
+    "baseThemeIdentifier" : "com.realmacsoftware.themes.system",
     "borderWidth" : [
 
     ],
-    "page" : {
+    "fontFamily" : [
 
-    }
+    ],
+    "textShadows" : [
+
+    ],
+    "borderRadius" : [
+
+    ]
   },
-  "privacy" : {
-    "anonymiseThirdPartyRequests" : false
+  "rootPage" : {
+    "code" : null,
+    "children" : [
+      {
+        "code" : null,
+        "children" : [
+
+        ],
+        "expanded" : true,
+        "browserTitle" : null,
+        "attributes" : {
+          "customJavaScript" : "",
+          "customBodyStart" : "",
+          "expires" : false,
+          "hidden" : false,
+          "shouldAllowPreview" : true,
+          "shouldArchivePage" : true,
+          "linkOpensInNewWindow" : false,
+          "customPageStart" : "",
+          "credit" : true,
+          "changedStatuses" : {
+            "default" : true
+          },
+          "shouldEnableSocialTags" : true,
+          "shouldIndexImages" : true,
+          "shouldEnableRobotTags" : true,
+          "customSiteTitle" : "",
+          "customHeadEnd" : "",
+          "useCustomSiteTitle" : false,
+          "customHeadStart" : "",
+          "enabled" : true,
+          "customCSS" : "",
+          "encoding" : 1,
+          "customBodyEnd" : "",
+          "expiryQuantity" : 2,
+          "lastChangedDate" : 1775137524612.3572,
+          "customHeader" : "",
+          "expiryUnit" : 0,
+          "shouldIndexPage" : true,
+          "excludeFromSitemap" : false,
+          "shouldFollowLinks" : true,
+          "filename" : "index.html",
+          "customPageEnd" : ""
+        },
+        "title" : "Accueil",
+        "manifests" : {
+
+        },
+        "pageDescription" : null,
+        "identifier" : "39345835-CF9F-4209-9F64-8622D4750AAB",
+        "isIndex" : true,
+        "kind" : "page",
+        "createdDate" : 1772830945699.1492,
+        "uniqueID" : "page0",
+        "iconIdentifier" : null,
+        "externalPageURL" : null
+      },
+      {
+        "code" : null,
+        "children" : [
+
+        ],
+        "expanded" : true,
+        "browserTitle" : null,
+        "attributes" : {
+          "customJavaScript" : "",
+          "customBodyStart" : "",
+          "foldername" : "",
+          "expires" : false,
+          "hidden" : false,
+          "shouldAllowPreview" : true,
+          "shouldArchivePage" : true,
+          "linkOpensInNewWindow" : false,
+          "customPageStart" : "",
+          "credit" : true,
+          "changedStatuses" : {
+            "default" : true
+          },
+          "shouldEnableSocialTags" : true,
+          "shouldIndexImages" : true,
+          "shouldEnableRobotTags" : true,
+          "customSiteTitle" : "",
+          "customHeadEnd" : "",
+          "useCustomSiteTitle" : false,
+          "customHeadStart" : "",
+          "enabled" : true,
+          "customCSS" : "",
+          "encoding" : 1,
+          "customBodyEnd" : "",
+          "expiryQuantity" : 2,
+          "lastChangedDate" : 1774797912088.583,
+          "customHeader" : "",
+          "expiryUnit" : 0,
+          "shouldIndexPage" : true,
+          "excludeFromSitemap" : false,
+          "shouldFollowLinks" : true,
+          "filename" : "index.html",
+          "customPageEnd" : ""
+        },
+        "title" : "Le Dojo",
+        "manifests" : {
+
+        },
+        "pageDescription" : null,
+        "identifier" : "5080AB96-25BC-4F58-85E1-0CDF123B9C57",
+        "isIndex" : false,
+        "kind" : "page",
+        "createdDate" : 1773587598186.1738,
+        "uniqueID" : "page1",
+        "iconIdentifier" : null,
+        "externalPageURL" : null
+      }
+    ],
+    "expanded" : true,
+    "browserTitle" : null,
+    "attributes" : {
+      "customSiteTitle" : "",
+      "shouldAllowPreview" : true,
+      "enabled" : true,
+      "customHeadEnd" : "",
+      "expires" : false,
+      "expiryQuantity" : 2,
+      "customJavaScript" : "",
+      "shouldEnableRobotTags" : true,
+      "filename" : "",
+      "shouldArchivePage" : true,
+      "shouldIndexImages" : true,
+      "useCustomSiteTitle" : false,
+      "customBodyEnd" : "",
+      "customCSS" : "",
+      "customPageEnd" : "",
+      "linkOpensInNewWindow" : false,
+      "lastChangedDate" : 1772830945681.509,
+      "customHeadStart" : "",
+      "excludeFromSitemap" : true,
+      "customBodyStart" : "",
+      "shouldEnableSocialTags" : true,
+      "encoding" : 1,
+      "shouldIndexPage" : true,
+      "changedStatuses" : {
+
+      },
+      "expiryUnit" : 0,
+      "hidden" : false,
+      "shouldFollowLinks" : true,
+      "customPageStart" : "",
+      "credit" : true,
+      "customHeader" : ""
+    },
+    "title" : "root",
+    "manifests" : {
+
+    },
+    "pageDescription" : null,
+    "identifier" : "9BDCF9F3-D8B9-4A5A-A4CC-BF7971BE44F2",
+    "isIndex" : false,
+    "kind" : "folder",
+    "createdDate" : 1772830945681.6511,
+    "uniqueID" : "9BDCF9F3-D8B9-4A5A-A4CC-BF7971BE44F2",
+    "iconIdentifier" : null,
+    "externalPageURL" : null
   },
   "rootPrefabNode" : {
+    "expanded" : true,
     "item" : null,
     "identifier" : "B882DFBE-A2F0-4BDF-93F0-DDEE5FCE6403",
-    "expanded" : true,
     "children" : [
 
     ],
-    "title" : "Project",
     "kind" : {
       "folder" : {
 
       }
-    }
+    },
+    "title" : "Project"
+  },
+  "project" : {
+    "autoStartWebServer" : false,
+    "uniqueBackupName" : "A62A1E83-B765-4A54-863C-23E52DEA999F_rwbackup"
   },
   "ui" : {
-    "contentArea" : {
-      "scale" : 1,
-      "responsiveSize" : "mobile",
-      "darkAppearance" : false,
-      "size" : [
-        390,
-        670
-      ]
-    },
     "resourceInspector" : {
       "show" : false
     },
-    "catalogFilter" : {
-      "smartDocumentElements" : false,
-      "showFavourites" : false
+    "projectInspector" : {
+      "show" : false
+    },
+    "contentArea" : {
+      "size" : [
+        1024,
+        670
+      ],
+      "scale" : 0.876953125,
+      "responsiveSize" : "lg",
+      "darkAppearance" : false
     },
     "elementEditor" : {
       "show" : false,
       "showOutline" : false
     },
-    "projectInspector" : {
-      "show" : false
+    "catalogFilter" : {
+      "showFavourites" : false,
+      "smartDocumentElements" : false
+    }
+  },
+  "customComponents" : {
+    "components" : {
+
+    }
+  },
+  "localization" : {
+
+  },
+  "globalElements" : {
+    "globals" : {
+
     }
   },
   "site" : {
-    "themeName" : "Elements",
-    "wantsXMLSiteMap" : true,
-    "consolidateCSSFiles" : true,
-    "cruftlessLinks" : true,
     "defaultFileExtension" : "html",
-    "allowDarkMode" : true,
-    "useCacheBusting" : true,
-    "minifyExtraFiles" : true,
+    "wantsXMLSiteMap" : true,
+    "cruftlessLinks" : true,
     "baseURL" : "",
-    "title" : "My Website"
+    "consolidateCSSFiles" : true,
+    "minifyExtraFiles" : true,
+    "useCacheBusting" : true,
+    "title" : "My Website",
+    "allowDarkMode" : true,
+    "themeName" : "Elements"
   },
-  "identifier" : "2A987E57-D371-46FE-A613-45727708CB70",
-  "version" : 9,
+  "uiStateIdentifier" : "2A987E57-D371-46FE-A613-45727708CB70",
   "siteResources" : {
+    "resources" : {
+      "67DD2FD1-C238-4D62-9936-81615C80F8B7" : {
+        "originalName" : "vue_dojo.jpg",
+        "timeStamp" : 1772898771985.2092,
+        "isSVG" : false,
+        "changedStatuses" : {
+
+        },
+        "identifier" : "67DD2FD1-C238-4D62-9936-81615C80F8B7",
+        "hostedImageURLs" : [
+
+        ],
+        "metadata" : {
+          "lens" : "iPhone 15 Pro Max back triple camera 2.22mm f\/2.2",
+          "aspect" : 2.9111913357400723,
+          "focalLength" : "2.220000028611935",
+          "aperture" : "2.2",
+          "iso" : "1250",
+          "width" : 4032,
+          "created" : "2026:03:07 09:09:46",
+          "shutter" : "1\/60th",
+          "height" : 1385
+        },
+        "name" : "vue_dojo.jpg",
+        "typeIdentifier" : "public.jpeg",
+        "kind" : 1,
+        "expanded" : true,
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "smartFolderKind" : 0
+      },
+      "E96C416E-5248-4AD0-AED8-EDFAD96789F8" : {
+        "changedStatuses" : {
+
+        },
+        "identifier" : "E96C416E-5248-4AD0-AED8-EDFAD96789F8",
+        "timeStamp" : 1662823132230,
+        "smartFolderKind" : 0,
+        "kind" : 1,
+        "originalName" : "20181204_195446.jpg",
+        "metadata" : {
+          "shutter" : "1\/14th",
+          "aspect" : 1.3333333333333333,
+          "focalLength" : "4.3",
+          "iso" : "250",
+          "width" : 4032,
+          "height" : 3024,
+          "aperture" : "1.7",
+          "created" : "2018:12:04 19:54:46"
+        },
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "isSVG" : false,
+        "expanded" : true,
+        "name" : "20181204_195446.jpg",
+        "hostedImageURLs" : [
+
+        ],
+        "typeIdentifier" : "public.jpeg"
+      },
+      "54D84AF4-BEDF-4B35-970C-0761346EC075" : {
+        "kind" : 1,
+        "name" : "20181204_195446.jpg",
+        "timeStamp" : 1662823132230,
+        "typeIdentifier" : "public.jpeg",
+        "metadata" : {
+          "shutter" : "1\/14th",
+          "aspect" : 1.3333333333333333,
+          "focalLength" : "4.3",
+          "iso" : "250",
+          "width" : 4032,
+          "height" : 3024,
+          "aperture" : "1.7",
+          "created" : "2018:12:04 19:54:46"
+        },
+        "smartFolderKind" : 0,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "originalName" : "20181204_195446.jpg",
+        "isSVG" : false,
+        "identifier" : "54D84AF4-BEDF-4B35-970C-0761346EC075",
+        "changedStatuses" : {
+
+        },
+        "expanded" : true
+      },
+      "3382C4A6-71F7-4AD7-99D6-D32491733B0C" : {
+        "typeIdentifier" : "public.heic",
+        "changedStatuses" : {
+
+        },
+        "originalName" : "IMG_3140.heic",
+        "name" : "IMG_3140.heic",
+        "timeStamp" : 1772914615087.802,
+        "metadata" : {
+          "created" : "2023:11:04 10:48:37",
+          "focalLength" : "6.86",
+          "height" : 2001,
+          "aperture" : "1.78",
+          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
+          "shutter" : "1\/50th",
+          "aspect" : 1.2963518240879561,
+          "iso" : "400",
+          "width" : 2594
+        },
+        "identifier" : "3382C4A6-71F7-4AD7-99D6-D32491733B0C",
+        "kind" : 1,
+        "isSVG" : false,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "smartFolderKind" : 0,
+        "expanded" : true
+      },
+      "17347B36-95BC-4246-B304-74D721588272" : {
+        "originalName" : "photo_andre.jpg",
+        "timeStamp" : 1772835776113.9177,
+        "isSVG" : false,
+        "changedStatuses" : {
+
+        },
+        "identifier" : "17347B36-95BC-4246-B304-74D721588272",
+        "hostedImageURLs" : [
+
+        ],
+        "metadata" : {
+          "aspect" : 1.366120218579235,
+          "focalLength" : "22.5",
+          "aperture" : "4.5",
+          "iso" : "800",
+          "width" : 500,
+          "created" : "2011:05:28 09:33:38",
+          "shutter" : "1\/50th",
+          "height" : 366
+        },
+        "name" : "photo_andre.jpg",
+        "typeIdentifier" : "public.jpeg",
+        "kind" : 1,
+        "expanded" : true,
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "smartFolderKind" : 0
+      },
+      "195EFAED-4B9D-4E1B-93DB-8B37CA617942" : {
+        "metadata" : {
+          "width" : 2048,
+          "aspect" : 1.3333333333333333,
+          "height" : 1536,
+          "iso" : "200",
+          "focalLength" : "6.86",
+          "shutter" : "1\/86th",
+          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
+          "created" : "2023:12:02 08:48:54",
+          "aperture" : "1.78"
+        },
+        "isSVG" : false,
+        "smartFolderKind" : 0,
+        "expanded" : true,
+        "identifier" : "195EFAED-4B9D-4E1B-93DB-8B37CA617942",
+        "originalName" : "vue_dojo.jpg",
+        "typeIdentifier" : "public.jpeg",
+        "timeStamp" : 1772814066528.8547,
+        "kind" : 1,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "name" : "vue_dojo.jpg",
+        "changedStatuses" : {
+
+        }
+      },
+      "8630467A-70D4-4644-BA1D-35DB91A169B2" : {
+        "metadata" : {
+          "created" : "2023:11:04 10:24:25",
+          "focalLength" : "6.86",
+          "aperture" : "1.78",
+          "height" : 3024,
+          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
+          "shutter" : "1\/33th",
+          "aspect" : 1.3333333333333333,
+          "iso" : "400",
+          "width" : 4032
+        },
+        "isSVG" : false,
+        "smartFolderKind" : 0,
+        "expanded" : true,
+        "identifier" : "8630467A-70D4-4644-BA1D-35DB91A169B2",
+        "originalName" : "IMG_3123.HEIC",
+        "typeIdentifier" : "public.heic",
+        "timeStamp" : 1699089865000,
+        "kind" : 1,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "name" : "IMG_3123.HEIC",
+        "changedStatuses" : {
+
+        }
+      },
+      "78A69C6B-240B-41BD-B42E-93DEB49D7BB2" : {
+        "metadata" : {
+          "shutter" : "1\/50th",
+          "aspect" : 1.3333333333333333,
+          "lens" : "iPhone 15 Pro Max back triple camera 15.66mm f\/2.8",
+          "height" : 3024,
+          "iso" : "400",
+          "width" : 4032,
+          "created" : "2023:11:04 11:01:21",
+          "aperture" : "2.8",
+          "focalLength" : "15.66"
+        },
+        "isSVG" : false,
+        "smartFolderKind" : 0,
+        "expanded" : true,
+        "identifier" : "78A69C6B-240B-41BD-B42E-93DEB49D7BB2",
+        "originalName" : "IMG_3157.HEIC",
+        "typeIdentifier" : "public.heic",
+        "timeStamp" : 1699092081000,
+        "kind" : 1,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "name" : "IMG_3157.HEIC",
+        "changedStatuses" : {
+
+        }
+      },
+      "83F33B90-7B3D-4751-AC0E-94A53FE45CAE" : {
+        "kind" : 1,
+        "name" : "logo_makoto.png",
+        "timeStamp" : 1772917714966.5073,
+        "typeIdentifier" : "public.png",
+        "metadata" : {
+          "height" : 1176,
+          "aspect" : 2.7176870748299318,
+          "width" : 3196
+        },
+        "smartFolderKind" : 0,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "originalName" : "logo_makoto.png",
+        "isSVG" : false,
+        "identifier" : "83F33B90-7B3D-4751-AC0E-94A53FE45CAE",
+        "changedStatuses" : {
+
+        },
+        "expanded" : true
+      },
+      "79178570-22CB-479F-AEE5-C6B2257BC23E" : {
+        "kind" : 1,
+        "name" : "aikido-kanji.png",
+        "timeStamp" : 1772919228427.3716,
+        "typeIdentifier" : "public.png",
+        "metadata" : {
+          "height" : 799,
+          "aspect" : 0.42428035043804757,
+          "width" : 339
+        },
+        "smartFolderKind" : 0,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "originalName" : "aikido-kanji.png",
+        "isSVG" : false,
+        "identifier" : "79178570-22CB-479F-AEE5-C6B2257BC23E",
+        "changedStatuses" : {
+
+        },
+        "expanded" : true
+      },
+      "565632DD-B8D7-4B17-9D53-929EE5FDF95C" : {
+        "timeStamp" : -62135769600000,
+        "identifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "smartFolderKind" : 0,
+        "name" : "Resources",
+        "hostedImageURLs" : [
+
+        ],
+        "kind" : 0,
+        "expanded" : true,
+        "changedStatuses" : {
+
+        }
+      },
+      "1CE8F15A-D8B4-4D48-831B-A729D8439205" : {
+        "typeIdentifier" : "public.jpeg",
+        "changedStatuses" : {
+
+        },
+        "originalName" : "photo_discipline.jpg",
+        "name" : "photo_discipline.jpg",
+        "timeStamp" : 1678640157259.0032,
+        "kind" : 1,
+        "identifier" : "1CE8F15A-D8B4-4D48-831B-A729D8439205",
+        "metadata" : {
+          "shutter" : "1\/80th",
+          "aspect" : 3.4865900383141764,
+          "focalLength" : "24.2",
+          "iso" : "100",
+          "width" : 910,
+          "height" : 261,
+          "aperture" : "2.8",
+          "created" : "2013:09:28 17:40:59"
+        },
+        "isSVG" : false,
+        "hostedImageURLs" : [
+
+        ],
+        "expanded" : true,
+        "smartFolderKind" : 0,
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
+      },
+      "DE57D3F7-B8D1-4ECA-8E98-70EBA725D4B2" : {
+        "name" : "vue_dojo.png",
+        "hostedImageURLs" : [
+
+        ],
+        "kind" : 1,
+        "timeStamp" : 1772965030341.6875,
+        "typeIdentifier" : "public.png",
+        "metadata" : {
+          "shutter" : "1\/50th",
+          "aspect" : 2.572,
+          "focalLength" : "4.3",
+          "iso" : "800",
+          "width" : 1286,
+          "height" : 500,
+          "aperture" : "1.7",
+          "created" : "2018:12:04 19:48:08"
+        },
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "identifier" : "DE57D3F7-B8D1-4ECA-8E98-70EBA725D4B2",
+        "changedStatuses" : {
+
+        },
+        "expanded" : true,
+        "smartFolderKind" : 0,
+        "isSVG" : false,
+        "originalName" : "vue_dojo.png"
+      },
+      "27540E9E-EF1C-4796-83EE-48C40799A3E0" : {
+        "kind" : 1,
+        "name" : "IMG_3164.HEIC",
+        "timeStamp" : 1699092219000,
+        "typeIdentifier" : "public.heic",
+        "metadata" : {
+          "shutter" : "1\/50th",
+          "aspect" : 1.3333333333333333,
+          "focalLength" : "6.86",
+          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
+          "iso" : "250",
+          "width" : 5712,
+          "height" : 4284,
+          "aperture" : "1.78",
+          "created" : "2023:11:04 11:03:39"
+        },
+        "smartFolderKind" : 0,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "originalName" : "IMG_3164.HEIC",
+        "isSVG" : false,
+        "identifier" : "27540E9E-EF1C-4796-83EE-48C40799A3E0",
+        "changedStatuses" : {
+
+        },
+        "expanded" : true
+      },
+      "6479C355-58BF-4111-8319-7EFDD10EEA0F" : {
+        "kind" : 1,
+        "name" : "Makoto_red.png",
+        "timeStamp" : 1773587400893.6067,
+        "typeIdentifier" : "public.png",
+        "metadata" : {
+          "height" : 1088,
+          "aspect" : 0.8823529411764706,
+          "width" : 960
+        },
+        "smartFolderKind" : 0,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "originalName" : "Makoto_red.png",
+        "isSVG" : false,
+        "identifier" : "6479C355-58BF-4111-8319-7EFDD10EEA0F",
+        "changedStatuses" : {
+
+        },
+        "expanded" : true
+      },
+      "65B1B7E6-1307-4E2E-85D6-2F70F68BC1D8" : {
+        "name" : "vue_dojo.jpg",
+        "hostedImageURLs" : [
+
+        ],
+        "kind" : 1,
+        "timeStamp" : 1772899488016.6335,
+        "typeIdentifier" : "public.jpeg",
+        "metadata" : {
+          "shutter" : "1\/60th",
+          "aspect" : 1.9042604116802297,
+          "focalLength" : "2.220000028611935",
+          "lens" : "iPhone 15 Pro Max back triple camera 2.22mm f\/2.2",
+          "iso" : "1250",
+          "width" : 3978,
+          "height" : 2089,
+          "aperture" : "2.2",
+          "created" : "2026:03:07 09:09:46"
+        },
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "identifier" : "65B1B7E6-1307-4E2E-85D6-2F70F68BC1D8",
+        "changedStatuses" : {
+
+        },
+        "expanded" : true,
+        "smartFolderKind" : 0,
+        "isSVG" : false,
+        "originalName" : "vue_dojo.jpg"
+      },
+      "7A4A950F-EBE7-4172-A764-AB15E2565155" : {
+        "metadata" : {
+          "shutter" : "1\/80th",
+          "aspect" : 3.4865900383141764,
+          "height" : 261,
+          "iso" : "100",
+          "width" : 910,
+          "created" : "2013:09:28 17:40:59",
+          "aperture" : "2.8",
+          "focalLength" : "24.2"
+        },
+        "isSVG" : false,
+        "smartFolderKind" : 0,
+        "expanded" : true,
+        "identifier" : "7A4A950F-EBE7-4172-A764-AB15E2565155",
+        "originalName" : "photo_discipline.jpg",
+        "typeIdentifier" : "public.jpeg",
+        "timeStamp" : 1678640157259.0032,
+        "kind" : 1,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "name" : "photo_discipline.jpg",
+        "changedStatuses" : {
+
+        }
+      },
+      "3F60168D-E88A-494B-B909-BA428C77F62E" : {
+        "metadata" : {
+          "width" : 4032,
+          "aspect" : 1.3333333333333333,
+          "height" : 3024,
+          "iso" : "320",
+          "focalLength" : "6.86",
+          "shutter" : "1\/33th",
+          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
+          "created" : "2023:11:04 10:23:55",
+          "aperture" : "1.78"
+        },
+        "isSVG" : false,
+        "smartFolderKind" : 0,
+        "expanded" : true,
+        "identifier" : "3F60168D-E88A-494B-B909-BA428C77F62E",
+        "originalName" : "IMG_3122.HEIC",
+        "typeIdentifier" : "public.heic",
+        "timeStamp" : 1699089835000,
+        "kind" : 1,
+        "hostedImageURLs" : [
+
+        ],
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "name" : "IMG_3122.HEIC",
+        "changedStatuses" : {
+
+        }
+      },
+      "6115BEA3-1A75-475A-959B-6D498D7C2D2E" : {
+        "originalName" : "Makoto.png",
+        "timeStamp" : 1772293341827.0059,
+        "isSVG" : false,
+        "changedStatuses" : {
+
+        },
+        "identifier" : "6115BEA3-1A75-475A-959B-6D498D7C2D2E",
+        "hostedImageURLs" : [
+
+        ],
+        "metadata" : {
+          "aspect" : 0.8823529411764706,
+          "width" : 960,
+          "height" : 1088
+        },
+        "name" : "Makoto.png",
+        "typeIdentifier" : "public.png",
+        "kind" : 1,
+        "expanded" : true,
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "smartFolderKind" : 0
+      }
+    },
     "children" : {
       "565632DD-B8D7-4B17-9D53-929EE5FDF95C" : [
         "195EFAED-4B9D-4E1B-93DB-8B37CA617942",
@@ -185,730 +908,7 @@
         "6479C355-58BF-4111-8319-7EFDD10EEA0F"
       ]
     },
-    "root" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-    "resources" : {
-      "E96C416E-5248-4AD0-AED8-EDFAD96789F8" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/14th",
-          "created" : "2018:12:04 19:54:46",
-          "focalLength" : "4.3",
-          "iso" : "250",
-          "aspect" : 1.3333333333333333,
-          "height" : 3024,
-          "aperture" : "1.7",
-          "width" : 4032
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "20181204_195446.jpg",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "E96C416E-5248-4AD0-AED8-EDFAD96789F8",
-        "timeStamp" : 1662823132230,
-        "kind" : 1,
-        "name" : "20181204_195446.jpg",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.jpeg"
-      },
-      "3F60168D-E88A-494B-B909-BA428C77F62E" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/33th",
-          "created" : "2023:11:04 10:23:55",
-          "focalLength" : "6.86",
-          "iso" : "320",
-          "aspect" : 1.3333333333333333,
-          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
-          "height" : 3024,
-          "aperture" : "1.78",
-          "width" : 4032
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "IMG_3122.HEIC",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "3F60168D-E88A-494B-B909-BA428C77F62E",
-        "timeStamp" : 1699089835000,
-        "kind" : 1,
-        "name" : "IMG_3122.HEIC",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.heic"
-      },
-      "7A4A950F-EBE7-4172-A764-AB15E2565155" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/80th",
-          "created" : "2013:09:28 17:40:59",
-          "focalLength" : "24.2",
-          "iso" : "100",
-          "aspect" : 3.4865900383141764,
-          "height" : 261,
-          "aperture" : "2.8",
-          "width" : 910
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "photo_discipline.jpg",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "7A4A950F-EBE7-4172-A764-AB15E2565155",
-        "timeStamp" : 1678640157259.0032,
-        "kind" : 1,
-        "name" : "photo_discipline.jpg",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.jpeg"
-      },
-      "65B1B7E6-1307-4E2E-85D6-2F70F68BC1D8" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/60th",
-          "created" : "2026:03:07 09:09:46",
-          "focalLength" : "2.220000028611935",
-          "iso" : "1250",
-          "aspect" : 1.9042604116802297,
-          "lens" : "iPhone 15 Pro Max back triple camera 2.22mm f\/2.2",
-          "height" : 2089,
-          "aperture" : "2.2",
-          "width" : 3978
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "vue_dojo.jpg",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "65B1B7E6-1307-4E2E-85D6-2F70F68BC1D8",
-        "timeStamp" : 1772899488016.6335,
-        "kind" : 1,
-        "name" : "vue_dojo.jpg",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.jpeg"
-      },
-      "27540E9E-EF1C-4796-83EE-48C40799A3E0" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/50th",
-          "created" : "2023:11:04 11:03:39",
-          "focalLength" : "6.86",
-          "iso" : "250",
-          "aspect" : 1.3333333333333333,
-          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
-          "height" : 4284,
-          "aperture" : "1.78",
-          "width" : 5712
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "IMG_3164.HEIC",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "27540E9E-EF1C-4796-83EE-48C40799A3E0",
-        "timeStamp" : 1699092219000,
-        "kind" : 1,
-        "name" : "IMG_3164.HEIC",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.heic"
-      },
-      "8630467A-70D4-4644-BA1D-35DB91A169B2" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/33th",
-          "created" : "2023:11:04 10:24:25",
-          "focalLength" : "6.86",
-          "iso" : "400",
-          "aspect" : 1.3333333333333333,
-          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
-          "height" : 3024,
-          "aperture" : "1.78",
-          "width" : 4032
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "IMG_3123.HEIC",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "8630467A-70D4-4644-BA1D-35DB91A169B2",
-        "timeStamp" : 1699089865000,
-        "kind" : 1,
-        "name" : "IMG_3123.HEIC",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.heic"
-      },
-      "6479C355-58BF-4111-8319-7EFDD10EEA0F" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "aspect" : 0.8823529411764706,
-          "height" : 1088,
-          "width" : 960
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "Makoto_red.png",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "6479C355-58BF-4111-8319-7EFDD10EEA0F",
-        "kind" : 1,
-        "timeStamp" : 1773587400893.6067,
-        "name" : "Makoto_red.png",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.png"
-      },
-      "195EFAED-4B9D-4E1B-93DB-8B37CA617942" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/86th",
-          "created" : "2023:12:02 08:48:54",
-          "focalLength" : "6.86",
-          "iso" : "200",
-          "aspect" : 1.3333333333333333,
-          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
-          "height" : 1536,
-          "aperture" : "1.78",
-          "width" : 2048
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "vue_dojo.jpg",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "195EFAED-4B9D-4E1B-93DB-8B37CA617942",
-        "timeStamp" : 1772814066528.8547,
-        "kind" : 1,
-        "name" : "vue_dojo.jpg",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.jpeg"
-      },
-      "565632DD-B8D7-4B17-9D53-929EE5FDF95C" : {
-        "smartFolderKind" : 0,
-        "changedStatuses" : {
-
-        },
-        "kind" : 0,
-        "identifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "name" : "Resources",
-        "hostedImageURLs" : [
-
-        ],
-        "expanded" : true,
-        "timeStamp" : -62135769600000
-      },
-      "17347B36-95BC-4246-B304-74D721588272" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/50th",
-          "created" : "2011:05:28 09:33:38",
-          "focalLength" : "22.5",
-          "iso" : "800",
-          "aspect" : 1.366120218579235,
-          "height" : 366,
-          "aperture" : "4.5",
-          "width" : 500
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "photo_andre.jpg",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "17347B36-95BC-4246-B304-74D721588272",
-        "timeStamp" : 1772835776113.9177,
-        "kind" : 1,
-        "name" : "photo_andre.jpg",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.jpeg"
-      },
-      "78A69C6B-240B-41BD-B42E-93DEB49D7BB2" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/50th",
-          "created" : "2023:11:04 11:01:21",
-          "focalLength" : "15.66",
-          "iso" : "400",
-          "aspect" : 1.3333333333333333,
-          "lens" : "iPhone 15 Pro Max back triple camera 15.66mm f\/2.8",
-          "height" : 3024,
-          "aperture" : "2.8",
-          "width" : 4032
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "IMG_3157.HEIC",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "78A69C6B-240B-41BD-B42E-93DEB49D7BB2",
-        "timeStamp" : 1699092081000,
-        "kind" : 1,
-        "name" : "IMG_3157.HEIC",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.heic"
-      },
-      "DE57D3F7-B8D1-4ECA-8E98-70EBA725D4B2" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/50th",
-          "created" : "2018:12:04 19:48:08",
-          "focalLength" : "4.3",
-          "iso" : "800",
-          "aspect" : 2.572,
-          "height" : 500,
-          "aperture" : "1.7",
-          "width" : 1286
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "vue_dojo.png",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "DE57D3F7-B8D1-4ECA-8E98-70EBA725D4B2",
-        "timeStamp" : 1772965030341.6875,
-        "kind" : 1,
-        "name" : "vue_dojo.png",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.png"
-      },
-      "6115BEA3-1A75-475A-959B-6D498D7C2D2E" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "aspect" : 0.8823529411764706,
-          "height" : 1088,
-          "width" : 960
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "Makoto.png",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "6115BEA3-1A75-475A-959B-6D498D7C2D2E",
-        "timeStamp" : 1772293341827.0059,
-        "kind" : 1,
-        "name" : "Makoto.png",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.png"
-      },
-      "79178570-22CB-479F-AEE5-C6B2257BC23E" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "aspect" : 0.42428035043804757,
-          "height" : 799,
-          "width" : 339
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "aikido-kanji.png",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "79178570-22CB-479F-AEE5-C6B2257BC23E",
-        "timeStamp" : 1772919228427.3716,
-        "kind" : 1,
-        "name" : "aikido-kanji.png",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.png"
-      },
-      "1CE8F15A-D8B4-4D48-831B-A729D8439205" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "aspect" : 3.4865900383141764,
-          "width" : 910,
-          "iso" : "100",
-          "focalLength" : "24.2",
-          "created" : "2013:09:28 17:40:59",
-          "aperture" : "2.8",
-          "shutter" : "1\/80th",
-          "height" : 261
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "photo_discipline.jpg",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "1CE8F15A-D8B4-4D48-831B-A729D8439205",
-        "kind" : 1,
-        "timeStamp" : 1678640157259.0032,
-        "name" : "photo_discipline.jpg",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.jpeg"
-      },
-      "54D84AF4-BEDF-4B35-970C-0761346EC075" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/14th",
-          "created" : "2018:12:04 19:54:46",
-          "focalLength" : "4.3",
-          "iso" : "250",
-          "aspect" : 1.3333333333333333,
-          "height" : 3024,
-          "aperture" : "1.7",
-          "width" : 4032
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "20181204_195446.jpg",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "54D84AF4-BEDF-4B35-970C-0761346EC075",
-        "timeStamp" : 1662823132230,
-        "kind" : 1,
-        "name" : "20181204_195446.jpg",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.jpeg"
-      },
-      "3382C4A6-71F7-4AD7-99D6-D32491733B0C" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/50th",
-          "created" : "2023:11:04 10:48:37",
-          "focalLength" : "6.86",
-          "iso" : "400",
-          "aspect" : 1.2963518240879561,
-          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
-          "height" : 2001,
-          "aperture" : "1.78",
-          "width" : 2594
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "IMG_3140.heic",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "3382C4A6-71F7-4AD7-99D6-D32491733B0C",
-        "timeStamp" : 1772914615087.802,
-        "kind" : 1,
-        "name" : "IMG_3140.heic",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.heic"
-      },
-      "83F33B90-7B3D-4751-AC0E-94A53FE45CAE" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "aspect" : 2.7176870748299318,
-          "height" : 1176,
-          "width" : 3196
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "logo_makoto.png",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "83F33B90-7B3D-4751-AC0E-94A53FE45CAE",
-        "timeStamp" : 1772917714966.5073,
-        "kind" : 1,
-        "name" : "logo_makoto.png",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.png"
-      },
-      "67DD2FD1-C238-4D62-9936-81615C80F8B7" : {
-        "changedStatuses" : {
-
-        },
-        "metadata" : {
-          "shutter" : "1\/60th",
-          "created" : "2026:03:07 09:09:46",
-          "focalLength" : "2.220000028611935",
-          "iso" : "1250",
-          "aspect" : 2.9111913357400723,
-          "lens" : "iPhone 15 Pro Max back triple camera 2.22mm f\/2.2",
-          "height" : 1385,
-          "aperture" : "2.2",
-          "width" : 4032
-        },
-        "smartFolderKind" : 0,
-        "originalName" : "vue_dojo.jpg",
-        "expanded" : true,
-        "isSVG" : false,
-        "identifier" : "67DD2FD1-C238-4D62-9936-81615C80F8B7",
-        "timeStamp" : 1772898771985.2092,
-        "kind" : 1,
-        "name" : "vue_dojo.jpg",
-        "hostedImageURLs" : [
-
-        ],
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "typeIdentifier" : "public.jpeg"
-      }
-    }
+    "root" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
   },
-  "customComponents" : {
-    "components" : {
-
-    }
-  },
-  "uiStateIdentifier" : "2A987E57-D371-46FE-A613-45727708CB70",
-  "social" : {
-    "useSocialTags" : true
-  },
-  "images" : {
-    "webIcons" : {
-      "small" : {
-        "autoGenerate" : false,
-        "type" : 2
-      },
-      "faviconLarge" : {
-        "autoGenerate" : false,
-        "type" : 4
-      },
-      "faviconMedium" : {
-        "autoGenerate" : false,
-        "type" : 5
-      },
-      "faviconSmall" : {
-        "autoGenerate" : false,
-        "type" : 6
-      },
-      "medium" : {
-        "autoGenerate" : false,
-        "type" : 1
-      },
-      "large" : {
-        "autoGenerate" : false,
-        "type" : 0
-      },
-      "pinnedTab" : {
-        "autoGenerate" : false,
-        "type" : 3
-      }
-    },
-    "logoAltText" : ""
-  },
-  "rootPage" : {
-    "title" : "root",
-    "pageDescription" : null,
-    "expanded" : true,
-    "uniqueID" : "9BDCF9F3-D8B9-4A5A-A4CC-BF7971BE44F2",
-    "kind" : "folder",
-    "identifier" : "9BDCF9F3-D8B9-4A5A-A4CC-BF7971BE44F2",
-    "createdDate" : 1772830945681.6511,
-    "iconIdentifier" : null,
-    "manifests" : {
-
-    },
-    "externalPageURL" : null,
-    "attributes" : {
-      "shouldArchivePage" : true,
-      "shouldIndexPage" : true,
-      "useCustomSiteTitle" : false,
-      "excludeFromSitemap" : true,
-      "expiryQuantity" : 2,
-      "shouldAllowPreview" : true,
-      "encoding" : 1,
-      "customSiteTitle" : "",
-      "expiryUnit" : 0,
-      "customJavaScript" : "",
-      "shouldEnableRobotTags" : true,
-      "credit" : true,
-      "customBodyEnd" : "",
-      "customBodyStart" : "",
-      "customHeader" : "",
-      "shouldIndexImages" : true,
-      "filename" : "",
-      "customPageStart" : "",
-      "linkOpensInNewWindow" : false,
-      "customCSS" : "",
-      "lastChangedDate" : 1772830945681.509,
-      "customHeadStart" : "",
-      "customHeadEnd" : "",
-      "enabled" : true,
-      "shouldFollowLinks" : true,
-      "customPageEnd" : "",
-      "hidden" : false,
-      "expires" : false,
-      "changedStatuses" : {
-
-      },
-      "shouldEnableSocialTags" : true
-    },
-    "children" : [
-      {
-        "title" : "Accueil",
-        "pageDescription" : null,
-        "expanded" : true,
-        "uniqueID" : "page0",
-        "kind" : "page",
-        "identifier" : "39345835-CF9F-4209-9F64-8622D4750AAB",
-        "createdDate" : 1772830945699.1492,
-        "iconIdentifier" : null,
-        "manifests" : {
-
-        },
-        "externalPageURL" : null,
-        "attributes" : {
-          "shouldArchivePage" : true,
-          "shouldIndexPage" : true,
-          "useCustomSiteTitle" : false,
-          "excludeFromSitemap" : false,
-          "expiryQuantity" : 2,
-          "shouldAllowPreview" : true,
-          "encoding" : 1,
-          "customSiteTitle" : "",
-          "expiryUnit" : 0,
-          "customJavaScript" : "",
-          "shouldEnableRobotTags" : true,
-          "credit" : true,
-          "customBodyEnd" : "",
-          "customBodyStart" : "",
-          "customHeader" : "",
-          "shouldIndexImages" : true,
-          "filename" : "index.html",
-          "customPageStart" : "",
-          "linkOpensInNewWindow" : false,
-          "customCSS" : "",
-          "lastChangedDate" : 1774797036474.816,
-          "customHeadStart" : "",
-          "customHeadEnd" : "",
-          "enabled" : true,
-          "shouldFollowLinks" : true,
-          "customPageEnd" : "",
-          "hidden" : false,
-          "expires" : false,
-          "changedStatuses" : {
-            "default" : true
-          },
-          "shouldEnableSocialTags" : true
-        },
-        "children" : [
-
-        ],
-        "isIndex" : true,
-        "browserTitle" : null,
-        "code" : null
-      },
-      {
-        "title" : "Le Dojo",
-        "pageDescription" : null,
-        "expanded" : true,
-        "uniqueID" : "page1",
-        "kind" : "page",
-        "identifier" : "5080AB96-25BC-4F58-85E1-0CDF123B9C57",
-        "createdDate" : 1773587598186.1738,
-        "iconIdentifier" : null,
-        "manifests" : {
-
-        },
-        "externalPageURL" : null,
-        "attributes" : {
-          "shouldArchivePage" : true,
-          "shouldIndexPage" : true,
-          "useCustomSiteTitle" : false,
-          "excludeFromSitemap" : false,
-          "expiryQuantity" : 2,
-          "shouldAllowPreview" : true,
-          "encoding" : 1,
-          "customSiteTitle" : "",
-          "foldername" : "",
-          "expiryUnit" : 0,
-          "customJavaScript" : "",
-          "shouldEnableRobotTags" : true,
-          "credit" : true,
-          "customBodyEnd" : "",
-          "customBodyStart" : "",
-          "customHeader" : "",
-          "shouldIndexImages" : true,
-          "filename" : "index.html",
-          "customPageStart" : "",
-          "linkOpensInNewWindow" : false,
-          "customCSS" : "",
-          "lastChangedDate" : 1774797912088.583,
-          "customHeadStart" : "",
-          "customHeadEnd" : "",
-          "enabled" : true,
-          "shouldFollowLinks" : true,
-          "customPageEnd" : "",
-          "hidden" : false,
-          "expires" : false,
-          "changedStatuses" : {
-            "default" : true
-          },
-          "shouldEnableSocialTags" : true
-        },
-        "children" : [
-
-        ],
-        "isIndex" : false,
-        "browserTitle" : null,
-        "code" : null
-      }
-    ],
-    "isIndex" : false,
-    "browserTitle" : null,
-    "code" : null
-  },
-  "localization" : {
-
-  },
-  "project" : {
-    "autoStartWebServer" : false,
-    "uniqueBackupName" : "A62A1E83-B765-4A54-863C-23E52DEA999F_rwbackup"
-  },
-  "globalElements" : {
-    "globals" : {
-
-    }
-  }
+  "version" : 9
 }
