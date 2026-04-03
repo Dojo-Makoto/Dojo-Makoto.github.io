@@ -1,29 +1,17 @@
 {
-  "customComponents" : {
-    "components" : {
-
-    }
-  },
-  "privacy" : {
-    "anonymiseThirdPartyRequests" : false
-  },
-  "identifier" : "2A987E57-D371-46FE-A613-45727708CB70",
   "ui" : {
     "elementEditor" : {
-      "showOutline" : false,
-      "show" : false
+      "show" : false,
+      "showOutline" : false
     },
     "contentArea" : {
-      "darkAppearance" : false,
       "responsiveSize" : "lg",
       "size" : [
         1024,
         1330
       ],
-      "scale" : 1
-    },
-    "resourceInspector" : {
-      "show" : false
+      "scale" : 1,
+      "darkAppearance" : false
     },
     "catalogFilter" : {
       "smartDocumentElements" : false,
@@ -31,191 +19,111 @@
     },
     "projectInspector" : {
       "show" : false
+    },
+    "resourceInspector" : {
+      "show" : false
     }
   },
-  "rootPrefabNode" : {
-    "item" : null,
-    "identifier" : "B882DFBE-A2F0-4BDF-93F0-DDEE5FCE6403",
-    "children" : [
-
-    ],
-    "title" : "Project",
-    "expanded" : true,
-    "kind" : {
-      "folder" : {
-
-      }
-    }
-  },
-  "uiStateIdentifier" : "2A987E57-D371-46FE-A613-45727708CB70",
-  "version" : 9,
-  "rootPage" : {
-    "isIndex" : false,
-    "manifests" : {
+  "theme" : {
+    "page" : {
 
     },
-    "pageDescription" : null,
-    "kind" : "folder",
-    "iconIdentifier" : null,
-    "externalPageURL" : null,
-    "title" : "root",
-    "children" : [
+    "borderRadius" : [
+
+    ],
+    "borderWidth" : [
+
+    ],
+    "screens" : [
       {
-        "isIndex" : true,
-        "manifests" : {
-
-        },
-        "pageDescription" : null,
-        "kind" : "page",
-        "iconIdentifier" : null,
-        "externalPageURL" : null,
-        "title" : "Accueil",
-        "children" : [
-
-        ],
-        "code" : null,
-        "identifier" : "39345835-CF9F-4209-9F64-8622D4750AAB",
-        "browserTitle" : null,
-        "createdDate" : 1772830945699.1492,
-        "attributes" : {
-          "expires" : false,
-          "enabled" : true,
-          "shouldIndexImages" : true,
-          "encoding" : 1,
-          "linkOpensInNewWindow" : false,
-          "shouldAllowPreview" : true,
-          "shouldEnableRobotTags" : true,
-          "lastChangedDate" : 1775211684982.3079,
-          "credit" : true,
-          "expiryQuantity" : 2,
-          "shouldFollowLinks" : true,
-          "shouldArchivePage" : true,
-          "customHeadStart" : "",
-          "expiryUnit" : 0,
-          "backgroundColor" : {
-            "colorStripId" : "none",
-            "shade" : 500,
-            "darkColorStripId" : "none",
-            "darkShade" : 500
-          },
-          "customPageEnd" : "",
-          "useCustomSiteTitle" : false,
-          "changedStatuses" : {
-            "default" : true
-          },
-          "customPageStart" : "",
-          "customBodyEnd" : "",
-          "customCSS" : "",
-          "customHeader" : "",
-          "shouldEnableSocialTags" : true,
-          "filename" : "index.html",
-          "customJavaScript" : "",
-          "shouldIndexPage" : true,
-          "customBodyStart" : "",
-          "excludeFromSitemap" : false,
-          "customSiteTitle" : "",
-          "customHeadEnd" : "",
-          "hidden" : false
-        },
-        "expanded" : true,
-        "uniqueID" : "page0"
+        "maxContainerWidth" : 0,
+        "units" : "auto",
+        "name" : "2xl",
+        "description" : "",
+        "classPrefix" : "2xl",
+        "enabled" : false,
+        "sfIcon" : "desktopcomputer",
+        "id" : "D709EE6D-C8E4-4BE2-9DD9-8F6FD04D256D",
+        "pixels" : 1536
       },
       {
-        "isIndex" : false,
-        "manifests" : {
-
-        },
-        "pageDescription" : null,
-        "kind" : "page",
-        "iconIdentifier" : null,
-        "externalPageURL" : null,
-        "title" : "Le Dojo",
-        "children" : [
-
-        ],
-        "code" : null,
-        "identifier" : "5080AB96-25BC-4F58-85E1-0CDF123B9C57",
-        "browserTitle" : null,
-        "createdDate" : 1773587598186.1738,
-        "attributes" : {
-          "expires" : false,
-          "enabled" : true,
-          "shouldIndexImages" : true,
-          "encoding" : 1,
-          "linkOpensInNewWindow" : false,
-          "shouldAllowPreview" : true,
-          "shouldEnableRobotTags" : true,
-          "lastChangedDate" : 1774797912088.583,
-          "credit" : true,
-          "expiryQuantity" : 2,
-          "shouldFollowLinks" : true,
-          "shouldArchivePage" : true,
-          "customHeadStart" : "",
-          "expiryUnit" : 0,
-          "customPageEnd" : "",
-          "useCustomSiteTitle" : false,
-          "changedStatuses" : {
-            "default" : true
-          },
-          "foldername" : "",
-          "customPageStart" : "",
-          "customBodyEnd" : "",
-          "customCSS" : "",
-          "customHeader" : "",
-          "shouldEnableSocialTags" : true,
-          "filename" : "index.html",
-          "customJavaScript" : "",
-          "shouldIndexPage" : true,
-          "customBodyStart" : "",
-          "excludeFromSitemap" : false,
-          "customSiteTitle" : "",
-          "customHeadEnd" : "",
-          "hidden" : false
-        },
-        "expanded" : true,
-        "uniqueID" : "page1"
+        "maxContainerWidth" : 0,
+        "units" : "auto",
+        "name" : "xl",
+        "description" : "",
+        "classPrefix" : "xl",
+        "enabled" : false,
+        "sfIcon" : "laptopcomputer",
+        "id" : "0D1B18AD-D7CC-4E69-B20B-C52B7B1587DF",
+        "pixels" : 1280
+      },
+      {
+        "maxContainerWidth" : 0,
+        "units" : "auto",
+        "name" : "lg",
+        "description" : "",
+        "classPrefix" : "lg",
+        "enabled" : true,
+        "sfIcon" : "ipad.landscape",
+        "id" : "6E5A831B-A315-4D89-A3DF-F981BD338BB2",
+        "pixels" : 1024
+      },
+      {
+        "maxContainerWidth" : 0,
+        "units" : "auto",
+        "name" : "md",
+        "description" : "This breakpoint is for tablets and small laptop screens. It usually encompasses widths from 600 pixels to 1023 pixels.",
+        "classPrefix" : "md",
+        "enabled" : true,
+        "sfIcon" : "ipad",
+        "id" : "34D244B0-1086-4E0F-AF9C-BFE29FA594E0",
+        "pixels" : 768
+      },
+      {
+        "maxContainerWidth" : 0,
+        "units" : "auto",
+        "name" : "sm",
+        "description" : "This breakpoint targets devices with small sceens like smartphones. The resolution width varies but typically starts from 320 pixels and below 600 pixels.",
+        "classPrefix" : "sm",
+        "enabled" : true,
+        "sfIcon" : "iphone.landscape",
+        "id" : "73C07C9F-BEDB-467A-91B9-FFD9B65E41F5",
+        "pixels" : 640
+      },
+      {
+        "maxContainerWidth" : 0,
+        "units" : "auto",
+        "name" : "mobile",
+        "description" : "",
+        "classPrefix" : "",
+        "enabled" : true,
+        "sfIcon" : "iphone",
+        "id" : "DD799EED-A074-4A3F-902D-B9D44539FB4B",
+        "pixels" : 0
       }
     ],
-    "code" : null,
-    "identifier" : "9BDCF9F3-D8B9-4A5A-A4CC-BF7971BE44F2",
-    "browserTitle" : null,
-    "createdDate" : 1772830945681.6511,
-    "attributes" : {
-      "expires" : false,
-      "enabled" : true,
-      "shouldIndexImages" : true,
-      "encoding" : 1,
-      "linkOpensInNewWindow" : false,
-      "shouldAllowPreview" : true,
-      "shouldEnableRobotTags" : true,
-      "lastChangedDate" : 1772830945681.509,
-      "credit" : true,
-      "expiryQuantity" : 2,
-      "shouldFollowLinks" : true,
-      "shouldArchivePage" : true,
-      "customHeadStart" : "",
-      "expiryUnit" : 0,
-      "customPageEnd" : "",
-      "useCustomSiteTitle" : false,
-      "changedStatuses" : {
+    "fontFamily" : [
 
-      },
-      "customPageStart" : "",
-      "customBodyEnd" : "",
-      "customCSS" : "",
-      "customHeader" : "",
-      "shouldEnableSocialTags" : true,
-      "filename" : "",
-      "customJavaScript" : "",
-      "shouldIndexPage" : true,
-      "customBodyStart" : "",
-      "excludeFromSitemap" : true,
-      "customSiteTitle" : "",
-      "customHeadEnd" : "",
-      "hidden" : false
-    },
-    "expanded" : true,
-    "uniqueID" : "9BDCF9F3-D8B9-4A5A-A4CC-BF7971BE44F2"
+    ],
+    "baseThemeIdentifier" : "com.realmacsoftware.themes.system",
+    "colors" : [
+
+    ],
+    "shadows" : [
+
+    ],
+    "textShadows" : [
+
+    ],
+    "spacing" : [
+
+    ],
+    "typographies" : [
+
+    ],
+    "fontStyle" : [
+
+    ]
   },
   "siteResources" : {
     "children" : {
@@ -241,2240 +149,570 @@
       ]
     },
     "resources" : {
-      "67DD2FD1-C238-4D62-9936-81615C80F8B7" : {
+      "83F33B90-7B3D-4751-AC0E-94A53FE45CAE" : {
+        "timeStamp" : 1772917714966.5073,
         "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "name" : "vue_dojo.jpg",
+        "smartFolderKind" : 0,
+        "expanded" : true,
+        "metadata" : {
+          "aspect" : 2.7176870748299318,
+          "width" : 3196,
+          "height" : 1176
+        },
+        "identifier" : "83F33B90-7B3D-4751-AC0E-94A53FE45CAE",
         "kind" : 1,
+        "isSVG" : false,
+        "name" : "logo_makoto.png",
         "changedStatuses" : {
 
         },
-        "typeIdentifier" : "public.jpeg",
-        "timeStamp" : 1772898771985.2092,
-        "isSVG" : false,
-        "metadata" : {
-          "created" : "2026:03:07 09:09:46",
-          "width" : 4032,
-          "aspect" : 2.9111913357400723,
-          "iso" : "1250",
-          "height" : 1385,
-          "aperture" : "2.2",
-          "shutter" : "1\/60th",
-          "focalLength" : "2.220000028611935",
-          "lens" : "iPhone 15 Pro Max back triple camera 2.22mm f\/2.2"
+        "typeIdentifier" : "public.png",
+        "originalName" : "logo_makoto.png",
+        "hostedImageURLs" : [
+
+        ]
+      },
+      "8630467A-70D4-4644-BA1D-35DB91A169B2" : {
+        "identifier" : "8630467A-70D4-4644-BA1D-35DB91A169B2",
+        "name" : "IMG_3123.HEIC",
+        "changedStatuses" : {
+
         },
+        "metadata" : {
+          "aperture" : "1.78",
+          "iso" : "400",
+          "shutter" : "1\/33th",
+          "width" : 4032,
+          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
+          "created" : "2023:11:04 10:24:25",
+          "aspect" : 1.3333333333333333,
+          "focalLength" : "6.86",
+          "height" : 3024
+        },
+        "expanded" : true,
+        "smartFolderKind" : 0,
+        "isSVG" : false,
+        "timeStamp" : 1699089865000,
         "hostedImageURLs" : [
 
         ],
-        "identifier" : "67DD2FD1-C238-4D62-9936-81615C80F8B7",
-        "originalName" : "vue_dojo.jpg",
+        "originalName" : "IMG_3123.HEIC",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "kind" : 1,
+        "typeIdentifier" : "public.heic"
+      },
+      "565632DD-B8D7-4B17-9D53-929EE5FDF95C" : {
+        "hostedImageURLs" : [
+
+        ],
+        "kind" : 0,
+        "changedStatuses" : {
+
+        },
         "smartFolderKind" : 0,
+        "name" : "Resources",
+        "timeStamp" : -62135769600000,
+        "identifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
         "expanded" : true
       },
       "195EFAED-4B9D-4E1B-93DB-8B37CA617942" : {
-        "smartFolderKind" : 0,
         "identifier" : "195EFAED-4B9D-4E1B-93DB-8B37CA617942",
-        "timeStamp" : 1772814066528.8547,
-        "metadata" : {
-          "created" : "2023:12:02 08:48:54",
-          "width" : 2048,
-          "iso" : "200",
-          "aspect" : 1.3333333333333333,
-          "height" : 1536,
-          "aperture" : "1.78",
-          "shutter" : "1\/86th",
-          "focalLength" : "6.86",
-          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78"
-        },
         "name" : "vue_dojo.jpg",
-        "isSVG" : false,
-        "originalName" : "vue_dojo.jpg",
-        "expanded" : true,
-        "typeIdentifier" : "public.jpeg",
         "changedStatuses" : {
 
         },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "hostedImageURLs" : [
-
-        ],
-        "kind" : 1
-      },
-      "78A69C6B-240B-41BD-B42E-93DEB49D7BB2" : {
-        "smartFolderKind" : 0,
-        "identifier" : "78A69C6B-240B-41BD-B42E-93DEB49D7BB2",
-        "timeStamp" : 1699092081000,
         "metadata" : {
-          "aspect" : 1.3333333333333333,
-          "lens" : "iPhone 15 Pro Max back triple camera 15.66mm f\/2.8",
-          "aperture" : "2.8",
-          "shutter" : "1\/50th",
-          "iso" : "400",
-          "created" : "2023:11:04 11:01:21",
-          "focalLength" : "15.66",
-          "height" : 3024,
-          "width" : 4032
-        },
-        "name" : "IMG_3157.HEIC",
-        "originalName" : "IMG_3157.HEIC",
-        "isSVG" : false,
-        "expanded" : true,
-        "typeIdentifier" : "public.heic",
-        "changedStatuses" : {
-
-        },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "hostedImageURLs" : [
-
-        ],
-        "kind" : 1
-      },
-      "3F60168D-E88A-494B-B909-BA428C77F62E" : {
-        "smartFolderKind" : 0,
-        "identifier" : "3F60168D-E88A-494B-B909-BA428C77F62E",
-        "timeStamp" : 1699089835000,
-        "metadata" : {
-          "aspect" : 1.3333333333333333,
-          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
           "aperture" : "1.78",
-          "shutter" : "1\/33th",
-          "iso" : "320",
-          "created" : "2023:11:04 10:23:55",
+          "iso" : "200",
+          "shutter" : "1\/86th",
+          "width" : 2048,
+          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
+          "created" : "2023:12:02 08:48:54",
+          "aspect" : 1.3333333333333333,
           "focalLength" : "6.86",
-          "height" : 3024,
-          "width" : 4032
+          "height" : 1536
         },
-        "name" : "IMG_3122.HEIC",
-        "originalName" : "IMG_3122.HEIC",
-        "isSVG" : false,
         "expanded" : true,
-        "typeIdentifier" : "public.heic",
-        "changedStatuses" : {
-
-        },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "smartFolderKind" : 0,
+        "isSVG" : false,
+        "timeStamp" : 1772814066528.8547,
         "hostedImageURLs" : [
 
         ],
-        "kind" : 1
+        "originalName" : "vue_dojo.jpg",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "kind" : 1,
+        "typeIdentifier" : "public.jpeg"
       },
-      "54D84AF4-BEDF-4B35-970C-0761346EC075" : {
+      "7A4A950F-EBE7-4172-A764-AB15E2565155" : {
+        "name" : "photo_discipline.jpg",
         "smartFolderKind" : 0,
-        "identifier" : "54D84AF4-BEDF-4B35-970C-0761346EC075",
-        "timeStamp" : 1662823132230,
-        "metadata" : {
-          "width" : 4032,
-          "iso" : "250",
-          "aspect" : 1.3333333333333333,
-          "height" : 3024,
-          "aperture" : "1.7",
-          "shutter" : "1\/14th",
-          "focalLength" : "4.3",
-          "created" : "2018:12:04 19:54:46"
-        },
-        "name" : "20181204_195446.jpg",
+        "hostedImageURLs" : [
+
+        ],
+        "kind" : 1,
+        "originalName" : "photo_discipline.jpg",
+        "timeStamp" : 1678640157259.0032,
         "isSVG" : false,
-        "originalName" : "20181204_195446.jpg",
+        "metadata" : {
+          "shutter" : "1\/80th",
+          "focalLength" : "24.2",
+          "created" : "2013:09:28 17:40:59",
+          "width" : 910,
+          "aperture" : "2.8",
+          "aspect" : 3.4865900383141764,
+          "iso" : "100",
+          "height" : 261
+        },
+        "changedStatuses" : {
+
+        },
         "expanded" : true,
         "typeIdentifier" : "public.jpeg",
+        "identifier" : "7A4A950F-EBE7-4172-A764-AB15E2565155",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
+      },
+      "27540E9E-EF1C-4796-83EE-48C40799A3E0" : {
         "changedStatuses" : {
 
         },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "originalName" : "IMG_3164.HEIC",
+        "name" : "IMG_3164.HEIC",
+        "expanded" : true,
+        "typeIdentifier" : "public.heic",
+        "isSVG" : false,
+        "timeStamp" : 1699092219000,
         "hostedImageURLs" : [
 
         ],
-        "kind" : 1
+        "identifier" : "27540E9E-EF1C-4796-83EE-48C40799A3E0",
+        "kind" : 1,
+        "metadata" : {
+          "shutter" : "1\/50th",
+          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
+          "height" : 4284,
+          "iso" : "250",
+          "width" : 5712,
+          "aperture" : "1.78",
+          "focalLength" : "6.86",
+          "aspect" : 1.3333333333333333,
+          "created" : "2023:11:04 11:03:39"
+        },
+        "smartFolderKind" : 0,
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
+      },
+      "1CE8F15A-D8B4-4D48-831B-A729D8439205" : {
+        "name" : "photo_discipline.jpg",
+        "smartFolderKind" : 0,
+        "hostedImageURLs" : [
+
+        ],
+        "kind" : 1,
+        "originalName" : "photo_discipline.jpg",
+        "timeStamp" : 1678640157259.0032,
+        "isSVG" : false,
+        "metadata" : {
+          "shutter" : "1\/80th",
+          "focalLength" : "24.2",
+          "created" : "2013:09:28 17:40:59",
+          "width" : 910,
+          "aperture" : "2.8",
+          "aspect" : 3.4865900383141764,
+          "iso" : "100",
+          "height" : 261
+        },
+        "changedStatuses" : {
+
+        },
+        "expanded" : true,
+        "typeIdentifier" : "public.jpeg",
+        "identifier" : "1CE8F15A-D8B4-4D48-831B-A729D8439205",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
       },
       "3382C4A6-71F7-4AD7-99D6-D32491733B0C" : {
+        "timeStamp" : 1772914615087.802,
         "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "name" : "IMG_3140.heic",
+        "smartFolderKind" : 0,
+        "expanded" : true,
+        "metadata" : {
+          "aperture" : "1.78",
+          "iso" : "400",
+          "shutter" : "1\/50th",
+          "width" : 2594,
+          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78",
+          "created" : "2023:11:04 10:48:37",
+          "aspect" : 1.2963518240879561,
+          "focalLength" : "6.86",
+          "height" : 2001
+        },
+        "identifier" : "3382C4A6-71F7-4AD7-99D6-D32491733B0C",
         "kind" : 1,
+        "isSVG" : false,
+        "name" : "IMG_3140.heic",
         "changedStatuses" : {
 
         },
         "typeIdentifier" : "public.heic",
-        "timeStamp" : 1772914615087.802,
-        "isSVG" : false,
-        "metadata" : {
-          "created" : "2023:11:04 10:48:37",
-          "width" : 2594,
-          "aspect" : 1.2963518240879561,
-          "iso" : "400",
-          "height" : 2001,
-          "aperture" : "1.78",
-          "shutter" : "1\/50th",
-          "focalLength" : "6.86",
-          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78"
-        },
-        "hostedImageURLs" : [
-
-        ],
-        "identifier" : "3382C4A6-71F7-4AD7-99D6-D32491733B0C",
         "originalName" : "IMG_3140.heic",
-        "smartFolderKind" : 0,
-        "expanded" : true
-      },
-      "17347B36-95BC-4246-B304-74D721588272" : {
-        "smartFolderKind" : 0,
-        "identifier" : "17347B36-95BC-4246-B304-74D721588272",
-        "timeStamp" : 1772835776113.9177,
-        "metadata" : {
-          "aspect" : 1.366120218579235,
-          "aperture" : "4.5",
-          "shutter" : "1\/50th",
-          "iso" : "800",
-          "created" : "2011:05:28 09:33:38",
-          "focalLength" : "22.5",
-          "height" : 366,
-          "width" : 500
-        },
-        "name" : "photo_andre.jpg",
-        "originalName" : "photo_andre.jpg",
-        "isSVG" : false,
-        "expanded" : true,
-        "typeIdentifier" : "public.jpeg",
-        "changedStatuses" : {
-
-        },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
         "hostedImageURLs" : [
 
-        ],
-        "kind" : 1
+        ]
       },
       "79178570-22CB-479F-AEE5-C6B2257BC23E" : {
-        "smartFolderKind" : 0,
-        "identifier" : "79178570-22CB-479F-AEE5-C6B2257BC23E",
-        "timeStamp" : 1772919228427.3716,
-        "metadata" : {
-          "width" : 339,
-          "height" : 799,
-          "aspect" : 0.42428035043804757
+        "changedStatuses" : {
+
         },
-        "name" : "aikido-kanji.png",
-        "isSVG" : false,
         "originalName" : "aikido-kanji.png",
+        "name" : "aikido-kanji.png",
         "expanded" : true,
         "typeIdentifier" : "public.png",
-        "changedStatuses" : {
-
-        },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "hostedImageURLs" : [
-
-        ],
-        "kind" : 1
-      },
-      "6115BEA3-1A75-475A-959B-6D498D7C2D2E" : {
-        "smartFolderKind" : 0,
-        "identifier" : "6115BEA3-1A75-475A-959B-6D498D7C2D2E",
-        "timeStamp" : 1772293341827.0059,
-        "metadata" : {
-          "height" : 1088,
-          "width" : 960,
-          "aspect" : 0.8823529411764706
-        },
-        "name" : "Makoto.png",
-        "originalName" : "Makoto.png",
         "isSVG" : false,
-        "expanded" : true,
-        "typeIdentifier" : "public.png",
-        "changedStatuses" : {
-
-        },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "timeStamp" : 1772919228427.3716,
         "hostedImageURLs" : [
 
         ],
-        "kind" : 1
+        "identifier" : "79178570-22CB-479F-AEE5-C6B2257BC23E",
+        "kind" : 1,
+        "metadata" : {
+          "height" : 799,
+          "aspect" : 0.42428035043804757,
+          "width" : 339
+        },
+        "smartFolderKind" : 0,
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
+      },
+      "67DD2FD1-C238-4D62-9936-81615C80F8B7" : {
+        "timeStamp" : 1772898771985.2092,
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "smartFolderKind" : 0,
+        "expanded" : true,
+        "metadata" : {
+          "aperture" : "2.2",
+          "iso" : "1250",
+          "shutter" : "1\/60th",
+          "width" : 4032,
+          "lens" : "iPhone 15 Pro Max back triple camera 2.22mm f\/2.2",
+          "created" : "2026:03:07 09:09:46",
+          "aspect" : 2.9111913357400723,
+          "focalLength" : "2.220000028611935",
+          "height" : 1385
+        },
+        "identifier" : "67DD2FD1-C238-4D62-9936-81615C80F8B7",
+        "kind" : 1,
+        "isSVG" : false,
+        "name" : "vue_dojo.jpg",
+        "changedStatuses" : {
+
+        },
+        "typeIdentifier" : "public.jpeg",
+        "originalName" : "vue_dojo.jpg",
+        "hostedImageURLs" : [
+
+        ]
       },
       "DE57D3F7-B8D1-4ECA-8E98-70EBA725D4B2" : {
         "smartFolderKind" : 0,
+        "changedStatuses" : {
+
+        },
+        "hostedImageURLs" : [
+
+        ],
+        "expanded" : true,
         "identifier" : "DE57D3F7-B8D1-4ECA-8E98-70EBA725D4B2",
-        "timeStamp" : 1772965030341.6875,
         "metadata" : {
-          "width" : 1286,
+          "aperture" : "1.7",
           "iso" : "800",
+          "shutter" : "1\/50th",
+          "width" : 1286,
+          "created" : "2018:12:04 19:48:08",
           "aspect" : 2.572,
-          "height" : 500,
-          "aperture" : "1.7",
-          "shutter" : "1\/50th",
           "focalLength" : "4.3",
-          "created" : "2018:12:04 19:48:08"
+          "height" : 500
         },
-        "name" : "vue_dojo.png",
         "isSVG" : false,
+        "typeIdentifier" : "public.png",
         "originalName" : "vue_dojo.png",
-        "expanded" : true,
-        "typeIdentifier" : "public.png",
-        "changedStatuses" : {
-
-        },
         "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "hostedImageURLs" : [
-
-        ],
-        "kind" : 1
-      },
-      "1CE8F15A-D8B4-4D48-831B-A729D8439205" : {
-        "smartFolderKind" : 0,
-        "identifier" : "1CE8F15A-D8B4-4D48-831B-A729D8439205",
-        "timeStamp" : 1678640157259.0032,
-        "metadata" : {
-          "width" : 910,
-          "iso" : "100",
-          "aspect" : 3.4865900383141764,
-          "height" : 261,
-          "aperture" : "2.8",
-          "shutter" : "1\/80th",
-          "focalLength" : "24.2",
-          "created" : "2013:09:28 17:40:59"
-        },
-        "name" : "photo_discipline.jpg",
-        "isSVG" : false,
-        "originalName" : "photo_discipline.jpg",
-        "expanded" : true,
-        "typeIdentifier" : "public.jpeg",
-        "changedStatuses" : {
-
-        },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "hostedImageURLs" : [
-
-        ],
-        "kind" : 1
-      },
-      "7A4A950F-EBE7-4172-A764-AB15E2565155" : {
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "name" : "photo_discipline.jpg",
+        "name" : "vue_dojo.png",
         "kind" : 1,
-        "changedStatuses" : {
-
-        },
-        "typeIdentifier" : "public.jpeg",
-        "timeStamp" : 1678640157259.0032,
-        "isSVG" : false,
-        "metadata" : {
-          "width" : 910,
-          "aspect" : 3.4865900383141764,
-          "iso" : "100",
-          "height" : 261,
-          "aperture" : "2.8",
-          "shutter" : "1\/80th",
-          "focalLength" : "24.2",
-          "created" : "2013:09:28 17:40:59"
-        },
-        "hostedImageURLs" : [
-
-        ],
-        "identifier" : "7A4A950F-EBE7-4172-A764-AB15E2565155",
-        "originalName" : "photo_discipline.jpg",
-        "smartFolderKind" : 0,
-        "expanded" : true
-      },
-      "565632DD-B8D7-4B17-9D53-929EE5FDF95C" : {
-        "kind" : 0,
-        "timeStamp" : -62135769600000,
-        "identifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "smartFolderKind" : 0,
-        "changedStatuses" : {
-
-        },
-        "expanded" : true,
-        "hostedImageURLs" : [
-
-        ],
-        "name" : "Resources"
-      },
-      "8630467A-70D4-4644-BA1D-35DB91A169B2" : {
-        "smartFolderKind" : 0,
-        "identifier" : "8630467A-70D4-4644-BA1D-35DB91A169B2",
-        "timeStamp" : 1699089865000,
-        "metadata" : {
-          "created" : "2023:11:04 10:24:25",
-          "width" : 4032,
-          "iso" : "400",
-          "aspect" : 1.3333333333333333,
-          "height" : 3024,
-          "aperture" : "1.78",
-          "shutter" : "1\/33th",
-          "focalLength" : "6.86",
-          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78"
-        },
-        "name" : "IMG_3123.HEIC",
-        "isSVG" : false,
-        "originalName" : "IMG_3123.HEIC",
-        "expanded" : true,
-        "typeIdentifier" : "public.heic",
-        "changedStatuses" : {
-
-        },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "hostedImageURLs" : [
-
-        ],
-        "kind" : 1
-      },
-      "83F33B90-7B3D-4751-AC0E-94A53FE45CAE" : {
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "name" : "logo_makoto.png",
-        "kind" : 1,
-        "changedStatuses" : {
-
-        },
-        "typeIdentifier" : "public.png",
-        "timeStamp" : 1772917714966.5073,
-        "isSVG" : false,
-        "metadata" : {
-          "height" : 1176,
-          "width" : 3196,
-          "aspect" : 2.7176870748299318
-        },
-        "hostedImageURLs" : [
-
-        ],
-        "identifier" : "83F33B90-7B3D-4751-AC0E-94A53FE45CAE",
-        "originalName" : "logo_makoto.png",
-        "smartFolderKind" : 0,
-        "expanded" : true
-      },
-      "E96C416E-5248-4AD0-AED8-EDFAD96789F8" : {
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "name" : "20181204_195446.jpg",
-        "kind" : 1,
-        "changedStatuses" : {
-
-        },
-        "typeIdentifier" : "public.jpeg",
-        "timeStamp" : 1662823132230,
-        "isSVG" : false,
-        "metadata" : {
-          "width" : 4032,
-          "aspect" : 1.3333333333333333,
-          "iso" : "250",
-          "height" : 3024,
-          "aperture" : "1.7",
-          "shutter" : "1\/14th",
-          "focalLength" : "4.3",
-          "created" : "2018:12:04 19:54:46"
-        },
-        "hostedImageURLs" : [
-
-        ],
-        "identifier" : "E96C416E-5248-4AD0-AED8-EDFAD96789F8",
-        "originalName" : "20181204_195446.jpg",
-        "smartFolderKind" : 0,
-        "expanded" : true
-      },
-      "27540E9E-EF1C-4796-83EE-48C40799A3E0" : {
-        "smartFolderKind" : 0,
-        "identifier" : "27540E9E-EF1C-4796-83EE-48C40799A3E0",
-        "timeStamp" : 1699092219000,
-        "metadata" : {
-          "created" : "2023:11:04 11:03:39",
-          "width" : 5712,
-          "iso" : "250",
-          "aspect" : 1.3333333333333333,
-          "height" : 4284,
-          "aperture" : "1.78",
-          "shutter" : "1\/50th",
-          "focalLength" : "6.86",
-          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78"
-        },
-        "name" : "IMG_3164.HEIC",
-        "isSVG" : false,
-        "originalName" : "IMG_3164.HEIC",
-        "expanded" : true,
-        "typeIdentifier" : "public.heic",
-        "changedStatuses" : {
-
-        },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
-        "hostedImageURLs" : [
-
-        ],
-        "kind" : 1
+        "timeStamp" : 1772965030341.6875
       },
       "6479C355-58BF-4111-8319-7EFDD10EEA0F" : {
         "smartFolderKind" : 0,
-        "identifier" : "6479C355-58BF-4111-8319-7EFDD10EEA0F",
-        "timeStamp" : 1773587400893.6067,
-        "metadata" : {
-          "height" : 1088,
-          "width" : 960,
-          "aspect" : 0.8823529411764706
-        },
-        "name" : "Makoto_red.png",
-        "originalName" : "Makoto_red.png",
-        "isSVG" : false,
-        "expanded" : true,
-        "typeIdentifier" : "public.png",
         "changedStatuses" : {
 
         },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
         "hostedImageURLs" : [
 
         ],
-        "kind" : 1
+        "expanded" : true,
+        "identifier" : "6479C355-58BF-4111-8319-7EFDD10EEA0F",
+        "metadata" : {
+          "height" : 1088,
+          "aspect" : 0.8823529411764706,
+          "width" : 960
+        },
+        "isSVG" : false,
+        "typeIdentifier" : "public.png",
+        "originalName" : "Makoto_red.png",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "name" : "Makoto_red.png",
+        "kind" : 1,
+        "timeStamp" : 1773587400893.6067
+      },
+      "6115BEA3-1A75-475A-959B-6D498D7C2D2E" : {
+        "name" : "Makoto.png",
+        "smartFolderKind" : 0,
+        "hostedImageURLs" : [
+
+        ],
+        "kind" : 1,
+        "originalName" : "Makoto.png",
+        "timeStamp" : 1772293341827.0059,
+        "isSVG" : false,
+        "metadata" : {
+          "height" : 1088,
+          "aspect" : 0.8823529411764706,
+          "width" : 960
+        },
+        "changedStatuses" : {
+
+        },
+        "expanded" : true,
+        "typeIdentifier" : "public.png",
+        "identifier" : "6115BEA3-1A75-475A-959B-6D498D7C2D2E",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
+      },
+      "54D84AF4-BEDF-4B35-970C-0761346EC075" : {
+        "smartFolderKind" : 0,
+        "changedStatuses" : {
+
+        },
+        "hostedImageURLs" : [
+
+        ],
+        "expanded" : true,
+        "identifier" : "54D84AF4-BEDF-4B35-970C-0761346EC075",
+        "metadata" : {
+          "aperture" : "1.7",
+          "iso" : "250",
+          "shutter" : "1\/14th",
+          "width" : 4032,
+          "created" : "2018:12:04 19:54:46",
+          "aspect" : 1.3333333333333333,
+          "focalLength" : "4.3",
+          "height" : 3024
+        },
+        "isSVG" : false,
+        "typeIdentifier" : "public.jpeg",
+        "originalName" : "20181204_195446.jpg",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "name" : "20181204_195446.jpg",
+        "kind" : 1,
+        "timeStamp" : 1662823132230
+      },
+      "E96C416E-5248-4AD0-AED8-EDFAD96789F8" : {
+        "name" : "20181204_195446.jpg",
+        "smartFolderKind" : 0,
+        "hostedImageURLs" : [
+
+        ],
+        "kind" : 1,
+        "originalName" : "20181204_195446.jpg",
+        "timeStamp" : 1662823132230,
+        "isSVG" : false,
+        "metadata" : {
+          "shutter" : "1\/14th",
+          "focalLength" : "4.3",
+          "created" : "2018:12:04 19:54:46",
+          "width" : 4032,
+          "aperture" : "1.7",
+          "aspect" : 1.3333333333333333,
+          "iso" : "250",
+          "height" : 3024
+        },
+        "changedStatuses" : {
+
+        },
+        "expanded" : true,
+        "typeIdentifier" : "public.jpeg",
+        "identifier" : "E96C416E-5248-4AD0-AED8-EDFAD96789F8",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
       },
       "65B1B7E6-1307-4E2E-85D6-2F70F68BC1D8" : {
         "smartFolderKind" : 0,
-        "identifier" : "65B1B7E6-1307-4E2E-85D6-2F70F68BC1D8",
-        "timeStamp" : 1772899488016.6335,
-        "metadata" : {
-          "aspect" : 1.9042604116802297,
-          "lens" : "iPhone 15 Pro Max back triple camera 2.22mm f\/2.2",
-          "aperture" : "2.2",
-          "shutter" : "1\/60th",
-          "iso" : "1250",
-          "created" : "2026:03:07 09:09:46",
-          "focalLength" : "2.220000028611935",
-          "height" : 2089,
-          "width" : 3978
-        },
-        "name" : "vue_dojo.jpg",
-        "originalName" : "vue_dojo.jpg",
-        "isSVG" : false,
-        "expanded" : true,
-        "typeIdentifier" : "public.jpeg",
         "changedStatuses" : {
 
         },
-        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
         "hostedImageURLs" : [
 
         ],
-        "kind" : 1
+        "expanded" : true,
+        "identifier" : "65B1B7E6-1307-4E2E-85D6-2F70F68BC1D8",
+        "metadata" : {
+          "aperture" : "2.2",
+          "iso" : "1250",
+          "shutter" : "1\/60th",
+          "width" : 3978,
+          "lens" : "iPhone 15 Pro Max back triple camera 2.22mm f\/2.2",
+          "created" : "2026:03:07 09:09:46",
+          "aspect" : 1.9042604116802297,
+          "focalLength" : "2.220000028611935",
+          "height" : 2089
+        },
+        "isSVG" : false,
+        "typeIdentifier" : "public.jpeg",
+        "originalName" : "vue_dojo.jpg",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "name" : "vue_dojo.jpg",
+        "kind" : 1,
+        "timeStamp" : 1772899488016.6335
+      },
+      "78A69C6B-240B-41BD-B42E-93DEB49D7BB2" : {
+        "identifier" : "78A69C6B-240B-41BD-B42E-93DEB49D7BB2",
+        "name" : "IMG_3157.HEIC",
+        "changedStatuses" : {
+
+        },
+        "metadata" : {
+          "aperture" : "2.8",
+          "iso" : "400",
+          "shutter" : "1\/50th",
+          "width" : 4032,
+          "lens" : "iPhone 15 Pro Max back triple camera 15.66mm f\/2.8",
+          "created" : "2023:11:04 11:01:21",
+          "aspect" : 1.3333333333333333,
+          "focalLength" : "15.66",
+          "height" : 3024
+        },
+        "expanded" : true,
+        "smartFolderKind" : 0,
+        "isSVG" : false,
+        "timeStamp" : 1699092081000,
+        "hostedImageURLs" : [
+
+        ],
+        "originalName" : "IMG_3157.HEIC",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C",
+        "kind" : 1,
+        "typeIdentifier" : "public.heic"
+      },
+      "3F60168D-E88A-494B-B909-BA428C77F62E" : {
+        "name" : "IMG_3122.HEIC",
+        "smartFolderKind" : 0,
+        "hostedImageURLs" : [
+
+        ],
+        "kind" : 1,
+        "originalName" : "IMG_3122.HEIC",
+        "timeStamp" : 1699089835000,
+        "isSVG" : false,
+        "metadata" : {
+          "shutter" : "1\/33th",
+          "focalLength" : "6.86",
+          "created" : "2023:11:04 10:23:55",
+          "width" : 4032,
+          "aperture" : "1.78",
+          "aspect" : 1.3333333333333333,
+          "iso" : "320",
+          "height" : 3024,
+          "lens" : "iPhone 15 Pro Max back triple camera 6.86mm f\/1.78"
+        },
+        "changedStatuses" : {
+
+        },
+        "expanded" : true,
+        "typeIdentifier" : "public.heic",
+        "identifier" : "3F60168D-E88A-494B-B909-BA428C77F62E",
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
+      },
+      "17347B36-95BC-4246-B304-74D721588272" : {
+        "changedStatuses" : {
+
+        },
+        "originalName" : "photo_andre.jpg",
+        "name" : "photo_andre.jpg",
+        "expanded" : true,
+        "typeIdentifier" : "public.jpeg",
+        "isSVG" : false,
+        "timeStamp" : 1772835776113.9177,
+        "hostedImageURLs" : [
+
+        ],
+        "identifier" : "17347B36-95BC-4246-B304-74D721588272",
+        "kind" : 1,
+        "metadata" : {
+          "aperture" : "4.5",
+          "iso" : "800",
+          "shutter" : "1\/50th",
+          "width" : 500,
+          "created" : "2011:05:28 09:33:38",
+          "aspect" : 1.366120218579235,
+          "focalLength" : "22.5",
+          "height" : 366
+        },
+        "smartFolderKind" : 0,
+        "parentIdentifier" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
       }
     },
     "root" : "565632DD-B8D7-4B17-9D53-929EE5FDF95C"
   },
-  "theme" : {
-    "typographies" : [
+  "customComponents" : {
+    "components" : {
 
-    ],
-    "screens" : [
-      {
-        "enabled" : false,
-        "maxContainerWidth" : 0,
-        "id" : "D709EE6D-C8E4-4BE2-9DD9-8F6FD04D256D",
-        "sfIcon" : "desktopcomputer",
-        "pixels" : 1536,
-        "description" : "",
-        "units" : "auto",
-        "classPrefix" : "2xl",
-        "name" : "2xl"
-      },
-      {
-        "enabled" : false,
-        "maxContainerWidth" : 0,
-        "id" : "0D1B18AD-D7CC-4E69-B20B-C52B7B1587DF",
-        "sfIcon" : "laptopcomputer",
-        "pixels" : 1280,
-        "description" : "",
-        "units" : "auto",
-        "classPrefix" : "xl",
-        "name" : "xl"
-      },
-      {
-        "enabled" : true,
-        "maxContainerWidth" : 0,
-        "id" : "6E5A831B-A315-4D89-A3DF-F981BD338BB2",
-        "sfIcon" : "ipad.landscape",
-        "pixels" : 1024,
-        "description" : "",
-        "units" : "auto",
-        "classPrefix" : "lg",
-        "name" : "lg"
-      },
-      {
-        "enabled" : true,
-        "maxContainerWidth" : 0,
-        "id" : "34D244B0-1086-4E0F-AF9C-BFE29FA594E0",
-        "sfIcon" : "ipad",
-        "pixels" : 768,
-        "description" : "This breakpoint is for tablets and small laptop screens. It usually encompasses widths from 600 pixels to 1023 pixels.",
-        "units" : "auto",
-        "classPrefix" : "md",
-        "name" : "md"
-      },
-      {
-        "enabled" : true,
-        "maxContainerWidth" : 0,
-        "id" : "73C07C9F-BEDB-467A-91B9-FFD9B65E41F5",
-        "sfIcon" : "iphone.landscape",
-        "pixels" : 640,
-        "description" : "This breakpoint targets devices with small sceens like smartphones. The resolution width varies but typically starts from 320 pixels and below 600 pixels.",
-        "units" : "auto",
-        "classPrefix" : "sm",
-        "name" : "sm"
-      },
-      {
-        "enabled" : true,
-        "maxContainerWidth" : 0,
-        "id" : "DD799EED-A074-4A3F-902D-B9D44539FB4B",
-        "sfIcon" : "iphone",
-        "pixels" : 0,
-        "description" : "",
-        "units" : "auto",
-        "classPrefix" : "",
-        "name" : "mobile"
-      }
-    ],
-    "spacing" : [
-
-    ],
-    "page" : {
-
-    },
-    "fontStyle" : [
-
-    ],
-    "textShadows" : [
-
-    ],
-    "shadows" : [
-
-    ],
-    "borderWidth" : [
-
-    ],
-    "fontFamily" : [
-
-    ],
-    "baseThemeIdentifier" : "com.realmacsoftware.themes.system",
-    "colors" : [
-
-    ],
-    "borderRadius" : [
-
-    ]
-  },
-  "site" : {
-    "useCacheBusting" : true,
-    "minifyExtraFiles" : true,
-    "allowDarkMode" : true,
-    "baseURL" : "",
-    "title" : "My Website",
-    "cruftlessLinks" : true,
-    "consolidateCSSFiles" : true,
-    "defaultFileExtension" : "html",
-    "themeName" : "Elements",
-    "wantsXMLSiteMap" : true
-  },
-  "project" : {
-    "autoStartWebServer" : false,
-    "uniqueBackupName" : "A62A1E83-B765-4A54-863C-23E52DEA999F_rwbackup"
-  },
-  "localization" : {
-
-  },
-  "social" : {
-    "useSocialTags" : true
-  },
-  "publishing" : {
-    "publishSettingsConfigured" : false,
-    "publishingDestinations" : [
-
-    ]
-  },
-  "images" : {
-    "logoAltText" : "",
-    "webIcons" : {
-      "pinnedTab" : {
-        "autoGenerate" : false,
-        "type" : 3
-      },
-      "faviconLarge" : {
-        "autoGenerate" : false,
-        "type" : 4
-      },
-      "faviconMedium" : {
-        "autoGenerate" : false,
-        "type" : 5
-      },
-      "large" : {
-        "autoGenerate" : false,
-        "type" : 0
-      },
-      "medium" : {
-        "autoGenerate" : false,
-        "type" : 1
-      },
-      "faviconSmall" : {
-        "autoGenerate" : false,
-        "type" : 6
-      },
-      "small" : {
-        "autoGenerate" : false,
-        "type" : 2
-      }
     }
   },
+  "identifier" : "2A987E57-D371-46FE-A613-45727708CB70",
   "globalElements" : {
     "globals" : {
       "rwF43BCF1D_874F_4142_A8B9_C369C28D5B26" : {
+        "containers" : {
+
+        },
         "identifier" : "rwF43BCF1D_874F_4142_A8B9_C369C28D5B26",
+        "rootNodeIdentifier" : "rwFBCDDEA6_7DDB_42A7_90AF_CAFA609467DA",
+        "elementId" : "com.realmacsoftware.rapidweaver.global",
+        "context" : {
+          "values" : {
+
+          },
+          "attributes" : {
+            "hidden" : false,
+            "locked" : false
+          },
+          "globalPropertyOverrides" : [
+
+          ],
+          "globalContainerOverrides" : [
+
+          ],
+          "dataCollections" : [
+
+          ]
+        },
         "nodes" : {
           "rwFBCDDEA6_7DDB_42A7_90AF_CAFA609467DA" : {
-            "elementId" : "com.realmacsoftware.text",
-            "layoutViewExpanded" : true,
-            "anchors" : [
-
-            ],
-            "isLinkedGlobalRootNode" : false,
             "containers" : {
 
             },
+            "identifier" : "rwFBCDDEA6_7DDB_42A7_90AF_CAFA609467DA",
+            "elementId" : "com.realmacsoftware.text",
             "context" : {
+              "attributes" : {
+                "userTitle" : "Titre Photo",
+                "hidden" : false,
+                "locked" : false
+              },
               "values" : {
-                "globalBgImagePosition" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "center"
-                      }
-                    }
-                  }
-                },
-                "globalTextFontSize" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "2xl"
-                      }
-                    }
-                  }
-                },
-                "globalTextFontWeight" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "700"
-                      }
-                    }
-                  }
-                },
-                "group:Transforms" : {
+                "group:Border" : {
                   "B" : false
-                },
-                "linkColorVisited" : {
-                  "TWC" : {
-                    "shade" : 800,
-                    "colorStripId" : "brand"
-                  }
-                },
-                "globalLayoutVisibility" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : ""
-                      }
-                    }
-                  }
-                },
-                "globalTransformScale" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalBordersRadiusEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TBR" : {
-                          "bottomLeftBorderRadiusId" : "Default",
-                          "topLeft" : 0,
-                          "bottomLeft" : 0,
-                          "useCustomBorderRadius" : false,
-                          "topLeftBorderRadiusId" : "Default",
-                          "bottomRightBorderRadiusId" : "Default",
-                          "topRightBorderRadiusId" : "Default",
-                          "topRight" : 0,
-                          "bottomRight" : 0
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalBordersRadius" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TBR" : {
-                          "bottomLeftBorderRadiusId" : "Default",
-                          "topLeft" : 0,
-                          "bottomLeft" : 0,
-                          "useCustomBorderRadius" : false,
-                          "topLeftBorderRadiusId" : "Default",
-                          "bottomRightBorderRadiusId" : "Default",
-                          "topRightBorderRadiusId" : "Default",
-                          "topRight" : 0,
-                          "bottomRight" : 0
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalTransitionsTimingFunctionCustom" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "0.95,0.05,0.795,0.035"
-                      }
-                    }
-                  }
-                },
-                "globalBordersColor" : {
-                  "TWC" : {
-                    "shade" : 500,
-                    "colorStripId" : "surface"
-                  }
-                },
-                "globalMinHeight" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "0",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "leftSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "md",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientDirectionEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "bg-gradient-to-b"
-                      }
-                    }
-                  }
-                },
-                "globalTransformSkewY" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "group:Effects" : {
-                  "B" : false
-                },
-                "group:General" : {
-                  "B" : false
-                },
-                "globalControlTypeFilters" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "none"
-                      }
-                    }
-                  }
-                },
-                "globalLayoutInset" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "md",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "leftSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "md",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalTextItalic" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "B" : false
-                      }
-                    }
-                  }
-                },
-                "linkState" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "default"
-                      }
-                    }
-                  }
-                },
-                "globalBgImageSizeEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "cover"
-                      }
-                    }
-                  }
-                },
-                "globalLayoutTopRightBottomLeftType" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "none"
-                      }
-                    }
-                  }
-                },
-                "globalWidth" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "auto",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "leftSpacingId" : "md",
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "md",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalLayoutZIndex" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "globalTextTextShadow" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TSH" : {
-                          "themeShadowName" : "none",
-                          "shadows" : [
-                            {
-                              "radius" : 10,
-                              "x" : 0,
-                              "y" : 5,
-                              "inner" : false,
-                              "color" : "0 0 0 0.5"
-                            }
-                          ]
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalLayoutOverflow" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : ""
-                      }
-                    }
-                  }
-                },
-                "linkFontWeightHover" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "400"
-                      }
-                    }
-                  }
-                },
-                "globalTextLetterSpacing" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "normal"
-                      }
-                    }
-                  }
-                },
-                "linkColor" : {
-                  "TWC" : {
-                    "shade" : 500,
-                    "colorStripId" : "brand"
-                  }
-                },
-                "globalLayoutHidden" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "B" : false
-                      }
-                    }
-                  }
-                },
-                "globalEffectsState" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "start"
-                      }
-                    }
-                  }
-                },
-                "globalHoverGroupCustomIdEffects" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : ""
-                      }
-                    }
-                  }
-                },
-                "globalTransformOrigin" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "center"
-                      }
-                    }
-                  }
-                },
-                "globalTextTextTransform" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "[font-variant-caps:small-caps]"
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientFromOpacity" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalSpacingEnabled" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "B" : false
-                      }
-                    }
-                  }
-                },
-                "globalBgImagePositionEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "center"
-                      }
-                    }
-                  }
-                },
-                "globalTextFontFamily" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "heading"
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientViaColor" : {
-                  "TWC" : {
-                    "shade" : 400,
-                    "colorStripId" : "brand"
-                  }
-                },
-                "globalBgGradientToOpacity" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalLayoutRight" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "leftSpacingNegated" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "md",
-                          "bottom" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "linkVertical" : false,
-                          "leftSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "rightSpacingId" : "md",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "topSpacingNegated" : false,
-                          "right" : 0,
-                          "linkHorizontal" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "linkUnderlineHover" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "B" : false
-                      }
-                    }
-                  }
-                },
-                "globalFiltersBlur" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "group:Advanced" : {
-                  "B" : false
-                },
-                "globalBgImageFetchPriority" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "auto"
-                      }
-                    }
-                  }
-                },
-                "globalControlTypeBorders" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "none"
-                      }
-                    }
-                  }
-                },
-                "globalBordersWidthEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TBW" : {
-                          "leftBorderWidthId" : "0",
-                          "topBorderWidthId" : "0",
-                          "rightBorderWidthId" : "0",
-                          "bottomBorderWidthId" : "0",
-                          "useCustomBorderWidth" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalHoverGroupTransforms" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "self"
-                      }
-                    }
-                  }
-                },
-                "globalTransformsState" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "start"
-                      }
-                    }
-                  }
-                },
-                "globalBordersStyleEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "solid"
-                      }
-                    }
-                  }
-                },
-                "group:Links" : {
-                  "B" : false
-                },
-                "globalLayoutLeft" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "md",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "leftSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "md",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalControlTypeBg" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "static"
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientViaEnabled" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "B" : false
-                      }
-                    }
-                  }
-                },
-                "globalFiltersDropShadowEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TSH" : {
-                          "themeShadowName" : "none",
-                          "shadows" : [
-                            {
-                              "radius" : 10,
-                              "x" : 0,
-                              "y" : 5,
-                              "inner" : false,
-                              "color" : "0 0 0 0.5"
-                            }
-                          ]
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientToOpacityEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalBgImageSize" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "cover"
-                      }
-                    }
-                  }
-                },
-                "globalHoverGroupEffects" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "self"
-                      }
-                    }
-                  }
-                },
-                "globalTransformScaleEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalHoverGroupBg" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "self"
-                      }
-                    }
-                  }
-                },
-                "globalHoverGroupCustomIdTransforms" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : ""
-                      }
-                    }
-                  }
-                },
-                "globalBgImageRepeat" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "no-repeat"
-                      }
-                    }
-                  }
-                },
-                "globalLayoutBottom" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "md",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "leftSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "md",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalTransformSkewYEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "linkUnderline" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "B" : false
-                      }
-                    }
-                  }
-                },
-                "linkUnderlineVisited" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "B" : false
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientFromOpacityEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalTransformTranslateX" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "0px"
-                      }
-                    }
-                  }
-                },
-                "globalMargin" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "0",
-                          "left" : 0,
-                          "singleId" : "md",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "0",
-                          "leftSpacingId" : "0",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "0",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalLayoutTop" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "md",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "leftSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "md",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalTextTextDecorationOffset" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 1
-                      }
-                    }
-                  }
                 },
                 "globalBgGradientViaOpacityEnd" : {
                   "R" : {
                     "responsiveValues" : {
                       "base" : {
                         "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalTextTextDecorationOpacity" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientToColorEnd" : {
-                  "TWC" : {
-                    "shade" : 500,
-                    "colorStripId" : "brand"
-                  }
-                },
-                "globalID" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : ""
-                      }
-                    }
-                  }
-                },
-                "globalBordersStyle" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "solid"
-                      }
-                    }
-                  }
-                },
-                "globalTransformTranslateXEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "0px"
-                      }
-                    }
-                  }
-                },
-                "globalTextTextDecorationColor" : {
-                  "TWC" : {
-                    "shade" : 100,
-                    "colorStripId" : "text"
-                  }
-                },
-                "globalBgState" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "start"
-                      }
-                    }
-                  }
-                },
-                "globalSizingMinMaxEnabled" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "B" : false
-                      }
-                    }
-                  }
-                },
-                "globalTransitionsTimingFunction" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "ease-in-out"
-                      }
-                    }
-                  }
-                },
-                "globalTransitionsDuration" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 300
-                      }
-                    }
-                  }
-                },
-                "globalTextColorOpacity" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalLayoutIsolation" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : ""
-                      }
-                    }
-                  }
-                },
-                "globalBgImageRepeatEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "no-repeat"
-                      }
-                    }
-                  }
-                },
-                "globalTransformSkewX" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "globalTransformSkewXEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "globalFiltersState" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "start"
-                      }
-                    }
-                  }
-                },
-                "globalFiltersBlurEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "group:Spacing" : {
-                  "B" : false
-                },
-                "globalFiltersBackdropBlur" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "globalControlTypeTransforms" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "none"
-                      }
-                    }
-                  }
-                },
-                "globalHeight" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "auto",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "leftSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "md",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "group:Sizing" : {
-                  "B" : false
-                },
-                "globalOpacityEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalTransformRotate" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "globalFiltersDropShadow" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TSH" : {
-                          "themeShadowName" : "none",
-                          "shadows" : [
-                            {
-                              "radius" : 10,
-                              "x" : 0,
-                              "y" : 5,
-                              "inner" : false,
-                              "color" : "0 0 0 0.5"
-                            }
-                          ]
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalBordersColorOpacityEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientDirection" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "bg-gradient-to-b"
-                      }
-                    }
-                  }
-                },
-                "content" : {
-                  "ST" : {
-                    "value" : "[{\"children\":[{\"text\":\"Le professeur\"}],\"type\":\"none\"}]",
-                    "hash" : "e40c13cfc0f612af3ef27ad6d32e12eb"
-                  }
-                },
-                "globalFiltersSaturate" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "linkColorHover" : {
-                  "TWC" : {
-                    "shade" : 800,
-                    "colorStripId" : "brand"
-                  }
-                },
-                "globalFiltersBrightness" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "linkFontWeight" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "400"
-                      }
-                    }
-                  }
-                },
-                "globalTransitionsDelay" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "globalControlTypeEffects" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "none"
-                      }
-                    }
-                  }
-                },
-                "globalFiltersBrightnessEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalFiltersBackdropBlurEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "globalTextTextDecorationStyle" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "solid"
-                      }
-                    }
-                  }
-                },
-                "globalHoverGroupFilters" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "self"
-                      }
-                    }
-                  }
-                },
-                "globalTextColorOpacityHover" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientFromColorEnd" : {
-                  "TWC" : {
-                    "shade" : 200,
-                    "colorStripId" : "brand"
-                  }
-                },
-                "globalTransformTranslateY" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "0px"
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientViaOpacity" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalBgType" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "color"
-                      }
-                    }
-                  }
-                },
-                "globalMinWidth" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "0",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "leftSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "md",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientFromColor" : {
-                  "TWC" : {
-                    "shade" : 200,
-                    "colorStripId" : "brand"
-                  }
-                },
-                "globalOpacity" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalBordersWidth" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TBW" : {
-                          "leftBorderWidthId" : "0",
-                          "topBorderWidthId" : "0",
-                          "rightBorderWidthId" : "0",
-                          "bottomBorderWidthId" : "0",
-                          "useCustomBorderWidth" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "group:Transitions" : {
-                  "B" : false
-                },
-                "globalBoxShadowEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TSH" : {
-                          "themeShadowName" : "Default",
-                          "shadows" : [
-                            {
-                              "radius" : 10,
-                              "x" : 0,
-                              "y" : 5,
-                              "inner" : false,
-                              "color" : "0 0 0 0.5"
-                            }
-                          ]
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalHoverGroupCustomIdFilters" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : ""
-                      }
-                    }
-                  }
-                },
-                "globalTextLineHeight" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "loose"
-                      }
-                    }
-                  }
-                },
-                "headingTextAlign" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "text-center"
-                      }
-                    }
-                  }
-                },
-                "globalTransformRotateEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "globalFiltersSaturateEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "group:Border" : {
-                  "B" : false
-                },
-                "globalTransformTranslateYEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "0px"
-                      }
-                    }
-                  }
-                },
-                "globalBordersColorEnd" : {
-                  "TWC" : {
-                    "shade" : 500,
-                    "colorStripId" : "surface"
-                  }
-                },
-                "globalMaxWidth" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "auto",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "leftSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "md",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalLayoutPosition" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : ""
-                      }
-                    }
-                  }
-                },
-                "group:Color" : {
-                  "B" : false
-                },
-                "globalLayoutZIndexType" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : ""
-                      }
-                    }
-                  }
-                },
-                "globalTextTextDecoration" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "no-underline"
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientViaEnabledEnd" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "B" : false
-                      }
-                    }
-                  }
-                },
-                "globalTransitionsProperty" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "all"
-                      }
-                    }
-                  }
-                },
-                "group:Filters" : {
-                  "B" : false
-                },
-                "globalTextWhiteSpace" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "none"
-                      }
-                    }
-                  }
-                },
-                "globalBordersColorOpacity" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "linkFontWeightVisited" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "400"
-                      }
-                    }
-                  }
-                },
-                "globalTextColor" : {
-                  "TWC" : {
-                    "shade" : 700,
-                    "colorStripId" : "red"
-                  }
-                },
-                "globalTextColorHover" : {
-                  "TWC" : {
-                    "shade" : 200,
-                    "colorStripId" : "text"
-                  }
-                },
-                "globalBgGradientToColor" : {
-                  "TWC" : {
-                    "colorStripId" : "brand",
-                    "shade" : 500
-                  }
-                },
-                "customTag" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : "div"
-                      }
-                    }
-                  }
-                },
-                "globalBoxShadow" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TSH" : {
-                          "themeShadowName" : "Default",
-                          "shadows" : [
-                            {
-                              "radius" : 10,
-                              "x" : 0,
-                              "y" : 5,
-                              "inner" : false,
-                              "color" : "0 0 0 0.5"
-                            }
-                          ]
-                        }
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientToPosition" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 100
-                      }
-                    }
-                  }
-                },
-                "globalPadding" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "0",
-                          "left" : 0,
-                          "singleId" : "md",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "0",
-                          "leftSpacingId" : "0",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "0",
-                          "leftSpacingNegated" : false
-                        }
-                      }
-                    }
-                  }
-                },
-                "cssClasses" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "S" : ""
-                      }
-                    }
-                  }
-                },
-                "globalBgGradientFromPosition" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "I" : 0
-                      }
-                    }
-                  }
-                },
-                "globalMaxHeight" : {
-                  "R" : {
-                    "responsiveValues" : {
-                      "base" : {
-                        "TS" : {
-                          "bottom" : 0,
-                          "linkVertical" : false,
-                          "linkHorizontal" : false,
-                          "topSpacingId" : "md",
-                          "left" : 0,
-                          "singleId" : "auto",
-                          "right" : 0,
-                          "top" : 0,
-                          "custom" : "",
-                          "singleSpacingNegated" : false,
-                          "bottomSpacingId" : "md",
-                          "leftSpacingId" : "md",
-                          "useCustomSpacing" : false,
-                          "topSpacingNegated" : false,
-                          "rightSpacingId" : "md",
-                          "leftSpacingNegated" : false
-                        }
                       }
                     }
                   }
@@ -2494,6 +732,1154 @@
                     "colorStripId" : "brand"
                   }
                 },
+                "globalControlTypeFilters" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "none"
+                      }
+                    }
+                  }
+                },
+                "globalTransformSkewX" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalTransformTranslateY" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "0px"
+                      }
+                    }
+                  }
+                },
+                "cssClasses" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : ""
+                      }
+                    }
+                  }
+                },
+                "globalControlTypeBorders" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "none"
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientFromPosition" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalBgImageSizeEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "cover"
+                      }
+                    }
+                  }
+                },
+                "globalBordersStyleEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "solid"
+                      }
+                    }
+                  }
+                },
+                "globalTransformScaleEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "group:Transitions" : {
+                  "B" : false
+                },
+                "linkColor" : {
+                  "TWC" : {
+                    "colorStripId" : "brand",
+                    "shade" : 500
+                  }
+                },
+                "globalBordersStyle" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "solid"
+                      }
+                    }
+                  }
+                },
+                "globalHoverGroupTransforms" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "self"
+                      }
+                    }
+                  }
+                },
+                "globalBordersWidthEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TBW" : {
+                          "topBorderWidthId" : "0",
+                          "rightBorderWidthId" : "0",
+                          "bottomBorderWidthId" : "0",
+                          "leftBorderWidthId" : "0",
+                          "useCustomBorderWidth" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalBgImagePosition" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "center"
+                      }
+                    }
+                  }
+                },
+                "globalHoverGroupEffects" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "self"
+                      }
+                    }
+                  }
+                },
+                "rwGlobalOverridesGroup" : {
+                  "B" : false
+                },
+                "globalHoverGroupCustomIdTransforms" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : ""
+                      }
+                    }
+                  }
+                },
+                "globalControlTypeEffects" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "none"
+                      }
+                    }
+                  }
+                },
+                "linkUnderline" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "B" : false
+                      }
+                    }
+                  }
+                },
+                "globalTextTextDecorationColor" : {
+                  "TWC" : {
+                    "colorStripId" : "text",
+                    "shade" : 100
+                  }
+                },
+                "globalTextTextDecoration" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "no-underline"
+                      }
+                    }
+                  }
+                },
+                "globalBordersWidth" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TBW" : {
+                          "topBorderWidthId" : "0",
+                          "useCustomBorderWidth" : false,
+                          "bottomBorderWidthId" : "0",
+                          "rightBorderWidthId" : "0",
+                          "leftBorderWidthId" : "0"
+                        }
+                      }
+                    }
+                  }
+                },
+                "group:Effects" : {
+                  "B" : false
+                },
+                "globalBoxShadowEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TSH" : {
+                          "themeShadowName" : "Default",
+                          "shadows" : [
+                            {
+                              "y" : 5,
+                              "radius" : 10,
+                              "x" : 0,
+                              "inner" : false,
+                              "color" : "0 0 0 0.5"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalTransformSkewY" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientToOpacityEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalPadding" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "0",
+                          "rightSpacingId" : "0",
+                          "bottomSpacingId" : "0",
+                          "singleId" : "md",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "0",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalTransformTranslateXEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "0px"
+                      }
+                    }
+                  }
+                },
+                "globalBgImageSize" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "cover"
+                      }
+                    }
+                  }
+                },
+                "globalLayoutVisibility" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : ""
+                      }
+                    }
+                  }
+                },
+                "globalLayoutLeft" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "md",
+                          "rightSpacingId" : "md",
+                          "bottomSpacingId" : "md",
+                          "singleId" : "md",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "md",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalTextColorOpacityHover" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalLayoutHidden" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "B" : false
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientViaOpacity" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalControlTypeBg" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "static"
+                      }
+                    }
+                  }
+                },
+                "globalControlTypeTransforms" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "none"
+                      }
+                    }
+                  }
+                },
+                "content" : {
+                  "ST" : {
+                    "value" : "[{\"type\":\"none\",\"children\":[{\"text\":\"Le professeur\"}]}]",
+                    "hash" : "e40c13cfc0f612af3ef27ad6d32e12eb"
+                  }
+                },
+                "headingTextAlign" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "text-center"
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientViaEnabled" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "B" : false
+                      }
+                    }
+                  }
+                },
+                "globalTransformScale" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalTextLineHeight" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "loose"
+                      }
+                    }
+                  }
+                },
+                "linkColorVisited" : {
+                  "TWC" : {
+                    "colorStripId" : "brand",
+                    "shade" : 800
+                  }
+                },
+                "globalOpacity" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "group:Sizing" : {
+                  "B" : false
+                },
+                "globalFiltersBlur" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientFromOpacity" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "group:Links" : {
+                  "B" : false
+                },
+                "globalTextLetterSpacing" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "normal"
+                      }
+                    }
+                  }
+                },
+                "globalLayoutTop" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "rightSpacingId" : "md",
+                          "topSpacingNegated" : false,
+                          "singleId" : "md",
+                          "topSpacingId" : "md",
+                          "left" : 0,
+                          "bottom" : 0,
+                          "linkHorizontal" : false,
+                          "right" : 0,
+                          "useCustomSpacing" : false,
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "top" : 0,
+                          "leftSpacingId" : "md",
+                          "linkVertical" : false,
+                          "bottomSpacingId" : "md",
+                          "leftSpacingNegated" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalEffectsState" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "start"
+                      }
+                    }
+                  }
+                },
+                "globalHoverGroupCustomIdFilters" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : ""
+                      }
+                    }
+                  }
+                },
+                "globalTransitionsProperty" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "all"
+                      }
+                    }
+                  }
+                },
+                "group:General" : {
+                  "B" : true
+                },
+                "linkColorHover" : {
+                  "TWC" : {
+                    "shade" : 800,
+                    "colorStripId" : "brand"
+                  }
+                },
+                "globalTextFontSize" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "2xl"
+                      }
+                    }
+                  }
+                },
+                "globalTextWhiteSpace" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "none"
+                      }
+                    }
+                  }
+                },
+                "globalTextTextDecorationStyle" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "solid"
+                      }
+                    }
+                  }
+                },
+                "globalFiltersBrightness" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientToPosition" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalTransitionsTimingFunctionCustom" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "0.95,0.05,0.795,0.035"
+                      }
+                    }
+                  }
+                },
+                "globalLayoutTopRightBottomLeftType" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "none"
+                      }
+                    }
+                  }
+                },
+                "globalTransformTranslateYEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "0px"
+                      }
+                    }
+                  }
+                },
+                "globalTextTextDecorationOffset" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 1
+                      }
+                    }
+                  }
+                },
+                "group:Layout" : {
+                  "B" : false
+                },
+                "globalTextItalic" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "B" : false
+                      }
+                    }
+                  }
+                },
+                "globalLayoutRight" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "md",
+                          "rightSpacingId" : "md",
+                          "bottomSpacingId" : "md",
+                          "singleId" : "md",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "md",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientDirection" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "bg-gradient-to-b"
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientFromOpacityEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalFiltersBackdropBlurEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalTransformSkewYEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalTextFontFamily" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "heading"
+                      }
+                    }
+                  }
+                },
+                "globalTransformOrigin" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "center"
+                      }
+                    }
+                  }
+                },
+                "globalLayoutZIndexType" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : ""
+                      }
+                    }
+                  }
+                },
+                "globalBgImageRepeatEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "no-repeat"
+                      }
+                    }
+                  }
+                },
+                "globalLayoutInset" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "md",
+                          "rightSpacingId" : "md",
+                          "bottomSpacingId" : "md",
+                          "singleId" : "md",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "md",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientToColor" : {
+                  "TWC" : {
+                    "colorStripId" : "brand",
+                    "shade" : 500
+                  }
+                },
+                "globalHoverGroupCustomIdEffects" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : ""
+                      }
+                    }
+                  }
+                },
+                "globalSizingMinMaxEnabled" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "B" : false
+                      }
+                    }
+                  }
+                },
+                "group:Color" : {
+                  "B" : false
+                },
+                "globalMargin" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "0",
+                          "rightSpacingId" : "0",
+                          "bottomSpacingId" : "0",
+                          "singleId" : "md",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "0",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalTransitionsDelay" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalTextColorHover" : {
+                  "TWC" : {
+                    "shade" : 200,
+                    "colorStripId" : "text"
+                  }
+                },
+                "group:Advanced" : {
+                  "B" : false
+                },
+                "globalBgGradientViaEnabledEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "B" : false
+                      }
+                    }
+                  }
+                },
+                "globalHoverGroupFilters" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "self"
+                      }
+                    }
+                  }
+                },
+                "globalTextColorOpacity" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalBgImageRepeat" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "no-repeat"
+                      }
+                    }
+                  }
+                },
+                "globalFiltersDropShadow" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TSH" : {
+                          "shadows" : [
+                            {
+                              "color" : "0 0 0 0.5",
+                              "y" : 5,
+                              "inner" : false,
+                              "radius" : 10,
+                              "x" : 0
+                            }
+                          ],
+                          "themeShadowName" : "none"
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalMinHeight" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "md",
+                          "rightSpacingId" : "md",
+                          "bottomSpacingId" : "md",
+                          "singleId" : "0",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "md",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalBordersRadiusEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TBR" : {
+                          "bottomRightBorderRadiusId" : "Default",
+                          "topRight" : 0,
+                          "bottomRight" : 0,
+                          "bottomLeftBorderRadiusId" : "Default",
+                          "useCustomBorderRadius" : false,
+                          "topLeftBorderRadiusId" : "Default",
+                          "bottomLeft" : 0,
+                          "topLeft" : 0,
+                          "topRightBorderRadiusId" : "Default"
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientToOpacity" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalTransformSkewXEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalOpacityEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalLayoutOverflow" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : ""
+                      }
+                    }
+                  }
+                },
+                "globalBgType" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "color"
+                      }
+                    }
+                  }
+                },
+                "globalBordersColor" : {
+                  "TWC" : {
+                    "colorStripId" : "surface",
+                    "shade" : 500
+                  }
+                },
+                "globalTextTextDecorationOpacity" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalFiltersDropShadowEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TSH" : {
+                          "themeShadowName" : "none",
+                          "shadows" : [
+                            {
+                              "radius" : 10,
+                              "inner" : false,
+                              "color" : "0 0 0 0.5",
+                              "y" : 5,
+                              "x" : 0
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalTransitionsDuration" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 300
+                      }
+                    }
+                  }
+                },
+                "globalLayoutPosition" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : ""
+                      }
+                    }
+                  }
+                },
+                "globalHeight" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "md",
+                          "rightSpacingId" : "md",
+                          "bottomSpacingId" : "md",
+                          "singleId" : "auto",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "md",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "customTag" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "div"
+                      }
+                    }
+                  }
+                },
+                "globalFiltersBlurEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalTransformsState" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "start"
+                      }
+                    }
+                  }
+                },
+                "globalBordersRadius" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TBR" : {
+                          "bottomRightBorderRadiusId" : "Default",
+                          "topRight" : 0,
+                          "bottomRight" : 0,
+                          "bottomLeftBorderRadiusId" : "Default",
+                          "useCustomBorderRadius" : false,
+                          "topLeftBorderRadiusId" : "Default",
+                          "bottomLeft" : 0,
+                          "topLeft" : 0,
+                          "topRightBorderRadiusId" : "Default"
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalTransformRotateEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalWidth" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "md",
+                          "rightSpacingId" : "md",
+                          "bottomSpacingId" : "md",
+                          "singleId" : "auto",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "md",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalFiltersState" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "start"
+                      }
+                    }
+                  }
+                },
+                "globalLayoutZIndex" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "linkUnderlineHover" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "B" : false
+                      }
+                    }
+                  }
+                },
+                "globalHoverGroupBg" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "self"
+                      }
+                    }
+                  }
+                },
                 "globalBgGradientViaPosition" : {
                   "R" : {
                     "responsiveValues" : {
@@ -2503,8 +1889,277 @@
                     }
                   }
                 },
-                "group:Layout" : {
+                "group:Filters" : {
                   "B" : false
+                },
+                "globalTransitionsTimingFunction" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "ease-in-out"
+                      }
+                    }
+                  }
+                },
+                "globalFiltersBackdropBlur" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "linkFontWeight" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "400"
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientToColorEnd" : {
+                  "TWC" : {
+                    "shade" : 500,
+                    "colorStripId" : "brand"
+                  }
+                },
+                "globalTextColor" : {
+                  "TWC" : {
+                    "colorStripId" : "red",
+                    "shade" : 700
+                  }
+                },
+                "globalTextTextShadow" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TSH" : {
+                          "shadows" : [
+                            {
+                              "x" : 0,
+                              "y" : 5,
+                              "inner" : false,
+                              "color" : "0 0 0 0.5",
+                              "radius" : 10
+                            }
+                          ],
+                          "themeShadowName" : "none"
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalMaxWidth" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "md",
+                          "rightSpacingId" : "md",
+                          "bottomSpacingId" : "md",
+                          "singleId" : "auto",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "md",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "group:Spacing" : {
+                  "B" : false
+                },
+                "globalBordersColorOpacity" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalLayoutIsolation" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : ""
+                      }
+                    }
+                  }
+                },
+                "globalTransformTranslateX" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "0px"
+                      }
+                    }
+                  }
+                },
+                "group:Transforms" : {
+                  "B" : false
+                },
+                "globalFiltersBrightnessEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "linkFontWeightVisited" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "400"
+                      }
+                    }
+                  }
+                },
+                "globalSpacingEnabled" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "B" : false
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientFromColorEnd" : {
+                  "TWC" : {
+                    "shade" : 200,
+                    "colorStripId" : "brand"
+                  }
+                },
+                "linkFontWeightHover" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "400"
+                      }
+                    }
+                  }
+                },
+                "linkState" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "default"
+                      }
+                    }
+                  }
+                },
+                "globalMaxHeight" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "rightSpacingId" : "md",
+                          "topSpacingNegated" : false,
+                          "singleId" : "auto",
+                          "topSpacingId" : "md",
+                          "left" : 0,
+                          "bottom" : 0,
+                          "linkHorizontal" : false,
+                          "right" : 0,
+                          "useCustomSpacing" : false,
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "top" : 0,
+                          "leftSpacingId" : "md",
+                          "linkVertical" : false,
+                          "bottomSpacingId" : "md",
+                          "leftSpacingNegated" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientFromColor" : {
+                  "TWC" : {
+                    "colorStripId" : "brand",
+                    "shade" : 200
+                  }
+                },
+                "globalLayoutBottom" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "md",
+                          "rightSpacingId" : "md",
+                          "bottomSpacingId" : "md",
+                          "singleId" : "md",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "md",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalBordersColorEnd" : {
+                  "TWC" : {
+                    "colorStripId" : "surface",
+                    "shade" : 500
+                  }
+                },
+                "globalTextTextTransform" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "[font-variant-caps:small-caps]"
+                      }
+                    }
+                  }
+                },
+                "linkUnderlineVisited" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "B" : false
+                      }
+                    }
+                  }
+                },
+                "globalFiltersSaturate" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalBgImageFetchPriority" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "auto"
+                      }
+                    }
+                  }
                 },
                 "tag" : {
                   "R" : {
@@ -2514,55 +2169,403 @@
                       }
                     }
                   }
+                },
+                "globalBgGradientViaColor" : {
+                  "TWC" : {
+                    "colorStripId" : "brand",
+                    "shade" : 400
+                  }
+                },
+                "globalTextFontWeight" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "700"
+                      }
+                    }
+                  }
+                },
+                "globalBgGradientDirectionEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "bg-gradient-to-b"
+                      }
+                    }
+                  }
+                },
+                "globalID" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : ""
+                      }
+                    }
+                  }
+                },
+                "globalFiltersSaturateEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalMinWidth" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TS" : {
+                          "bottom" : 0,
+                          "leftSpacingNegated" : false,
+                          "right" : 0,
+                          "topSpacingNegated" : false,
+                          "topSpacingId" : "md",
+                          "rightSpacingId" : "md",
+                          "bottomSpacingId" : "md",
+                          "singleId" : "0",
+                          "linkHorizontal" : false,
+                          "leftSpacingId" : "md",
+                          "custom" : "",
+                          "singleSpacingNegated" : false,
+                          "left" : 0,
+                          "useCustomSpacing" : false,
+                          "top" : 0,
+                          "linkVertical" : false
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalTransformRotate" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 0
+                      }
+                    }
+                  }
+                },
+                "globalBoxShadow" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "TSH" : {
+                          "shadows" : [
+                            {
+                              "y" : 5,
+                              "radius" : 10,
+                              "color" : "0 0 0 0.5",
+                              "inner" : false,
+                              "x" : 0
+                            }
+                          ],
+                          "themeShadowName" : "Default"
+                        }
+                      }
+                    }
+                  }
+                },
+                "globalBordersColorOpacityEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "I" : 100
+                      }
+                    }
+                  }
+                },
+                "globalBgState" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "start"
+                      }
+                    }
+                  }
+                },
+                "globalBgImagePositionEnd" : {
+                  "R" : {
+                    "responsiveValues" : {
+                      "base" : {
+                        "S" : "center"
+                      }
+                    }
+                  }
                 }
               },
-              "attributes" : {
-                "locked" : false,
-                "hidden" : false,
-                "userTitle" : "Titre Photo"
-              },
-              "globalContainerOverrides" : [
+              "globalPropertyOverrides" : [
 
               ],
-              "globalPropertyOverrides" : [
+              "globalContainerOverrides" : [
 
               ],
               "dataCollections" : [
 
               ]
             },
-            "identifier" : "rwFBCDDEA6_7DDB_42A7_90AF_CAFA609467DA"
+            "isLinkedGlobalRootNode" : false,
+            "anchors" : [
+
+            ],
+            "layoutViewExpanded" : true
           }
         },
-        "layoutViewExpanded" : true,
+        "isLinkedGlobalRootNode" : false,
         "anchors" : [
 
         ],
-        "isLinkedGlobalRootNode" : false,
-        "rootNodeIdentifier" : "rwFBCDDEA6_7DDB_42A7_90AF_CAFA609467DA",
-        "containers" : {
-
-        },
-        "context" : {
-          "attributes" : {
-            "locked" : false,
-            "hidden" : false
-          },
-          "globalContainerOverrides" : [
-
-          ],
-          "values" : {
-
-          },
-          "globalPropertyOverrides" : [
-
-          ],
-          "dataCollections" : [
-
-          ]
-        },
-        "elementId" : "com.realmacsoftware.rapidweaver.global"
+        "layoutViewExpanded" : true
       }
     }
+  },
+  "localization" : {
+
+  },
+  "rootPage" : {
+    "isIndex" : false,
+    "externalPageURL" : null,
+    "pageDescription" : null,
+    "expanded" : true,
+    "identifier" : "9BDCF9F3-D8B9-4A5A-A4CC-BF7971BE44F2",
+    "attributes" : {
+      "shouldAllowPreview" : true,
+      "excludeFromSitemap" : true,
+      "customSiteTitle" : "",
+      "linkOpensInNewWindow" : false,
+      "expiryUnit" : 0,
+      "shouldArchivePage" : true,
+      "shouldIndexPage" : true,
+      "customHeadStart" : "",
+      "customCSS" : "",
+      "customHeadEnd" : "",
+      "shouldFollowLinks" : true,
+      "customHeader" : "",
+      "customPageEnd" : "",
+      "lastChangedDate" : 1772830945681.509,
+      "shouldIndexImages" : true,
+      "enabled" : true,
+      "credit" : true,
+      "filename" : "",
+      "hidden" : false,
+      "changedStatuses" : {
+
+      },
+      "expires" : false,
+      "customBodyEnd" : "",
+      "customJavaScript" : "",
+      "customPageStart" : "",
+      "expiryQuantity" : 2,
+      "customBodyStart" : "",
+      "encoding" : 1,
+      "shouldEnableRobotTags" : true,
+      "useCustomSiteTitle" : false,
+      "shouldEnableSocialTags" : true
+    },
+    "kind" : "folder",
+    "children" : [
+      {
+        "isIndex" : true,
+        "externalPageURL" : null,
+        "pageDescription" : null,
+        "expanded" : true,
+        "identifier" : "39345835-CF9F-4209-9F64-8622D4750AAB",
+        "attributes" : {
+          "shouldAllowPreview" : true,
+          "excludeFromSitemap" : false,
+          "customSiteTitle" : "",
+          "backgroundColor" : {
+            "shade" : 500,
+            "darkColorStripId" : "none",
+            "colorStripId" : "none",
+            "darkShade" : 500
+          },
+          "linkOpensInNewWindow" : false,
+          "expiryUnit" : 0,
+          "shouldArchivePage" : true,
+          "shouldIndexPage" : true,
+          "customHeadStart" : "",
+          "customCSS" : "",
+          "customHeadEnd" : "",
+          "shouldFollowLinks" : true,
+          "customHeader" : "",
+          "customPageEnd" : "",
+          "lastChangedDate" : 1775217629542.0461,
+          "shouldIndexImages" : true,
+          "enabled" : true,
+          "credit" : true,
+          "filename" : "index.html",
+          "hidden" : false,
+          "changedStatuses" : {
+            "default" : true
+          },
+          "expires" : false,
+          "customBodyEnd" : "",
+          "customJavaScript" : "",
+          "customPageStart" : "",
+          "expiryQuantity" : 2,
+          "customBodyStart" : "",
+          "encoding" : 1,
+          "shouldEnableRobotTags" : true,
+          "useCustomSiteTitle" : false,
+          "shouldEnableSocialTags" : true
+        },
+        "kind" : "page",
+        "children" : [
+
+        ],
+        "browserTitle" : null,
+        "code" : null,
+        "iconIdentifier" : null,
+        "title" : "Accueil",
+        "manifests" : {
+
+        },
+        "createdDate" : 1772830945699.1492,
+        "uniqueID" : "page0"
+      },
+      {
+        "isIndex" : false,
+        "externalPageURL" : null,
+        "pageDescription" : null,
+        "expanded" : true,
+        "identifier" : "5080AB96-25BC-4F58-85E1-0CDF123B9C57",
+        "attributes" : {
+          "shouldAllowPreview" : true,
+          "excludeFromSitemap" : false,
+          "customSiteTitle" : "",
+          "linkOpensInNewWindow" : false,
+          "expiryUnit" : 0,
+          "shouldArchivePage" : true,
+          "shouldIndexPage" : true,
+          "customHeadStart" : "",
+          "customCSS" : "",
+          "customHeadEnd" : "",
+          "shouldFollowLinks" : true,
+          "customHeader" : "",
+          "foldername" : "",
+          "customPageEnd" : "",
+          "lastChangedDate" : 1774797912088.583,
+          "shouldIndexImages" : true,
+          "enabled" : true,
+          "credit" : true,
+          "filename" : "index.html",
+          "hidden" : false,
+          "changedStatuses" : {
+            "default" : true
+          },
+          "expires" : false,
+          "customBodyEnd" : "",
+          "customJavaScript" : "",
+          "expiryQuantity" : 2,
+          "customPageStart" : "",
+          "customBodyStart" : "",
+          "encoding" : 1,
+          "shouldEnableRobotTags" : true,
+          "useCustomSiteTitle" : false,
+          "shouldEnableSocialTags" : true
+        },
+        "kind" : "page",
+        "children" : [
+
+        ],
+        "browserTitle" : null,
+        "code" : null,
+        "iconIdentifier" : null,
+        "title" : "Le Dojo",
+        "manifests" : {
+
+        },
+        "createdDate" : 1773587598186.1738,
+        "uniqueID" : "page1"
+      }
+    ],
+    "browserTitle" : null,
+    "code" : null,
+    "iconIdentifier" : null,
+    "title" : "root",
+    "manifests" : {
+
+    },
+    "createdDate" : 1772830945681.6511,
+    "uniqueID" : "9BDCF9F3-D8B9-4A5A-A4CC-BF7971BE44F2"
+  },
+  "version" : 9,
+  "site" : {
+    "minifyExtraFiles" : true,
+    "baseURL" : "",
+    "themeName" : "Elements",
+    "wantsXMLSiteMap" : true,
+    "cruftlessLinks" : true,
+    "defaultFileExtension" : "html",
+    "allowDarkMode" : true,
+    "useCacheBusting" : true,
+    "title" : "My Website",
+    "consolidateCSSFiles" : true
+  },
+  "images" : {
+    "logoAltText" : "",
+    "webIcons" : {
+      "pinnedTab" : {
+        "type" : 3,
+        "autoGenerate" : false
+      },
+      "medium" : {
+        "type" : 1,
+        "autoGenerate" : false
+      },
+      "small" : {
+        "type" : 2,
+        "autoGenerate" : false
+      },
+      "faviconMedium" : {
+        "type" : 5,
+        "autoGenerate" : false
+      },
+      "large" : {
+        "type" : 0,
+        "autoGenerate" : false
+      },
+      "faviconSmall" : {
+        "type" : 6,
+        "autoGenerate" : false
+      },
+      "faviconLarge" : {
+        "type" : 4,
+        "autoGenerate" : false
+      }
+    }
+  },
+  "uiStateIdentifier" : "2A987E57-D371-46FE-A613-45727708CB70",
+  "social" : {
+    "useSocialTags" : true
+  },
+  "project" : {
+    "autoStartWebServer" : false,
+    "uniqueBackupName" : "A62A1E83-B765-4A54-863C-23E52DEA999F_rwbackup"
+  },
+  "rootPrefabNode" : {
+    "children" : [
+
+    ],
+    "kind" : {
+      "folder" : {
+
+      }
+    },
+    "expanded" : true,
+    "item" : null,
+    "identifier" : "B882DFBE-A2F0-4BDF-93F0-DDEE5FCE6403",
+    "title" : "Project"
+  },
+  "publishing" : {
+    "publishingDestinations" : [
+
+    ],
+    "publishSettingsConfigured" : false
+  },
+  "privacy" : {
+    "anonymiseThirdPartyRequests" : false
   }
 }
