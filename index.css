@@ -67,6 +67,7 @@
     .aspect-\[0\.42571428418159485\]{aspect-ratio:0.42571428418159485}
     .aspect-\[0\.6679999828338623\]{aspect-ratio:0.6679999828338623}
     .aspect-\[0\.7068607211112976\]{aspect-ratio:0.7068607211112976}
+    .aspect-\[0\.7072649598121643\]{aspect-ratio:0.7072649598121643}
     .aspect-\[0\.8823529481887817\]{aspect-ratio:0.8823529481887817}
     .aspect-\[1\.3333333730697632\]{aspect-ratio:1.3333333730697632}
     .aspect-\[1\.3346561193466187\]{aspect-ratio:1.3346561193466187}
@@ -385,6 +386,10 @@
   }
 }
 
+/* [data-rwx-droparea] {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+} */
 /* [data-rwx-droparea] {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
