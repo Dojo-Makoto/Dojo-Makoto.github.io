@@ -220,8 +220,8 @@
     .bg-opacity-\[50\%\]{--tw-bg-opacity:50%}
     .bg-opacity-\[80\%\]{--tw-bg-opacity:80%}
     .bg-opacity-\[88\%\]{--tw-bg-opacity:88%}
+    .bg-\[url\(resources\/dojo-ensemble\.jpg\)\]{background-image:url(resources/dojo-ensemble.jpg)}
     .bg-\[url\(resources\/soleil\.jpg\)\]{background-image:url(resources/soleil.jpg)}
-    .bg-\[url\(resources\/vue_dojo\.png\)\]{background-image:url(resources/vue_dojo.png)}
     .bg-auto{background-size:auto}
     .bg-contain{background-size:contain}
     .bg-left{background-position:left}

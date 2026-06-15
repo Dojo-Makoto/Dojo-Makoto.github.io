@@ -126,14 +126,19 @@
     .rounded-tr-full{border-top-right-radius:36.0rem}
     .rounded-tr-none{border-top-right-radius:0.0rem}
     .border-b-0{border-bottom-width:0.0rem}
+    .border-b-1{border-bottom-width:0.06rem}
     .border-b-2{border-bottom-width:0.125rem}
     .border-l-0{border-left-width:0.0rem}
+    .border-l-1{border-left-width:0.06rem}
     .border-l-2{border-left-width:0.125rem}
     .border-r-0{border-right-width:0.0rem}
+    .border-r-1{border-right-width:0.06rem}
     .border-r-2{border-right-width:0.125rem}
     .border-t-0{border-top-width:0.0rem}
+    .border-t-1{border-top-width:0.06rem}
     .border-t-2{border-top-width:0.125rem}
     .border-solid{border-style:solid}
+    .border-dotted{border-style:dotted}
     .border-gray-500\/\[100\%\]{border-color:rgb(107 114 128 / 100%)}
     .border-surface-300{--tw-border-opacity:1;border-color:rgb(170 188 207 / var(--tw-border-opacity))}
     .border-surface-500\/\[100\%\]{border-color:rgb(92 123 155 / 100%)}
@@ -149,7 +154,7 @@
     .bg-opacity-\[38\%\]{--tw-bg-opacity:38%}
     .bg-opacity-\[80\%\]{--tw-bg-opacity:80%}
     .bg-opacity-\[88\%\]{--tw-bg-opacity:88%}
-    .bg-\[url\(\.\.\/resources\/vue_dojo\.png\)\]{background-image:url(../resources/vue_dojo.png)}
+    .bg-\[url\(\.\.\/resources\/dojo-ensemble\.jpg\)\]{background-image:url(../resources/dojo-ensemble.jpg)}
     .bg-auto{background-size:auto}
     .bg-top{background-position:top}
     .bg-no-repeat{background-repeat:no-repeat}
@@ -204,6 +209,7 @@
     .opacity-0{opacity:0}
     .opacity-100{opacity:1}
     .opacity-\[100\%\]{opacity:100%}
+    .shadow{--tw-shadow:0px 2px 4px 0px rgba(26,41,82,0.20), 0px 6px 6px 0px rgba(26,41,82,0.20);--tw-shadow-colored:0px 2px 4px 0px var(--tw-shadow-color), 0px 6px 6px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
     .shadow-lg{--tw-shadow:0px 8px 12px 0px rgba(26,41,82,0.20), 0px 8px 17px 0px rgba(26,41,82,0.20);--tw-shadow-colored:0px 8px 12px 0px var(--tw-shadow-color), 0px 8px 17px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
     .shadow-none{--tw-shadow:;--tw-shadow-colored:;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}
     .ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}
@@ -250,7 +256,7 @@
     @media (min-width: 640px){.sm\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}
     @media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:w-\[42px\]{width:42px}.md\:flex-1{flex:1 1 0%}.md\:justify-end{justify-content:flex-end}.md\:gap-7{gap:1.75rem}.md\:bg-contain{background-size:contain}.md\:tracking-wider{letter-spacing:0.05em}}
     @media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:gap-12{gap:3.0rem}.lg\:bg-contain{background-size:contain}.lg\:text-2xl{font-size:1.50rem;line-height:2.00rem}.lg\:tracking-widest{letter-spacing:0.1em}}
-    @media (prefers-color-scheme: dark){.dark\:bg-surface-700{--tw-bg-opacity:1;background-color:rgb(59 81 105 / var(--tw-bg-opacity))}.dark\:bg-white-500{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.dark\:bg-opacity-\[100\%\]{--tw-bg-opacity:100%}.dark\:bg-opacity-\[38\%\]{--tw-bg-opacity:38%}.dark\:bg-opacity-\[80\%\]{--tw-bg-opacity:80%}.dark\:bg-opacity-\[88\%\]{--tw-bg-opacity:88%}.dark\:text-opacity-\[100\%\]{--tw-text-opacity:100%}.dark\:hover\:bg-surface-800:hover{--tw-bg-opacity:1;background-color:rgb(52 68 88 / var(--tw-bg-opacity))}.dark\:hover\:bg-opacity-\[100\%\]:hover{--tw-bg-opacity:100%}.dark\:hover\:text-opacity-\[100\%\]:hover{--tw-text-opacity:100%}.dark\:aria-\[current\=page\]\:text-opacity-\[100\%\][aria-current=page]{--tw-text-opacity:100%}}
+    @media (prefers-color-scheme: dark){.dark\:border-surface-300\/\[100\%\]{border-color:rgb(170 188 207 / 100%)}.dark\:bg-surface-700{--tw-bg-opacity:1;background-color:rgb(59 81 105 / var(--tw-bg-opacity))}.dark\:bg-white-500{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.dark\:bg-opacity-\[100\%\]{--tw-bg-opacity:100%}.dark\:bg-opacity-\[38\%\]{--tw-bg-opacity:38%}.dark\:bg-opacity-\[80\%\]{--tw-bg-opacity:80%}.dark\:bg-opacity-\[88\%\]{--tw-bg-opacity:88%}.dark\:text-opacity-\[100\%\]{--tw-text-opacity:100%}.dark\:hover\:bg-surface-800:hover{--tw-bg-opacity:1;background-color:rgb(52 68 88 / var(--tw-bg-opacity))}.dark\:hover\:bg-opacity-\[100\%\]:hover{--tw-bg-opacity:100%}.dark\:hover\:text-opacity-\[100\%\]:hover{--tw-text-opacity:100%}.dark\:aria-\[current\=page\]\:text-opacity-\[100\%\][aria-current=page]{--tw-text-opacity:100%}}
     .\[\&\>\*\]\:col-start-1>*{grid-column-start:1}
     .\[\&\>\*\]\:row-start-1>*{grid-row-start:1}
     .\[\&\>\*\]\:min-w-0>*{min-width:0.0rem}
