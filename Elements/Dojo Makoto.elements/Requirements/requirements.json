@@ -18,18 +18,10 @@
       "packVersion" : 1
     },
     {
-      "developerName" : "Multithemes",
-      "displayName" : "Info Pop-Up",
-      "elementId" : "com.multithemes.infopopup",
-      "packId" : "com.multithemes.infopopup",
-      "packName" : "com.multithemes.infopopup-v1-b6.elementspack",
-      "packVersion" : 1
-    },
-    {
       "developerName" : "Realmac Software",
       "displayName" : "Background",
       "elementId" : "com.realmacsoftware.background",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -38,7 +30,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Button",
       "elementId" : "com.realmacsoftware.button",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -47,7 +39,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Container",
       "elementId" : "com.realmacsoftware.container",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -56,7 +48,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Divider",
       "elementId" : "com.realmacsoftware.divider",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -65,16 +57,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Flex",
       "elementId" : "com.realmacsoftware.flex",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
-      "packId" : "com.realmac.corepack",
-      "packName" : "Core.elementspack",
-      "packVersion" : 2
-    },
-    {
-      "developerName" : "Realmac Software",
-      "displayName" : "Gallery",
-      "elementId" : "com.realmacsoftware.gallery",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -83,7 +66,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Grid",
       "elementId" : "com.realmacsoftware.grid",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -92,7 +75,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Image",
       "elementId" : "com.realmacsoftware.image",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -101,7 +84,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Image Slider",
       "elementId" : "com.realmacsoftware.imageSlider",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -110,7 +93,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Menu",
       "elementId" : "com.realmacsoftware.navbar",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -127,7 +110,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "SVG",
       "elementId" : "com.realmacsoftware.svg",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -136,7 +119,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Table",
       "elementId" : "com.realmacsoftware.table",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -145,7 +128,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Text",
       "elementId" : "com.realmacsoftware.text",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
@@ -154,7 +137,7 @@
       "developerName" : "Realmac Software",
       "displayName" : "Video",
       "elementId" : "com.realmacsoftware.video",
-      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/list",
+      "helpURL" : "https:\/\/docs.realmacsoftware.com\/elements-docs\/elements-app\/components\/built-in-components\/image-slider",
       "packId" : "com.realmac.corepack",
       "packName" : "Core.elementspack",
       "packVersion" : 2
