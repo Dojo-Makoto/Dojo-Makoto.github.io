@@ -330,6 +330,10 @@
   grid-column: 1 / -1;
   grid-row: 1 / -1;
 } */
+/* [data-rwx-droparea] {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+} */
  [x-cloak] {display: block !important;} /* Display block for testing only -  none by default *//* [data-rwx-droparea] {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
