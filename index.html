@@ -1,15 +1,15 @@
 <!doctype html>
 <html class="scroll-smooth" lang="fr">
  <head> 
-  <script defer src="rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=808674034"></script> 
-  <script defer src="rw/elements/com.realmac.corepack/alpine-focus.js?rwcache=808674034"></script> 
-  <script defer src="rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=808674034"></script> 
-  <script defer src="rw/elements/com.realmac.corepack/alpine-ui.js?rwcache=808674034"></script> 
-  <script defer src="rw/elements/com.realmac.corepack/alpine.js?rwcache=808674034"></script> 
-  <script src="rw/elements/com.realmac.corepack/smoothscroll.min.js?rwcache=808674034"></script> 
-  <script src="rw/elements/com.realmac.corepack/gsap.min.js?rwcache=808674034"></script> 
-  <script src="rw/elements/com.realmac.corepack/ScrollTrigger.min.js?rwcache=808674034"></script> 
-  <script src="rw/elements/com.realmac.corepack/gsap-effects.js?rwcache=808674034"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=808751812"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-focus.js?rwcache=808751812"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=808751812"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-ui.js?rwcache=808751812"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine.js?rwcache=808751812"></script> 
+  <script src="rw/elements/com.realmac.corepack/smoothscroll.min.js?rwcache=808751812"></script> 
+  <script src="rw/elements/com.realmac.corepack/gsap.min.js?rwcache=808751812"></script> 
+  <script src="rw/elements/com.realmac.corepack/ScrollTrigger.min.js?rwcache=808751812"></script> 
+  <script src="rw/elements/com.realmac.corepack/gsap-effects.js?rwcache=808751812"></script> 
   <meta charset="utf-8" /> 
   <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
   <meta name="viewport" content="width=device-width" /> 
@@ -25,13 +25,13 @@
   <meta property="og:image" content="https://www.aikido-marseille-makoto.fr/resources/photo_discipline.jpg" /> 
   <meta property="og:url" content="https://www.aikido-marseille-makoto.fr/" /> 
   <title>Accueil</title> 
-  <link href="index.css?rwcache=808674034" media="all" rel="stylesheet" type="text/css" /> 
-  <script src="rw/elements/com.realmac.corepack/effectsTransforms.js?rwcache=808674034"></script> 
-  <script src="rw/elements/com.realmac.corepack/modal.js?rwcache=808674034"></script> 
-  <script src="rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=808674034"></script> 
-  <script src="rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=808674034"></script> 
-  <script src="rw/elements/com.realmac.corepack/alpine-exit-intent.js?rwcache=808674034"></script> 
-  <script src="rw/elements/com.realmac.corepack/image-lightbox.js?rwcache=808674034"></script> 
+  <link href="index.css?rwcache=808751812" media="all" rel="stylesheet" type="text/css" /> 
+  <script src="rw/elements/com.realmac.corepack/effectsTransforms.js?rwcache=808751812"></script> 
+  <script src="rw/elements/com.realmac.corepack/modal.js?rwcache=808751812"></script> 
+  <script src="rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=808751812"></script> 
+  <script src="rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=808751812"></script> 
+  <script src="rw/elements/com.realmac.corepack/alpine-exit-intent.js?rwcache=808751812"></script> 
+  <script src="rw/elements/com.realmac.corepack/image-lightbox.js?rwcache=808751812"></script> 
   <style lang="css">
     /* Required for alpine.js x-cloak directive to work */
     [x-cloak] {
@@ -57,7 +57,7 @@
         /* Firefox */
     }
 </style> 
-  <link rel="stylesheet" type="text/css" media="all" href="rw/styles/consolidated.css?rwcache=808674034" /> 
+  <link rel="stylesheet" type="text/css" media="all" href="rw/styles/consolidated.css?rwcache=808751812" /> 
  </head> 
  <body class="bg-white-900 dark:bg-white-500"> 
   <div x-data="navigationStandard('mobile-menu-rwE1B67A3A_23FD_4B09_88A0_81160AADDA51')" class="relative z-50"> 
@@ -125,8 +125,7 @@
     </div> 
    </nav> 
   </header> 
-  <!--  Info Pop-Up b5 - new appear after option  --> 
-  <!--  This popup is designed for static sites. CMS-driven or dynamic sites require a dedicated cookie consent solution. --> 
+  <!--  Copyright Multithemes© Info Pop-Up B6 Elements V3 TW4  --> 
   <div x-data="{
 show: false,
 cookieAccepted: false,
@@ -178,7 +177,7 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
 }"> 
    <div class="   "> 
     <!-- root --> 
-    <div x-show="show" style="display:none" class=" fixed inset-0 bg-surface-950 dark:bg-surface-950 bg-opacity-[78%] dark:bg-opacity-[78%] z-[9999] "> 
+    <div x-show="show" style="display:none" class=" fixed inset-0 bg-surface-950/(--bg-opacity) dark:bg-surface-950/(--bg-opacity) [--bg-opacity:78%] z-[9999] "> 
     </div>
     <!-- overlay --> 
     <div x-show="show" style="display:none" class=" fixed inset-0 flex z-[9999] w-full px-2.5 pointer-events-none overflow-y-auto scrollbar-hide"> 
@@ -213,7 +212,6 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
     <!-- wrapper --> 
    </div> 
    <!-- root --> 
-   <!-- Copyright Multithemes© Proprietary code, reuse to create competing products (e.g. Elements App martket) is prohibited. --> 
    <div class="overflow-hidden relative block w-screen h-[400px]" id="rw399AF9B0_189A_479D_A313_5C3FE8845808"> 
     <div class="[clip:rect(0,_auto,_auto,_0)] absolute top-0 left-0 w-full h-full -z-10"> 
      <div class="block w-full h-full top-0 left-0 -z-10 [clip-path:_polygon(0_28%,100%_60%,100%_0%,0_0%)] fixed [will-change:transform] [transform:translateZ(0)] bg-[url(resources/dojo-ensemble.jpg)] bg-contain md:bg-contain bg-no-repeat bg-top"> 
@@ -353,9 +351,9 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
        <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-2 pb-2 pl-0 pr-0">
         <div class="transform-gpu inset-md block w-[40%] sm:w-[65%] md:w-[60%] lg:w-[70%] h-auto mt-auto mb-auto ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
          <picture> 
-          <source data-lightbox-role="light" srcset="resources/semaine-de-couverte.png" media="not all" /> 
+          <source data-lightbox-role="light" srcset="resources/semaine-d-couverte-5.png" media="not all" /> 
           <!-- Fallback img element --> 
-          <img class="cursor-zoom-in max-w-[100%] w-full object-center aspect-[0.7070000171661377]" src="resources/semaine-de-couverte.png" alt="" width="1414" height="2000" x-data="" data-lightbox-breakpoints="[{&quot;minWidth&quot;:0,&quot;enabled&quot;:true}]" @click="
+          <img class="cursor-zoom-in max-w-[100%] w-full object-center aspect-[0.7070000171661377]" src="resources/semaine-d-couverte-5.png" alt="" width="1414" height="2000" x-data="" data-lightbox-breakpoints="[{&quot;minWidth&quot;:0,&quot;enabled&quot;:true}]" @click="
                 const bps = JSON.parse($el.dataset.lightboxBreakpoints);
                 let enabled = false;
                 bps.forEach(bp => { if (window.innerWidth >= bp.minWidth) enabled = bp.enabled; });
@@ -555,15 +553,14 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
     <div class="z-0 transform-gpu overflow-hidden"> 
     </div> 
    </div>
-   <!-- Free Back to Top Button Component No - class or ID required --> 
+   <!-- Copyright ©Multithemes Back To Top FREE B4 Elements V3 TW4 --> 
    <div x-data="{ DisplayIcon: false }" x-init="window.addEventListener('scroll', () => { DisplayIcon = window.scrollY > 300; })" class="fixed right-6 bottom-6 z-50 "> 
-    <button x-show="DisplayIcon" x-cloak x-transition:enter="transform transition ease-out duration-300" x-transition:enter-start="translate-y-20 opacity-0" x-transition:enter-end="translate-y-0 translate-x-0 opacity-100" x-transition:leave="transform transition ease-in duration-300" x-transition:leave-start="translate-y-0 translate-x-0 opacity-100" x-transition:leave-end="translate-y-20 opacity-0" @click="window.scrollTo({ top: 0, behavior: 'smooth' })" class="  bg-blue-400 dark:bg-surface-700 bg-opacity-[80%] dark:bg-opacity-[80%] hover:bg-surface-800 dark:hover:bg-surface-800 hover:bg-opacity-[100%] dark:hover:bg-opacity-[100%] rounded-3xl text-white" title="Back to top button"> 
+    <button x-show="DisplayIcon" x-cloak x-transition:enter="transform transition ease-out duration-300" x-transition:enter-start="translate-y-20 opacity-0" x-transition:enter-end="translate-y-0 translate-x-0 opacity-100" x-transition:leave="transform transition ease-in duration-300" x-transition:leave-start="translate-y-0 translate-x-0 opacity-100" x-transition:leave-end="translate-y-20 opacity-0" @click="window.scrollTo({ top: 0, behavior: 'smooth' })" class="  bg-blue-400/(--bg-opacity) dark:bg-surface-700/(--bg-opacity) [--bg-opacity:80%] hover:bg-surface-800/(--bg-opacity) dark:hover:bg-surface-800/(--bg-opacity) hover:[--bg-opacity:100%] rounded-3xl text-white" title="Back to top button"> 
      <!-- icon --> 
      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 29" stroke="currentColor" class="w-10 h-10"> 
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.084,11.335L12,8.04L12,21.423L12,8.04L16.916,11.335" /> 
      </svg> </button> 
    </div> 
-   <!-- Copyright ©Multithemes Proprietary code, reuse to create competing products (e.g. Elements App martket) is prohibited. -->
    <div class="rw6F38C3CC_17B8_446A_9561_2A6BC34561F4 group/container group/rw6F38C3CC_17B8_446A_9561_2A6BC34561F4 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-[100px] mt-10 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
      <div class="group/rw66D496E3_AFE8_42DA_AA83_FFA235C4DDC8 group/flex transform flex w-full h-auto gap-x-4 gap-y-2 flex-row flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
