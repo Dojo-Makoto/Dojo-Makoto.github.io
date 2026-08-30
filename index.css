@@ -65,6 +65,7 @@
     .aspect-\[0\.8823529481887817\]{aspect-ratio:0.8823529481887817}
     .aspect-\[1\.3333333730697632\]{aspect-ratio:1.3333333730697632}
     .aspect-\[1\.3346561193466187\]{aspect-ratio:1.3346561193466187}
+    .aspect-\[1\]{aspect-ratio:1}
     .aspect-video{aspect-ratio:16 / 9}
     .size-6{width:1.5rem;height:1.5rem}
     .h-0{height:0.0rem}
@@ -236,6 +237,7 @@
     .pt-5{padding-top:1.25rem}
     .text-left{text-align:left}
     .text-center{text-align:center}
+    .text-right{text-align:right}
     .text-justify{text-align:justify}
     .font-body{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'sans-serif'}
     .font-heading{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'sans-serif'}
@@ -320,7 +322,7 @@
     .aria-\[current\=page\]\:text-shadow-lg[aria-current=page]{text-shadow:0px 8px 12px rgba(26,41,82,0.20), 0px 8px 17px rgba(26,41,82,0.20)}
     @media (min-width: 640px){.sm\:col-span-1{grid-column:span 1 / span 1}.sm\:w-\[40\%\]{width:40%}.sm\:w-\[65\%\]{width:65%}.sm\:grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}
     @media (min-width: 768px){.md\:col-span-1{grid-column:span 1 / span 1}.md\:flex{display:flex}.md\:hidden{display:none}.md\:w-\[42px\]{width:42px}.md\:w-\[60\%\]{width:60%}.md\:flex-1{flex:1 1 0%}.md\:grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:justify-end{justify-content:flex-end}.md\:gap-7{gap:1.75rem}.md\:bg-contain{background-size:contain}.md\:tracking-wider{letter-spacing:0.05em}}
-    @media (min-width: 1024px){.lg\:col-span-1{grid-column:span 1 / span 1}.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:w-\[40\%\]{width:40%}.lg\:w-\[70\%\]{width:70%}.lg\:grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:gap-12{gap:3.0rem}.lg\:text-2xl{font-size:1.50rem;line-height:2.00rem}.lg\:text-base{font-size:1.00rem;line-height:1.50rem}.lg\:tracking-widest{letter-spacing:0.1em}}
+    @media (min-width: 1024px){.lg\:col-span-1{grid-column:span 1 / span 1}.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:w-\[25\%\]{width:25%}.lg\:w-\[40\%\]{width:40%}.lg\:w-\[70\%\]{width:70%}.lg\:grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:gap-12{gap:3.0rem}.lg\:text-2xl{font-size:1.50rem;line-height:2.00rem}.lg\:text-base{font-size:1.00rem;line-height:1.50rem}.lg\:tracking-widest{letter-spacing:0.1em}}
     @media (prefers-color-scheme: dark){.dark\:bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity))}.dark\:bg-surface-100{--tw-bg-opacity:1;background-color:rgb(235 239 243 / var(--tw-bg-opacity))}.dark\:bg-surface-700{--tw-bg-opacity:1;background-color:rgb(59 81 105 / var(--tw-bg-opacity))}.dark\:bg-surface-950{--tw-bg-opacity:1;background-color:rgb(31 38 50 / var(--tw-bg-opacity))}.dark\:bg-white-500{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.dark\:bg-opacity-\[100\%\]{--tw-bg-opacity:100%}.dark\:bg-opacity-\[31\%\]{--tw-bg-opacity:31%}.dark\:bg-opacity-\[38\%\]{--tw-bg-opacity:38%}.dark\:bg-opacity-\[78\%\]{--tw-bg-opacity:78%}.dark\:bg-opacity-\[80\%\]{--tw-bg-opacity:80%}.dark\:bg-opacity-\[88\%\]{--tw-bg-opacity:88%}.dark\:text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity))}.dark\:text-brand-950{--tw-text-opacity:1;color:rgb(22 42 85 / var(--tw-text-opacity))}.dark\:text-opacity-\[100\%\]{--tw-text-opacity:100%}.dark\:hover\:bg-surface-800:hover{--tw-bg-opacity:1;background-color:rgb(52 68 88 / var(--tw-bg-opacity))}.dark\:hover\:bg-opacity-\[100\%\]:hover{--tw-bg-opacity:100%}.dark\:hover\:text-opacity-\[100\%\]:hover{--tw-text-opacity:100%}.dark\:aria-\[current\=page\]\:text-opacity-\[100\%\][aria-current=page]{--tw-text-opacity:100%}}
     .\[\&\>\*\]\:col-start-1>*{grid-column-start:1}
     .\[\&\>\*\]\:row-start-1>*{grid-row-start:1}
@@ -350,6 +352,10 @@
   }
 }
 
+/* [data-rwx-droparea] {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+} */
 /* [data-rwx-droparea] {
   grid-column: 1 / -1;
   grid-row: 1 / -1;

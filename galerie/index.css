@@ -103,6 +103,7 @@
     .gap-x-4{-moz-column-gap:1.0rem;column-gap:1.0rem}
     .gap-y-2{row-gap:0.5rem}
     .self-center{align-self:center}
+    .justify-self-auto{justify-self:auto}
     .justify-self-center{justify-self:center}
     .overflow-hidden{overflow:hidden}
     .overflow-y-auto{overflow-y:auto}
