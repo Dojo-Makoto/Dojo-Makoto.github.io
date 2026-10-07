@@ -1,15 +1,11 @@
 <!doctype html>
 <html class="scroll-smooth" lang="fr">
  <head> 
-  <script defer src="rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=812614159"></script> 
-  <script defer src="rw/elements/com.realmac.corepack/alpine-focus.js?rwcache=812614159"></script> 
-  <script defer src="rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=812614159"></script> 
-  <script defer src="rw/elements/com.realmac.corepack/alpine-ui.js?rwcache=812614159"></script> 
-  <script defer src="rw/elements/com.realmac.corepack/alpine.js?rwcache=812614159"></script> 
-  <script src="rw/elements/com.realmac.corepack/smoothscroll.min.js?rwcache=812614159"></script> 
-  <script src="rw/elements/com.realmac.corepack/gsap.min.js?rwcache=812614159"></script> 
-  <script src="rw/elements/com.realmac.corepack/ScrollTrigger.min.js?rwcache=812614159"></script> 
-  <script src="rw/elements/com.realmac.corepack/gsap-effects.js?rwcache=812614159"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=813051073"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=813051073"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=813051073"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=813051073"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine.js?rwcache=813051073"></script> 
   <meta charset="utf-8" /> 
   <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
   <meta name="viewport" content="width=device-width" /> 
@@ -25,13 +21,7 @@
   <meta property="og:image" content="https://www.aikido-marseille-makoto.fr/resources/photo_discipline.jpg" /> 
   <meta property="og:url" content="https://www.aikido-marseille-makoto.fr/" /> 
   <title>Accueil</title> 
-  <link href="index.css?rwcache=812614159" media="all" rel="stylesheet" type="text/css" /> 
-  <script src="rw/elements/com.realmac.corepack/effectsTransforms.js?rwcache=812614159"></script> 
-  <script src="rw/elements/com.realmac.corepack/modal.js?rwcache=812614159"></script> 
-  <script src="rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=812614159"></script> 
-  <script src="rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=812614159"></script> 
-  <script src="rw/elements/com.realmac.corepack/alpine-exit-intent.js?rwcache=812614159"></script> 
-  <script src="rw/elements/com.realmac.corepack/image-lightbox.js?rwcache=812614159"></script> 
+  <link href="index.css?rwcache=813051073" media="all" rel="stylesheet" type="text/css" /> 
   <style lang="css">
     /* Required for alpine.js x-cloak directive to work */
     [x-cloak] {
@@ -57,12 +47,12 @@
         /* Firefox */
     }
 </style> 
-  <link rel="stylesheet" type="text/css" media="all" href="rw/styles/consolidated.css?rwcache=812614159" /> 
+  <link rel="stylesheet" type="text/css" media="all" href="rw/styles/consolidated.css?rwcache=813051073" /> 
  </head> 
  <body class="bg-white-900 dark:bg-white-500"> 
   <div x-data="navigationStandard('mobile-menu-rwE1B67A3A_23FD_4B09_88A0_81160AADDA51')" class="relative z-50"> 
-   <div style="display: none" x-bind="backdrop" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 duration-150 pointer-events-none bg-surface-900 bg-opacity-[38%] dark:bg-opacity-[38%] backdrop-blur-[0px]" aria-hidden="true"></div> 
-   <div style="display: none" x-bind="menu" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full" class="fixed z-50 origin-top p-8 ring-1 ring-zinc-900/5 duration-150 overflow-y-auto bg-surface-50 bg-opacity-[88%] dark:bg-opacity-[88%] backdrop-blur-[0px] shadow-none rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none border-t-0 border-r-0 border-b-0 border-l-0 border-surface-900 inset-6" tabindex="-1"> 
+   <div style="display: none" x-bind="backdrop" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 duration-150 pointer-events-none bg-surface-900/(--mobile-backdrop-bg-opacity) [--mobile-backdrop-bg-opacity:38%] backdrop-blur-[0px]" aria-hidden="true"></div> 
+   <div style="display: none" x-bind="menu" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full" class="fixed z-50 origin-top p-8 ring-1 ring-zinc-900/5 duration-150 overflow-y-auto bg-surface-50/(--mobile-menu-bg-opacity) [--mobile-menu-bg-opacity:88%] backdrop-blur-[0px] shadow-none rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none border-t-0 border-r-0 border-b-0 border-l-0 border-surface-900 inset-6" tabindex="-1"> 
     <div class="flex items-center justify-between"> 
      <button aria-label="Close menu" type="button" @click="open = false" class="transition-all duration-[300ms] delay-[0ms] ease-in-out absolute inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer text-text-100 hover:text-red-700 top-8 right-8"> 
       <svg viewbox="0 0 24 24" aria-hidden="true" class="size-6 transition-colors duration-300 text-text-50 hover:text-text-50"> 
@@ -72,26 +62,26 @@
     <nav> 
      <ul class=""> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open" aria-current="page"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open" aria-current="page"> 
         <a class="flex justify-between items-center" href="./" aria-current="page">Accueil</a> 
        </div> </li> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
         <a class="flex justify-between items-center" href="le-dojo/">Le Dojo</a> 
        </div> </li> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
         <a class="flex justify-between items-center" href="les-cours/">Les cours</a> 
        </div> </li> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
         <a class="flex justify-between items-center" href="galerie/">Galerie</a> 
        </div> </li> 
      </ul> 
     </nav> 
    </div> 
   </div> 
-  <header class="group/rwE1B67A3A_23FD_4B09_88A0_81160AADDA51 group/navbar items-center flex w-full h-auto mt-0 mb-0 ml-auto mr-auto bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%]" id=""> 
+  <header class="group/rwE1B67A3A_23FD_4B09_88A0_81160AADDA51 group/navbar items-center flex w-full h-auto mt-0 mb-0 ml-auto mr-auto bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%]" id=""> 
    <nav class="mx-auto flex items-center justify-between container w-full h-auto pt-1 pb-2 pl-0 pr-0"> 
     <!-- Logo --> 
     <div class="flex md:flex-1 pt-0 pb-0 pl-4 pr-0"> 
@@ -108,16 +98,16 @@
     <!-- Desktop items --> 
     <div class="hidden md:flex gap-4 md:gap-7 lg:gap-12"> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="./" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out" aria-current="page"> Accueil </a> 
+      <a href="./" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out" aria-current="page"> Accueil </a> 
      </div> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="le-dojo/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Le Dojo </a> 
+      <a href="le-dojo/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Le Dojo </a> 
      </div> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="les-cours/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Les cours </a> 
+      <a href="les-cours/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Les cours </a> 
      </div> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="galerie/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Galerie </a> 
+      <a href="galerie/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Galerie </a> 
      </div> 
     </div> 
     <!-- Desktop right items --> 
@@ -187,12 +177,12 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
       <div class=" bg-surface-100 dark:bg-surface-100 overflow-hidden flex flex-col items-start pt-5 pb-5 pl-5 pr-5 rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl rounded-br-3xl w-full "> 
        <div class="group/rw4555E9F6_6038_4D96_A420_F6D18EBD7335 group/flex transform flex w-full h-auto gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
         <div class="transform-gpu block w-[100%] h-auto" id="" rwresourcedropzone="image"> 
-         <picture> 
+         <picture class="block"> 
           <!-- Fallback img element --> 
           <img class="max-w-[100%] w-full object-center aspect-[0.7070000171661377]" src="resources/semaine-d-couverte-5.png" alt="" width="1414" height="2000" decoding="async" /> 
          </picture> 
         </div>
-        <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> <span class="text-brand-500 dark:text-brand-950 font-body text-xl"><strong>Un cours d’essai gratuit ou 2 semaines découverte (soit 8 cours) pour 20€ pendant tout le mois de septembre 2026.</strong></span> </p> 
+        <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> <span class="text-brand-500 dark:text-brand-950 font-body text-xl"><strong>Un cours d’essai gratuit ou 2 semaines découverte (soit 8 cours) pour 20€ pendant tout le mois de septembre 2026.</strong></span> </p> 
        </div> 
        <div class=" flex items-center justify-between w-full p-2 w-full "> 
         <!-- actions --> 
@@ -202,7 +192,7 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
         </div> 
         <!-- readmore --> 
         <div @click="acceptCookies()" class=" "> 
-         <button class="group/button group/rw9F32E034_98A1_4946_B43B_FCE0913A42A1 flex items-center cursor-pointer flex w-auto h-auto mt-0 mb-0 ml-auto mr-auto pt-2 pb-2 pl-3.5 pr-3.5 transition-all duration-[300ms] delay-[0ms] ease-in-out bg-brand-500 dark:bg-red-600 bg-opacity-[100%] dark:bg-opacity-[100%] hover:bg-brand-500 hover:bg-opacity-[100%] dark:hover:bg-opacity-[100%] border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg border-surface-500/[100%] justify-center text-surface-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] leading-normal tracking-normal normal-case hover:text-surface-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none" id=""> OK </button> 
+         <button class="group/button group/rw9F32E034_98A1_4946_B43B_FCE0913A42A1 flex items-center cursor-pointer flex w-auto h-auto mt-0 mb-0 ml-auto mr-auto pt-2 pb-2 pl-3.5 pr-3.5 transition-all duration-[300ms] delay-[0ms] ease-in-out bg-brand-500/(--bgColorOpacity) dark:bg-red-600/(--bgColorOpacity) [--bgColorOpacity:100%] hover:bg-brand-500/(--bgColorOpacityEnd) hover:[--bgColorOpacityEnd:100%] border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg border-surface-500/[100%] justify-center text-center text-surface-50/(--buttonFontAndTextStylesColorOpacity) [--buttonFontAndTextStylesColorOpacity:100%] font-body text-base text-shadow-none font-[400] leading-normal tracking-normal normal-case hover:text-surface-50/(--buttonFontAndTextStylesColorOpacityHover) hover:[--buttonFontAndTextStylesColorOpacityHover:100%] hover:text-shadow-none" id=""> OK </button> 
         </div> 
        </div> 
        <!-- actions --> 
@@ -219,7 +209,7 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
     </div> 
     <div class="rw90C7B8CA_A06D_45A7_B584_DFE52743822C group/container group/rw90C7B8CA_A06D_45A7_B584_DFE52743822C grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-full" data-filter-tags="" id=""> 
      <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-0">
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-white-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-6xl font-[600] tracking-normal leading-normal not-italic text-shadow-xl [font-variant-caps:small-caps] whitespace-none text-center" id=""> Dojo d’Aïkido MAKOTO </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-white-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-6xl font-[600] tracking-normal leading-normal not-italic text-shadow-xl [font-variant-caps:small-caps] whitespace-none text-center" id=""> Dojo d’Aïkido MAKOTO </p>
      </div> 
      <div class="z-0 transform-gpu overflow-hidden"> 
      </div> 
@@ -227,13 +217,13 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
    </div>
    <div class="rw81D39F3C_8977_4535_8C8E_B3080341E0F1 group/container group/rw81D39F3C_8977_4535_8C8E_B3080341E0F1 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto" data-filter-tags="" id=""> 
     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md">
-     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-2 mb-0 ml-0 mr-0 pt-0 pb-3 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-base">Notre but est de faire vivre un Dojo d’Aïkido et d’y cultiver la transmission.</span> </p>
+     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-2 mb-0 ml-0 mr-0 pt-0 pb-3 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-base">Notre but est de faire vivre un Dojo d’Aïkido et d’y cultiver la transmission.</span> </p>
      <div class="group/rwAE7A2AD3_ED35_46E0_905D_E2BD83889771 group/grid grid w-full h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row auto-cols-max justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
       <div class="rw79410D49_F628_4756_9E8C_28B909D64B54 group/container group/rw79410D49_F628_4756_9E8C_28B909D64B54 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-1 row-span-auto grid w-[35%] sm:w-[40%] lg:w-[40%] h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
        <div class="relative z-30 flex flex-col peer w-auto h-auto self-start justify-self-auto gap-auto pt-4 pb-4 pl-auto pr-auto">
-        <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-5 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> L'Aïkido </p>
+        <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-5 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> L'Aïkido </p>
         <div class="transform-gpu block w-[100] h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-         <picture> 
+         <picture class="block"> 
           <!-- Fallback img element --> 
           <img class="max-w-[100%] w-full border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-800/[100%] object-center aspect-[0.42571428418159485]" src="resources/aikido-kanji.png" alt="" width="149" height="350" decoding="async" /> 
          </picture> 
@@ -244,7 +234,7 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
       </div>
       <div class="rw178775E2_5D88_4FEE_81A3_F38309E7AFEB group/container group/rw178775E2_5D88_4FEE_81A3_F38309E7AFEB grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-2 md:col-span-1 lg:col-span-2 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
        <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-        <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-2 pr-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-justify" id=""> <span class="text-base">L’Aïkido est issu et héritier d'une longue lignée d'Arts Martiaux japonais combinant des techniques de sabre, de lance et de combat à mains nues. </span><br /><span class="text-base">C'est une </span><span class="text-base"><strong>Voie martiale</strong></span><span class="text-base"> combinant techniques à mains nues, travail d’armes et méditation. </span><br /><span class="text-base"></span><br /><span class="text-base"><a title="Le Dojo" href="le-dojo/#Aikido">En savoir plus ...</a></span> </p>
+        <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-2 pr-2 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-justify" id=""> <span class="text-base">L’Aïkido est issu et héritier d'une longue lignée d'Arts Martiaux japonais combinant des techniques de sabre, de lance et de combat à mains nues.&nbsp;</span><br /><span class="text-base">C'est une&nbsp;</span><span class="text-base"><strong>Voie martiale</strong></span><span class="text-base">&nbsp;combinant techniques à mains nues, travail d’armes et méditation.&nbsp;</span><br /><span class="text-base"></span><br /><span class="text-base"><a href="le-dojo/#Aikido" title="Le Dojo">En savoir plus ...</a></span> </p>
        </div> 
        <div class="z-0 transform-gpu overflow-hidden"> 
        </div> 
@@ -260,15 +250,15 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
       <div class="rw095166A2_8AAA_478E_8C51_D255DD5030E6 group/container group/rw095166A2_8AAA_478E_8C51_D255DD5030E6 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
        <div class="relative z-30 flex flex-col peer container w-full h-auto self-start justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
         <div class="group/rw61BEA687_32AD_44C8_A29F_EC0130D9D73D group/flex transform flex w-full h-auto gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
-         <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> Le professeur </p>
+         <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> Le professeur </p>
          <div class="rw994239CD_8372_4C5F_AF34_EDD35581F744 group/container group/rw994239CD_8372_4C5F_AF34_EDD35581F744 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
           <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-auto pr-0">
            <a class="transform-gpu relative block w-[90%] h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" href="le-dojo/#Professeur" id="" rwresourcedropzone="image" target="" title="Le Dojo"> 
-            <picture> 
+            <picture class="block"> 
              <!-- Fallback img element --> 
-             <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-sm opacity-[100%] group-hover/flex:shadow group-hover/flex:opacity-[100%] brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[1.3346561193466187]" src="resources/photo_andre.jpg" alt="" width="4036" height="3024" loading="lazy" decoding="async" /> 
+             <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-sm shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] group-hover/flex:shadow group-hover/flex:shadow--500/(--box-shadow-opacity) group-hover/flex:[--box-shadow-opacity:100%] group-hover/flex:opacity-[100%] brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[1.3346561193466187]" src="resources/photo_andre.jpg" alt="" width="4036" height="3024" loading="lazy" decoding="async" /> 
             </picture> </a>
-           <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-[0px] mb-[0px] ml-[0px] mr-[0px] pt-4 pb-4 pl-4 pr-4 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> André Palmeri, 6ème dan, a débuté l'Aïkido dans les années 70.<br /> Il a suivi l’enseignement de Tamura Shihan ainsi que de Chiba Shihan. </p>
+           <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-[0px] mb-[0px] ml-[0px] mr-[0px] pt-4 pb-4 pl-4 pr-4 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> André Palmeri, 6ème dan, a débuté l'Aïkido dans les années 70.<br />&nbsp;Il a suivi l’enseignement de Tamura Shihan ainsi que de Chiba Shihan. </p>
           </div> 
           <div class="z-0 transform-gpu overflow-hidden"> 
           </div> 
@@ -281,15 +271,15 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
       <div class="rw2848F825_6716_4379_88E8_9B777EAE6E4E group/container group/rw2848F825_6716_4379_88E8_9B777EAE6E4E grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
        <div class="relative z-30 flex flex-col peer container w-full h-auto self-start justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
         <div class="group/rwD27CC7ED_047D_4D3D_A1DE_16E93D3D586D group/flex transform flex w-full h-auto gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
-         <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> Le Dojo </p>
+         <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> Le Dojo </p>
          <div class="rw9D50E327_144B_495A_B729_E0CCBE21368D group/container group/rw9D50E327_144B_495A_B729_E0CCBE21368D grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
           <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
            <a class="transform-gpu block w-[90%] h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" href="le-dojo/#Dojo" id="" rwresourcedropzone="image" target="" title="Le Dojo"> 
-            <picture> 
+            <picture class="block"> 
              <!-- Fallback img element --> 
-             <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-sm opacity-[100%] group-hover/flex:shadow group-hover/flex:opacity-[100%] brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[1.3333333730697632]" src="resources/20181204_195446.jpg" alt="" width="4032" height="3024" loading="lazy" decoding="async" /> 
+             <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-sm shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] group-hover/flex:shadow group-hover/flex:shadow--500/(--box-shadow-opacity) group-hover/flex:[--box-shadow-opacity:100%] group-hover/flex:opacity-[100%] brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[1.3333333730697632]" src="resources/20181204_195446.jpg" alt="" width="4032" height="3024" loading="lazy" decoding="async" /> 
             </picture> </a>
-           <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-4 pl-4 pr-4 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Depuis 1985, André Palmeri s'est consacré à l’enseignement de l’Aïkido en créant le Dojo Makoto. </p>
+           <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-4 pl-4 pr-4 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Depuis 1985, André Palmeri s'est consacré à l’enseignement de l’Aïkido en créant le Dojo Makoto.&nbsp; </p>
           </div> 
           <div class="z-0 transform-gpu overflow-hidden"> 
           </div> 
@@ -302,15 +292,15 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
       <div class="rwE9FE33D0_B079_4CCF_9E3B_5390386540EF group/container group/rwE9FE33D0_B079_4CCF_9E3B_5390386540EF grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
        <div class="relative z-30 flex flex-col peer container w-full h-auto self-start justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
         <div class="group/rw8E0A3DE6_DA42_46F6_9CB2_078B5FB4FE12 group/flex transform flex w-full h-auto gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
-         <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> Les cours </p>
+         <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> Les cours </p>
          <div class="rw97BC899B_62D0_43E1_AF89_88F34F183BF9 group/container group/rw97BC899B_62D0_43E1_AF89_88F34F183BF9 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
           <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
            <a class="transform-gpu block w-[90%] h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" href="les-cours/" id="" rwresourcedropzone="image" target="" title="Les cours"> 
-            <picture> 
+            <picture class="block"> 
              <!-- Fallback img element --> 
              <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[1.3333333730697632]" src="resources/img_3123.jpg" alt="" width="4032" height="3024" loading="lazy" decoding="async" /> 
             </picture> </a>
-           <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-4 pl-4 pr-4 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Les cours :<br />Horaires, accès au Dojo et contact. </p>
+           <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-4 pl-4 pr-4 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Les cours :<br />Horaires, accès au Dojo et contact. </p>
           </div> 
           <div class="z-0 transform-gpu overflow-hidden"> 
           </div> 
@@ -328,101 +318,18 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
    <div class="rw9F629B71_879A_42A3_87D9_0953BD3B0DAA group/container group/rw9F629B71_879A_42A3_87D9_0953BD3B0DAA grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-[75px] mt-3 mb-3 ml-auto mr-auto" data-filter-tags="" id=""> 
     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-auto gap-md pt-0 pb-0 pl-0 pr-0">
      <div class="transform-gpu block w-[50px] h-auto mt-0 mb-0 ml-3 mr-3 pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-      <picture> 
+      <picture class="block"> 
        <!-- Fallback img element --> 
        <img class="max-w-[100%] w-full object-center aspect-[0.8823529481887817]" src="resources/makoto_red.png" alt="" width="960" height="1088" decoding="async" /> 
       </picture> 
      </div>
     </div> 
-    <div class="z-0 transform-gpu bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+    <div class="z-0 transform-gpu bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] overflow-hidden"> 
     </div> 
    </div>
    <div class="rw9B0C27E7_BF40_4940_A280_6587AE97B934 group/container group/rw9B0C27E7_BF40_4940_A280_6587AE97B934 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 group/actus-section grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id="actus-section"> 
     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-auto mb-auto ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id="actus"> Les actualités </p>
-    </div> 
-    <div class="z-0 transform-gpu overflow-hidden"> 
-    </div> 
-   </div>
-   <div class="rw4FD7FAD8_22D2_45FC_AB42_AAD02B2001F0 group/container group/rw4FD7FAD8_22D2_45FC_AB42_AAD02B2001F0 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-4 mb-4 ml-auto mr-auto" data-filter-tags="" id=""> 
-    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-     <div class="group/rwA1A003D6_64FC_4B61_BFD1_0C452C2850CB group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
-      <div class="rw1FA9A639_73EF_4C77_89D3_D46D74F912AC group/container group/rw1FA9A639_73EF_4C77_89D3_D46D74F912AC grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-auto sm:col-span-1 md:col-span-1 lg:col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
-       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-2 pb-2 pl-0 pr-0">
-        <div class="transform-gpu inset-md block w-[40%] sm:w-[65%] md:w-[60%] lg:w-[70%] h-auto mt-auto mb-auto ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-         <picture> 
-          <source data-lightbox-role="light" srcset="resources/semaine-d-couverte-5.png" media="not all" /> 
-          <!-- Fallback img element --> 
-          <img class="cursor-zoom-in max-w-[100%] w-full object-center aspect-[0.7070000171661377]" src="resources/semaine-d-couverte-5.png" alt="" width="1414" height="2000" x-data="" data-lightbox-breakpoints="[{&quot;minWidth&quot;:0,&quot;enabled&quot;:true}]" @click="
-                const bps = JSON.parse($el.dataset.lightboxBreakpoints);
-                let enabled = false;
-                bps.forEach(bp => { if (window.innerWidth >= bp.minWidth) enabled = bp.enabled; });
-                if (!enabled) return;
-                const pic = $el.closest('picture');
-                const light = pic &amp;&amp; pic.querySelector('source[data-lightbox-role=&quot;light&quot;]');
-                const dark = pic &amp;&amp; pic.querySelector('source[data-lightbox-role=&quot;dark&quot;]');
-                $dispatch('image-lightbox-open', {
-                    id: 'rw97B387CA_542A_44A8_9B75_B0DE98E652FF',
-                    src: (light &amp;&amp; light.getAttribute('srcset')) || $el.currentSrc || $el.src,
-                    srcDark: (dark &amp;&amp; dark.getAttribute('srcset')) || null,
-                    alt: $el.alt,
-                });
-            " decoding="async" /> 
-         </picture> 
-        </div>
-       </div> 
-       <div class="z-0 transform-gpu overflow-hidden"> 
-       </div> 
-      </div>
-      <div class="rw56515F9E_9CCB_4EFD_AA2D_1A1419F12D83 group/container group/rw56515F9E_9CCB_4EFD_AA2D_1A1419F12D83 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
-       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-        <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <u><strong>Semaine de découverte</strong></u><br /><u><strong></strong></u><br />Un cours d’essai gratuit et/ou 2 semaines découverte (soit 8 cours) pour 20€ pendant tout le mois de <u><strong>septembre</strong></u> 2026.<br /><br />Assurance incluse, sans engagement.<br /><br /> </p>
-        <a class="group/button group/rw55E2EBA9_34ED_46CC_8CB8_F63B8D34FFC8 flex items-center cursor-pointer gap-x-2 flex w-auto h-auto mt-3 mb-3 ml-auto mr-auto pt-2 pb-2 pl-3.5 pr-3.5 transition-all duration-[300ms] delay-[0ms] ease-in-out transform origin-center scale-[95%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[0px] hover:scale-[100%] hover:rotate-[0deg] hover:skew-x-[0deg] hover:skew-y-[0deg] hover:translate-x-[0px] hover:translate-y-[0px] bg-gray-500 bg-opacity-[100%] dark:bg-opacity-[100%] hover:bg-red-700 hover:bg-opacity-[100%] dark:hover:bg-opacity-[100%] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full border-gray-500/[100%] justify-center text-surface-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] leading-normal tracking-normal normal-case hover:text-surface-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none" href="mailto:makoto.dojo@free.fr" id="" target=""> <strong>Contactez nous </strong> 
-         <div class="order-last"> 
-          <div class="w-8 h-auto block" id="" rwresourcedropzone="svg"> 
-           <svg class="w-8 h-auto" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" fill="currentColor">
-            <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm640-480L501-453q-5 3-10.5 4.5T480-447q-5 0-10.5-1.5T459-453L160-640v400h640v-400ZM480-520l320-200H160l320 200ZM160-640v10-59 1-32 32-.5 58.5-10 400-400Z" />
-           </svg> 
-          </div> 
-         </div> </a>
-       </div> 
-       <div class="z-0 transform-gpu overflow-hidden"> 
-       </div> 
-      </div>
-      <div class="rwD84F202E_D5EF_490E_948D_D4ECC2F4273E group/container group/rwD84F202E_D5EF_490E_948D_D4ECC2F4273E grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-auto sm:col-span-1 md:col-span-1 lg:col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
-       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-2 pb-2 pl-0 pr-0">
-        <div class="group/rwDB97FC9B_B729_41B3_B163_095B9EA0818F group/video relative aspect-video block w-[100%] h-auto" id="" rwresourcedropzone="video" x-data="videoPlayer('rwDB97FC9B_B729_41B3_B163_095B9EA0818F', 'mp4', 'undefined', {'autoplay':'immediate','loop':true,'muted':false,'controls':true,'wantsLightbox':false,'startAt':'2'})"> 
-         <div x-bind="trigger" class="absolute inset-0 z-10 cursor-pointer w-full h-full grid place-content-center bg-surface-50 dark:bg-surface-100 bg-opacity-[31%] dark:bg-opacity-[31%]"> 
-         </div> 
-         <picture x-show="!showVideo" x-ref="thumbnail" @click="showVideo = true" class="block relative w-full h-full z-0"> 
-          <source srcset="resources/capture-d-e-cran-2026-08-15-a--14.31.07.jpg" media="(prefers-color-scheme: light)" /> 
-          <source srcset="resources/capture-d-e-cran-2026-08-15-a--14.31.07.png" media="(prefers-color-scheme: dark)" /> 
-          <img src="resources/capture-d-e-cran-2026-08-15-a--14.31.07.jpg" alt="" class="absolute inset-0 z-0 cursor-pointer w-full h-full pt-0 pb-0 pl-0 pr-0 object-center" x-show="!showVideo" x-ref="thumbnail" @click="showVideo = true" /> 
-         </picture> 
-         <template x-if="showVideo"> 
-          <video x-show="showVideo" x-ref="video" x-bind="mp4" autoplay playsinline class="aspect-video w-full h-auto object-center pt-0 pb-0 pl-0 pr-0"> 
-           <source src="resources/rentre-e-2026-2-compresse.mp4" type="video/mp4" /> Your browser does not support the video tag. 
-          </video> 
-         </template> 
-        </div>
-       </div> 
-       <div class="z-0 transform-gpu overflow-hidden"> 
-       </div> 
-      </div> 
-     </div>
-     <div class="w-auto h-0.5 mt-0 mb-0 ml-4 mr-4 pt-0 pb-0 pl-0 pr-0 bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%]" aria-orientation="horizontal" id="" role="separator">
-       &nbsp; 
-     </div>
-     <div class="w-auto h-0.5 mt-0 mb-0 ml-4 mr-4 pt-0 pb-0 pl-0 pr-0 bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%]" aria-orientation="horizontal" id="" role="separator">
-       &nbsp; 
-     </div>
-    </div> 
-    <div class="z-0 transform-gpu overflow-hidden"> 
-    </div> 
-   </div>
-   <div class="rw4D9FBEA7_F3FC_45F3_86B0_F3C303ABBC3C group/container group/rw4D9FBEA7_F3FC_45F3_86B0_F3C303ABBC3C grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 group/actus-section grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id="actus-section"> 
-    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-auto mb-auto ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> Les actualités passées </p>
+     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-auto mb-auto ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id="actus"> Les actualités </p>
      <div class="rw631E9FF7_0C35_4401_B45B_6702CF942C3E group/container group/rw631E9FF7_0C35_4401_B45B_6702CF942C3E grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-4 mb-4 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
        <div class="group/rw6352C2D8_F66B_4A3C_AD1A_C8BC901D6A93 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
@@ -458,13 +365,97 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
         </div>
         <div class="rw3A3E1A71_89D8_4887_99A7_3913E9178D49 group/container group/rw3A3E1A71_89D8_4887_99A7_3913E9178D49 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-2 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
          <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <u><strong>Forum des associations Marseille 9ème</strong></u><br /><u><strong></strong></u><br />Le Dojo était présent au forum des assocations de la mairie Marseille 9ème !<br />Une belle énergie pour tenir le stand tout au long de cette journée.<br /><em></em><br /><br /> </p>
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-4 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <u><strong>Forum des associations Marseille 9ème</strong></u><br /><u><strong></strong></u><br />Le Dojo était présent au forum des assocations de la mairie Marseille 9ème !<br />Une belle énergie pour tenir le stand tout au long de cette journée.<br /><em></em><br /><br /> </p>
          </div> 
          <div class="z-0 transform-gpu overflow-hidden"> 
          </div> 
         </div> 
        </div>
-       <div class="w-auto h-0.5 mt-0 mb-0 ml-4 mr-4 pt-0 pb-0 pl-0 pr-0 bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%]" aria-orientation="horizontal" id="" role="separator">
+       <div class="w-auto h-0.5 mt-0 mb-0 ml-4 mr-4 pt-0 pb-0 pl-0 pr-0 bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%]" aria-orientation="horizontal" id="" role="separator">
+         &nbsp; 
+       </div>
+      </div> 
+      <div class="z-0 transform-gpu overflow-hidden"> 
+      </div> 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu overflow-hidden"> 
+    </div> 
+   </div>
+   <div class="rw4D9FBEA7_F3FC_45F3_86B0_F3C303ABBC3C group/container group/rw4D9FBEA7_F3FC_45F3_86B0_F3C303ABBC3C grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 group/actus-section grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id="actus-section"> 
+    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-auto mb-auto ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> Les actualités passées </p>
+     <div class="rw4FD7FAD8_22D2_45FC_AB42_AAD02B2001F0 group/container group/rw4FD7FAD8_22D2_45FC_AB42_AAD02B2001F0 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-4 mb-4 ml-auto mr-auto" data-filter-tags="" id=""> 
+      <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+       <div class="group/rwA1A003D6_64FC_4B61_BFD1_0C452C2850CB group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
+        <div class="rw1FA9A639_73EF_4C77_89D3_D46D74F912AC group/container group/rw1FA9A639_73EF_4C77_89D3_D46D74F912AC grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-auto sm:col-span-1 md:col-span-1 lg:col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-2 pb-2 pl-0 pr-0">
+          <div class="transform-gpu inset-md block w-[40%] sm:w-[65%] md:w-[60%] lg:w-[70%] h-auto mt-auto mb-auto ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+           <picture class="block"> 
+            <source data-lightbox-role="light" srcset="resources/semaine-d-couverte-5.png" media="not all" /> 
+            <!-- Fallback img element --> 
+            <img class="cursor-zoom-in max-w-[100%] w-full object-center aspect-[0.7070000171661377]" src="resources/semaine-d-couverte-5.png" alt="" width="1414" height="2000" x-data="" data-lightbox-breakpoints="[{&quot;minWidth&quot;:0,&quot;enabled&quot;:true}]" @click="
+                const bps = JSON.parse($el.dataset.lightboxBreakpoints);
+                let enabled = false;
+                bps.forEach(bp => { if (window.innerWidth >= bp.minWidth) enabled = bp.enabled; });
+                if (!enabled) return;
+                $event.preventDefault();
+                const pic = $el.closest('picture');
+                const light = pic &amp;&amp; pic.querySelector('source[data-lightbox-role=&quot;light&quot;]');
+                const dark = pic &amp;&amp; pic.querySelector('source[data-lightbox-role=&quot;dark&quot;]');
+                $dispatch('image-lightbox-open', {
+                    id: 'rw97B387CA_542A_44A8_9B75_B0DE98E652FF',
+                    src: (light &amp;&amp; light.getAttribute('srcset')) || $el.currentSrc || $el.src,
+                    srcDark: (dark &amp;&amp; dark.getAttribute('srcset')) || null,
+                    alt: $el.alt,
+                });
+            " decoding="async" /> 
+           </picture> 
+          </div>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div>
+        <div class="rw56515F9E_9CCB_4EFD_AA2D_1A1419F12D83 group/container group/rw56515F9E_9CCB_4EFD_AA2D_1A1419F12D83 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-4 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <u><strong>Semaine de découverte</strong></u><br /><u><strong></strong></u><br />Un cours d’essai gratuit et/ou 2 semaines découverte (soit 8 cours) pour 20€ pendant tout le mois de&nbsp;<u><strong>septembre</strong></u>&nbsp;2026.<br /><br />Assurance incluse, sans engagement.<br /><br /> </p>
+          <a class="group/button group/rw55E2EBA9_34ED_46CC_8CB8_F63B8D34FFC8 flex items-center cursor-pointer gap-x-2 flex w-auto h-auto mt-3 mb-3 ml-auto mr-auto pt-2 pb-2 pl-3.5 pr-3.5 transition-all duration-[300ms] delay-[0ms] ease-in-out transform origin-center scale-x-[95%] scale-y-[95%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[0px] hover:scale-x-[100%] hover:scale-y-[100%] hover:rotate-[0deg] hover:skew-x-[0deg] hover:skew-y-[0deg] hover:translate-x-[0px] hover:translate-y-[0px] bg-gray-500/(--bgColorOpacity) [--bgColorOpacity:100%] hover:bg-red-700/(--bgColorOpacityEnd) hover:[--bgColorOpacityEnd:100%] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full border-gray-500/[100%] justify-center text-center text-surface-50/(--buttonFontAndTextStylesColorOpacity) [--buttonFontAndTextStylesColorOpacity:100%] font-body text-base text-shadow-none font-[400] leading-normal tracking-normal normal-case hover:text-surface-50/(--buttonFontAndTextStylesColorOpacityHover) hover:[--buttonFontAndTextStylesColorOpacityHover:100%] hover:text-shadow-none" href="mailto:makoto.dojo@free.fr" id="" target=""> <strong>Contactez nous&nbsp;&nbsp;&nbsp;</strong> 
+           <div class="order-last"> 
+            <div class="w-8 h-auto block" id="" rwresourcedropzone="svg"> 
+             <svg class="w-8 h-auto" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" fill="currentColor">
+              <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm640-480L501-453q-5 3-10.5 4.5T480-447q-5 0-10.5-1.5T459-453L160-640v400h640v-400ZM480-520l320-200H160l320 200ZM160-640v10-59 1-32 32-.5 58.5-10 400-400Z" />
+             </svg> 
+            </div> 
+           </div> </a>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div>
+        <div class="rwD84F202E_D5EF_490E_948D_D4ECC2F4273E group/container group/rwD84F202E_D5EF_490E_948D_D4ECC2F4273E grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-auto sm:col-span-1 md:col-span-1 lg:col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-2 pb-2 pl-0 pr-0">
+          <div class="group/rwDB97FC9B_B729_41B3_B163_095B9EA0818F group/video relative aspect-video block w-[100%] h-auto" id="" rwresourcedropzone="video" x-data="videoPlayer('rwDB97FC9B_B729_41B3_B163_095B9EA0818F', 'mp4', '', {'autoplay':'immediate','loop':true,'muted':false,'controls':true,'wantsLightbox':false,'startAt':'2'})"> 
+           <div x-bind="trigger" class="absolute inset-0 z-10 cursor-pointer w-full h-full grid place-content-center bg-surface-50/(--overlay-bg-opacity) dark:bg-surface-100/(--overlay-bg-opacity) [--overlay-bg-opacity:31%]"> 
+           </div> 
+           <picture x-show="!showVideo" x-ref="thumbnail" @click="showVideo = true" class="block relative w-full h-full z-0"> 
+            <source srcset="resources/capture-d-e-cran-2026-08-15-a--14.31.07.jpg" media="(prefers-color-scheme: light)" /> 
+            <source srcset="resources/capture-d-e-cran-2026-08-15-a--14.31.07.png" media="(prefers-color-scheme: dark)" /> 
+            <img src="resources/capture-d-e-cran-2026-08-15-a--14.31.07.jpg" alt="" class="absolute inset-0 z-0 cursor-pointer w-full h-full pt-0 pb-0 pl-0 pr-0 object-center" x-show="!showVideo" x-ref="thumbnail" @click="showVideo = true" /> 
+           </picture> 
+           <template x-if="showVideo"> 
+            <video x-show="showVideo" x-ref="video" x-bind="mp4" preload="metadata" autoplay playsinline class="aspect-video w-full h-auto object-center pt-0 pb-0 pl-0 pr-0"> 
+             <source src="resources/rentre-e-2026-2-compresse.mp4" type="video/mp4" /> Your browser does not support the video tag. 
+            </video> 
+           </template> 
+          </div>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div> 
+       </div>
+       <div class="w-auto h-0.5 mt-0 mb-0 ml-4 mr-4 pt-0 pb-0 pl-0 pr-0 bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%]" aria-orientation="horizontal" id="" role="separator">
+         &nbsp; 
+       </div>
+       <div class="w-auto h-0.5 mt-0 mb-0 ml-4 mr-4 pt-0 pb-0 pl-0 pr-0 bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%]" aria-orientation="horizontal" id="" role="separator">
          &nbsp; 
        </div>
       </div> 
@@ -476,13 +467,13 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
        <div class="group/rwF1443C91_2EFC_4235_8A6E_CDBAEF326AB5 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
         <div class="rw7EEBC165_EC6C_4A18_9AF2_1ABC323580E6 group/container group/rw7EEBC165_EC6C_4A18_9AF2_1ABC323580E6 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
          <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <u><strong>Rentrée 2026 - Osoji</strong></u><br /><u><strong></strong></u><br />Le Dojo a rouvert le samedi 29 août. Grand nettoyage traditionnel du Dojo <br />Osoji 大掃除<br />Rerprise des cours aux horaires habituels dès lundi 31 août.<br /><a title="Galerie" href="galerie/#osoji">Un beau moment de partage ...</a><br /> </p>
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-4 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <u><strong>Rentrée 2026 - Osoji</strong></u><br /><u><strong></strong></u><br />Le Dojo a rouvert le samedi 29 août.&nbsp; Grand nettoyage traditionnel du Dojo&nbsp;<br />Osoji 大掃除<br />Rerprise des cours aux horaires habituels dès lundi 31 août.<br /><a href="galerie/#osoji" title="Galerie">Un beau moment de partage ...</a><br /> </p>
          </div> 
          <div class="z-0 transform-gpu overflow-hidden"> 
          </div> 
         </div> 
        </div>
-       <div class="w-auto h-0.5 mt-0 mb-0 ml-4 mr-4 pt-0 pb-0 pl-0 pr-0 bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%]" aria-orientation="horizontal" id="" role="separator">
+       <div class="w-auto h-0.5 mt-0 mb-0 ml-4 mr-4 pt-0 pb-0 pl-0 pr-0 bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%]" aria-orientation="horizontal" id="" role="separator">
          &nbsp; 
        </div>
       </div> 
@@ -498,7 +489,7 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
      <div class="group/rw3B748445_C87E_42C5_B17D_4A84149DA5BE group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
       <div class="rw22511929_D804_408E_9F36_9971DC3AF5BE group/container group/rw22511929_D804_408E_9F36_9971DC3AF5BE grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-2 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
        <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-        <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Avec le soutien de la ville de Marseille<br /> </p>
+        <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-4 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Avec le soutien de la ville de Marseille<br /> </p>
        </div> 
        <div class="z-0 transform-gpu overflow-hidden"> 
        </div> 
@@ -506,7 +497,7 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
       <div class="rwF5221116_C0DD_4674_9127_F52E85189543 group/container group/rwF5221116_C0DD_4674_9127_F52E85189543 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 col-span-auto sm:col-span-1 md:col-span-1 lg:col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
        <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-2 pb-2 pl-0 pr-0">
         <div class="transform-gpu inset-md block w-[10%] sm:w-[20%] md:w-[25%] lg:w-[20%] h-auto mt-auto mb-auto ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-         <picture> 
+         <picture class="block"> 
           <source data-lightbox-role="light" srcset="resources/logo_marseille.jpg" media="not all" /> 
           <!-- Fallback img element --> 
           <img class="cursor-zoom-in max-w-[100%] w-full object-center aspect-[1]" src="resources/logo_marseille.jpg" alt="" width="330" height="330" x-data="" data-lightbox-breakpoints="[{&quot;minWidth&quot;:0,&quot;enabled&quot;:true}]" @click="
@@ -514,6 +505,7 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
                 let enabled = false;
                 bps.forEach(bp => { if (window.innerWidth >= bp.minWidth) enabled = bp.enabled; });
                 if (!enabled) return;
+                $event.preventDefault();
                 const pic = $el.closest('picture');
                 const light = pic &amp;&amp; pic.querySelector('source[data-lightbox-role=&quot;light&quot;]');
                 const dark = pic &amp;&amp; pic.querySelector('source[data-lightbox-role=&quot;dark&quot;]');
@@ -534,7 +526,7 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
     </div> 
     <div class="z-0 transform-gpu overflow-hidden"> 
     </div> 
-    <div class="relative z-20 false  bg-surface-50 dark:bg-surface-100 bg-opacity-[100%] dark:bg-opacity-[100%]"></div> 
+    <div class="relative z-20 false  bg-surface-50/(--overlayColorOpacity) dark:bg-surface-100/(--overlayColorOpacity) [--overlayColorOpacity:100%]"></div> 
    </div>
    <!-- Copyright ©Multithemes Back To Top FREE B4 Elements V3 TW4 --> 
    <div x-data="{ DisplayIcon: false }" x-init="window.addEventListener('scroll', () => { DisplayIcon = window.scrollY > 300; })" class="fixed right-6 bottom-6 z-50 "> 
@@ -548,19 +540,19 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
      <div class="group/rw66D496E3_AFE8_42DA_AA83_FFA235C4DDC8 group/flex transform flex w-full h-auto gap-x-4 gap-y-2 flex-row flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
       <div class="transform-gpu block w-[150px] h-auto mt-0 mb-0 ml-3 mr-3 pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-       <picture> 
+       <picture class="block"> 
         <!-- Fallback img element --> 
         <img class="max-w-[100%] w-full object-center aspect-[0.8823529481887817]" src="resources/makoto_red.png" alt="" width="960" height="1088" decoding="async" /> 
        </picture> 
       </div>
       <div class="group/rw39182DCE_DB87_470F_A4B0_F203BDC64997 group/flex transform flex w-full h-auto gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-[normal] content-normal justify-center" data-filter-tags="" id=""> 
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[800] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Dojo d’Aïkido Makoto </p>
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> 47, avenue de Lattre de Tassigny - 13009 Marseille<br />Mail : <a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a> </p> 
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[800] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Dojo d’Aïkido Makoto </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> 47, avenue de Lattre de Tassigny - 13009 Marseille<br />Mail :&nbsp;<a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a> </p> 
       </div> 
      </div>
      <div class="rwCAB2A4C8_33B1_41FD_B9EA_ADB3A4052339 group/container group/rwCAB2A4C8_33B1_41FD_B9EA_ADB3A4052339 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-3 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-       <div class="group/rw15AF3B3C_2383_4579_B8D3_B0749106AC49 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
+       <div class="group/rw15AF3B3C_2383_4579_B8D3_B0749106AC49 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
         <a class="w-10 h-auto block mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0" href="https://www.youtube.com/@MakotoDojoAikidoMarseille" id="" rwresourcedropzone="svg" target=""> 
          <svg class="w-10 h-auto" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
           <path d="M31.331,8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673,0,0-10.007,0-12.502,.673-1.377,.37-2.461,1.462-2.829,2.848-.669,2.512-.669,7.752-.669,7.752,0,0,0,5.241,.669,7.752,.368,1.386,1.452,2.477,2.829,2.847,2.496,.673,12.502,.673,12.502,.673,0,0,10.007,0,12.502-.673,1.377-.37,2.461-1.462,2.829-2.847,.669-2.512,.669-7.752,.669-7.752,0,0,0-5.24-.669-7.752ZM12.727,20.758V11.242l8.364,4.758-8.364,4.758Z"></path>
@@ -575,124 +567,17 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
          </svg> </a> 
        </div>
       </div> 
-      <div class="z-0 transform-gpu bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+      <div class="z-0 transform-gpu bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] overflow-hidden"> 
       </div> 
      </div>
     </div> 
-    <div class="z-0 transform-gpu bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+    <div class="z-0 transform-gpu bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] overflow-hidden"> 
     </div> 
    </div> 
-   <script>
-    gsap.registerPlugin(ScrollTrigger);
-    document.addEventListener("DOMContentLoaded", () => {
-        const revealElements = document.querySelectorAll("[data-reveal]");
-        revealElements.forEach((element, index) => {
-            element.style.visibility = "hidden";
-            element.style.transitionProperty = "none";
-
-            const {
-                revealAnimation: animation = "fadeUpIn",
-                revealExitAnimation: exitAnimation = "fadeUpOut",
-                revealPlay: play = "enter-exit",
-                revealStart: start = "top bottom",
-                revealEnd: end = "top top",
-                revealDelay: delay = 0,
-                revealDuration: duration = 0.5,
-                revealEasing: easing = "power1.out",
-                revealDistance: distance = 200,
-                revealDegrees: degrees = 90,
-                revealScrub: scrub = false,
-                revealDebug: debug = false,
-                revealId,
-            } = element.dataset;
-
-            const id = `${revealId}-${index}`;
-            const wantsScrub = scrub === "true";
-            const wantsDebug = debug === "true";
-            const wantsExitAnimation = play == "enter-exit";
-            const playOnce = play == "enter-once";
-            const durationNumber = parseFloat(duration);
-            const delayNumber = parseFloat(delay);
-            const degreesNumber = parseFloat(degrees);
-            const degreesNumberOut = degreesNumber * -1;
-            
-            let triggeredOnce = false;
-            
-            const config = {
-                duration: durationNumber,
-                ease: easing,
-                delay: delayNumber,
-                distance: distance,
-                degrees: degreesNumber,
-                degreesOut: degreesNumberOut,
-                clearProps: "auto",
-                onComplete: () => {
-                    element.style.transitionProperty = "";
-                },
-            }
-
-            const markers = wantsDebug
-                ? {
-                    startColor: "green",
-                    endColor: "red",
-                    fontSize: "12px",
-                    fontWeight: "bold",
-                    indent: 20,
-                }
-                : false;
-
-            if (wantsScrub) {
-                gsap.effects[animation](element, {
-                    scrollTrigger: {
-                        trigger: element,
-                        start: start,
-                        end: end,
-                        scrub: true,
-                        markers,
-                        id,
-                    },
-                    ...config
-                });
-            } else {
-                ScrollTrigger.create({
-                    trigger: element,
-                    start: start,
-                    end: end,
-                    markers,
-                    id,
-                    onEnter: () => {
-                        if (playOnce && triggeredOnce) return;
-                        element.style.transitionProperty = "none";
-                        triggeredOnce = true;
-                        gsap.effects[animation](element, config);
-                    },
-                    onLeave: () => {
-                        if (wantsExitAnimation) {
-                            element.style.transitionProperty = "none";
-                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
-                        }
-                    },
-                    onEnterBack: () => {
-                        if (wantsExitAnimation) {
-                            element.style.transitionProperty = "none";
-                            gsap.effects[animation](element, config);
-                        }
-                    },
-                    onLeaveBack: () => {
-                        if (wantsExitAnimation) {
-                            element.style.transitionProperty = "none";
-                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
-                        }
-                    },
-                });
-            }
-        });
-    });
-</script> 
    <div x-cloak x-data="imageLightbox('rw97B387CA_542A_44A8_9B75_B0DE98E652FF')"> 
-    <div x-show="open" class="fixed inset-0 z-50 grid place-items-center"> 
-     <div @click="$dispatch('image-lightbox-close', { id: 'rw97B387CA_542A_44A8_9B75_B0DE98E652FF' })" class="fixed inset-0 bg-black-50 bg-opacity-[50%] backdrop-blur-[0px]" x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"></div> 
-     <button @click="$dispatch('image-lightbox-close', { id: 'rw97B387CA_542A_44A8_9B75_B0DE98E652FF' })" class="absolute top-0 right-0 p-4 text-white z-20"> 
+    <div x-show="open" x-transition:leave="duration-200" @click="$dispatch('image-lightbox-close', { id: 'rw97B387CA_542A_44A8_9B75_B0DE98E652FF' })" class="fixed inset-0 z-50 grid place-items-center"> 
+     <div class="fixed inset-0 bg-black-50/(--lightbox-bg-opacity) [--lightbox-bg-opacity:50%] backdrop-blur-[0px]" x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"></div> 
+     <button type="button" class="absolute top-0 right-0 p-4 text-white z-20"> 
       <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" fill="none" color="currentColor"> 
        <path stroke="none" d="M0 0h24v24H0z" fill="none" /> 
        <line x1="18" y1="6" x2="6" y2="18" /> 
@@ -703,15 +588,15 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
        <template x-if="srcDark"> 
         <source :srcset="srcDark" media="(prefers-color-scheme: dark)" /> 
        </template> 
-       <img class=" w-full h-full object-contain object-center" :src="src" :alt="alt" loading="lazy" x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" /> 
+       <img class="w-full h-full object-contain object-center" :src="src" :alt="alt" loading="lazy" x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" /> 
       </picture> 
      </div> 
     </div> 
    </div> 
    <div x-cloak x-data="imageLightbox('rw082725C1_F5B2_4BCC_B957_C8962BD4860A')"> 
-    <div x-show="open" class="fixed inset-0 z-50 grid place-items-center"> 
-     <div @click="$dispatch('image-lightbox-close', { id: 'rw082725C1_F5B2_4BCC_B957_C8962BD4860A' })" class="fixed inset-0 bg-black-50 bg-opacity-[50%] backdrop-blur-[0px]" x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"></div> 
-     <button @click="$dispatch('image-lightbox-close', { id: 'rw082725C1_F5B2_4BCC_B957_C8962BD4860A' })" class="absolute top-0 right-0 p-4 text-white z-20"> 
+    <div x-show="open" x-transition:leave="duration-200" @click="$dispatch('image-lightbox-close', { id: 'rw082725C1_F5B2_4BCC_B957_C8962BD4860A' })" class="fixed inset-0 z-50 grid place-items-center"> 
+     <div class="fixed inset-0 bg-black-50/(--lightbox-bg-opacity) [--lightbox-bg-opacity:50%] backdrop-blur-[0px]" x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"></div> 
+     <button type="button" class="absolute top-0 right-0 p-4 text-white z-20"> 
       <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" fill="none" color="currentColor"> 
        <path stroke="none" d="M0 0h24v24H0z" fill="none" /> 
        <line x1="18" y1="6" x2="6" y2="18" /> 
@@ -722,7 +607,7 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
        <template x-if="srcDark"> 
         <source :srcset="srcDark" media="(prefers-color-scheme: dark)" /> 
        </template> 
-       <img class=" w-full h-full object-contain object-center" :src="src" :alt="alt" loading="lazy" x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" /> 
+       <img class="w-full h-full object-contain object-center" :src="src" :alt="alt" loading="lazy" x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" /> 
       </picture> 
      </div> 
     </div> 
@@ -855,7 +740,9 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
           },
 
           get iframeAttributes() {
-            return `autoplay=1&loop=${this.options.loop}&mute=${this.options.muted}&controls=${this.options.controls}`;
+            // Vimeo's mute parameter is "muted"; YouTube's is "mute".
+            const muteParam = this.platform === 'vimeo' ? 'muted' : 'mute';
+            return `autoplay=1&loop=${this.options.loop}&${muteParam}=${this.options.muted}&controls=${this.options.controls}`;
           },
 
           get iframeUrl() {
@@ -982,7 +869,8 @@ document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
           }
       }));
     });
-  </script>  
+  </script> 
+   <script src="files/com.realmacsoftware.image/image-lightbox.js?rwcache=813051073"></script>  
    <!-- Matomo --> 
    <script>
   var _paq = window._paq = window._paq || [];

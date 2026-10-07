@@ -1,15 +1,11 @@
 <!doctype html>
 <html class="scroll-smooth" lang="fr">
  <head> 
-  <script defer src="../rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=810411156"></script> 
-  <script defer src="../rw/elements/com.realmac.corepack/alpine-focus.js?rwcache=810411156"></script> 
-  <script defer src="../rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=810411156"></script> 
-  <script defer src="../rw/elements/com.realmac.corepack/alpine-ui.js?rwcache=810411156"></script> 
-  <script defer src="../rw/elements/com.realmac.corepack/alpine.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/smoothscroll.min.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/gsap.min.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/ScrollTrigger.min.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/gsap-effects.js?rwcache=810411156"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=813051031"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=813051031"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=813051031"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=813051031"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine.js?rwcache=813051031"></script> 
   <meta charset="utf-8" /> 
   <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
   <meta name="viewport" content="width=device-width" /> 
@@ -18,7 +14,7 @@
   <meta name="keywords" content="Dojo, Club, Tatami, Entrainement, Souplesse, Professeur, André Palmeri, Uchi Deshi, Dan" /> 
   <meta name="description" content="L’Aïkido ne s’explique pas, mais se pratique." /> 
   <meta name="robots" content="index, follow" /> 
-  <meta name="formatter" content="RapidWeaver Elements (Pro license) 2.4.4 (24287)" /> 
+  <meta name="formatter" content="RapidWeaver Elements (Pro license) 3.1.1 (24668)" /> 
   <meta property="og:type" content="website" /> 
   <meta property="og:site_name" content="Dojo Makoto" /> 
   <meta property="og:title" content="Dojo" /> 
@@ -26,7 +22,7 @@
   <meta property="og:image" content="https://www.aikido-marseille-makoto.fr/resources/vue_dojo.jpg" /> 
   <meta property="og:url" content="https://www.aikido-marseille-makoto.fr/le-dojo/" /> 
   <title>Le Dojo</title> 
-  <link href="index.css?rwcache=810411156" media="all" rel="stylesheet" type="text/css" /> 
+  <link href="index.css?rwcache=813051031" media="all" rel="stylesheet" type="text/css" /> 
   <style lang="css">
     /* Required for alpine.js x-cloak directive to work */
     [x-cloak] {
@@ -52,18 +48,12 @@
         /* Firefox */
     }
 </style> 
-  <script src="../rw/elements/com.realmac.corepack/effectsTransforms.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/modal.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/alpine-exit-intent.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/image-lightbox.js?rwcache=810411156"></script> 
-  <link rel="stylesheet" type="text/css" media="all" href="../rw/styles/consolidated.css?rwcache=810411156" /> 
+  <link rel="stylesheet" type="text/css" media="all" href="../rw/styles/consolidated.css?rwcache=813051031" /> 
  </head> 
  <body class="bg-white-900 dark:bg-white-500"> 
   <div x-data="navigationStandard('mobile-menu-rwBDE3A216_E5D7_48CA_BA65_2AF480D7628F')" class="relative z-50"> 
-   <div style="display: none" x-bind="backdrop" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 duration-150 pointer-events-none bg-surface-900 bg-opacity-[38%] dark:bg-opacity-[38%] backdrop-blur-[0px]" aria-hidden="true"></div> 
-   <div style="display: none" x-bind="menu" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full" class="fixed z-50 origin-top p-8 ring-1 ring-zinc-900/5 duration-150 overflow-y-auto bg-surface-50 bg-opacity-[88%] dark:bg-opacity-[88%] backdrop-blur-[0px] shadow-none rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none border-t-0 border-r-0 border-b-0 border-l-0 border-surface-900 inset-6" tabindex="-1"> 
+   <div style="display: none" x-bind="backdrop" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 duration-150 pointer-events-none bg-surface-900/(--mobile-backdrop-bg-opacity) [--mobile-backdrop-bg-opacity:38%] backdrop-blur-[0px]" aria-hidden="true"></div> 
+   <div style="display: none" x-bind="menu" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full" class="fixed z-50 origin-top p-8 ring-1 ring-zinc-900/5 duration-150 overflow-y-auto bg-surface-50/(--mobile-menu-bg-opacity) [--mobile-menu-bg-opacity:88%] backdrop-blur-[0px] shadow-none rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none border-t-0 border-r-0 border-b-0 border-l-0 border-surface-900 inset-6" tabindex="-1"> 
     <div class="flex items-center justify-between"> 
      <button aria-label="Close menu" type="button" @click="open = false" class="transition-all duration-[300ms] delay-[0ms] ease-in-out absolute inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer text-text-100 hover:text-red-700 top-8 right-8"> 
       <svg viewbox="0 0 24 24" aria-hidden="true" class="size-6 transition-colors duration-300 text-text-50 hover:text-text-50"> 
@@ -73,26 +63,26 @@
     <nav> 
      <ul class=""> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
         <a class="flex justify-between items-center" href="../">Accueil</a> 
        </div> </li> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open" aria-current="page"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open" aria-current="page"> 
         <a class="flex justify-between items-center" href="../le-dojo/" aria-current="page">Le Dojo</a> 
        </div> </li> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
         <a class="flex justify-between items-center" href="../les-cours/">Les cours</a> 
        </div> </li> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
         <a class="flex justify-between items-center" href="../galerie/">Galerie</a> 
        </div> </li> 
      </ul> 
     </nav> 
    </div> 
   </div> 
-  <header class="group/rwBDE3A216_E5D7_48CA_BA65_2AF480D7628F group/navbar items-center flex w-full h-auto mt-0 mb-0 ml-auto mr-auto bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%]" id=""> 
+  <header class="group/rwBDE3A216_E5D7_48CA_BA65_2AF480D7628F group/navbar items-center flex w-full h-auto mt-0 mb-0 ml-auto mr-auto bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%]" id=""> 
    <nav class="mx-auto flex items-center justify-between container w-full h-auto pt-1 pb-2 pl-0 pr-0"> 
     <!-- Logo --> 
     <div class="flex md:flex-1 pt-0 pb-0 pl-4 pr-0"> 
@@ -109,16 +99,16 @@
     <!-- Desktop items --> 
     <div class="hidden md:flex gap-4 md:gap-7 lg:gap-12"> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="../" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Accueil </a> 
+      <a href="../" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Accueil </a> 
      </div> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="../le-dojo/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out" aria-current="page"> Le Dojo </a> 
+      <a href="../le-dojo/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out" aria-current="page"> Le Dojo </a> 
      </div> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="../les-cours/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Les cours </a> 
+      <a href="../les-cours/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Les cours </a> 
      </div> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="../galerie/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Galerie </a> 
+      <a href="../galerie/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Galerie </a> 
      </div> 
     </div> 
     <!-- Desktop right items --> 
@@ -133,7 +123,7 @@
    </div> 
    <div class="rwD0919C65_77B0_4CF4_A874_193DA633BF22 group/container group/rwD0919C65_77B0_4CF4_A874_193DA633BF22 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-full" data-filter-tags="" id=""> 
     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-auto">
-     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-white-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-6xl font-[600] tracking-normal leading-normal not-italic text-shadow-[0px_-21px_27px_rgba(254,251,221,1.00),0px_10px_18px_rgba(0,0,0,0.50)] [font-variant-caps:small-caps] whitespace-none text-center" id=""> Le Dojo </p>
+     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-white-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-6xl font-[600] tracking-normal leading-normal not-italic text-shadow-[0px_-21px_27px_rgba(254,251,221,1.00),0px_10px_18px_rgba(0,0,0,0.50)] [font-variant-caps:small-caps] whitespace-none text-center" id=""> Le Dojo </p>
     </div> 
     <div class="z-0 transform-gpu overflow-hidden"> 
     </div> 
@@ -144,20 +134,20 @@
     <div class="group/rwA3A4A8A3_2FF1_4699_8A6D_DA68799C7E35 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 grid-rows-auto gap-x-md gap-y-md grid-flow-row auto-cols-max justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
      <div class="rwF427D093_62FD_4A0C_9617_F62A432CEE9A group/container group/rwF427D093_62FD_4A0C_9617_F62A432CEE9A grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-auto h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer w-auto h-auto self-start justify-self-center gap-auto pt-4 pb-4 pl-auto pr-auto">
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-5 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> L'Aïkido </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-5 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-center" id=""> L'Aïkido </p>
        <div class="transform-gpu block w-[100] h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-        <picture> 
+        <picture class="block"> 
          <!-- Fallback img element --> 
          <img class="max-w-[100%] w-full border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-800/[100%] object-center aspect-[0.42571428418159485]" src="../resources/aikido-kanji.png" alt="" width="149" height="350" decoding="async" /> 
         </picture> 
        </div>
       </div> 
-      <div class="z-0 transform-gpu bg-[url(undefined)] bg-cover bg-no-repeat bg-center overflow-hidden"> 
+      <div class="z-0 transform-gpu bg-cover bg-no-repeat bg-center overflow-hidden"> 
       </div> 
      </div>
      <div class="rw7B75BB66_0A5C_4AE1_B32B_D83A3899C546 group/container group/rw7B75BB66_0A5C_4AE1_B32B_D83A3899C546 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> <span class="text-lg">Fondé entre 1925 et 1969 par Maître Morihei Ueshiba, l’Aïkido est issu et héritier d'une longue lignée d'Arts Martiaux japonais combinant des techniques de sabre, de lance et de combat à mains nues. Dit en deux mots, l’Aïkido est une </span><span class="text-lg"><strong>Voie martiale</strong></span><span class="text-lg">. </span><br /><span class="text-lg"></span><br /><span class="text-lg">La gestuelle constitue l’outil fondamental de la discipline ; elle allie travail à mains nues, armes et méditation. Cependant la technique sert de support à une philosophie de vie. L'entraînement rigoureux, la maîtrise du corps et l'engagement sont alors des outils au service d’une évolution de l'individu. </span><br /><span class="text-lg"></span><br /><span class="text-lg">Un des premiers principes enseignés dans un Dojo est que </span><span class="text-lg"><strong>l’Aïkido ne s’explique pas, mais se pratique</strong></span><span class="text-lg">. Toute description est donc vouée à n’être que l’ombre de la réalité et un essai reste la meilleure solution pour découvrir la discipline.</span> </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> <span class="text-lg">Fondé entre 1925 et 1969 par Maître Morihei Ueshiba, l’Aïkido est issu et héritier d'une longue lignée d'Arts Martiaux japonais combinant des techniques de sabre, de lance et de combat à mains nues. Dit en deux mots, l’Aïkido est une&nbsp;</span><span class="text-lg"><strong>Voie martiale</strong></span><span class="text-lg">.&nbsp;</span><br /><span class="text-lg"></span><br /><span class="text-lg">La gestuelle constitue l’outil fondamental de la discipline ; elle allie travail à mains nues, armes et méditation. Cependant la technique sert de support à une philosophie de vie. L'entraînement rigoureux, la maîtrise du corps et l'engagement sont alors des outils au service d’une évolution de l'individu.&nbsp;</span><br /><span class="text-lg"></span><br /><span class="text-lg">Un des premiers principes enseignés dans un Dojo est que&nbsp;</span><span class="text-lg"><strong>l’Aïkido ne s’explique pas, mais se pratique</strong></span><span class="text-lg">. Toute description est donc vouée à n’être que l’ombre de la réalité et un essai reste la meilleure solution pour découvrir la discipline.</span> </p>
       </div> 
       <div class="z-0 transform-gpu overflow-hidden"> 
       </div> 
@@ -166,14 +156,14 @@
     <div class="group/rw7E70F45A_57E9_480C_A306_E3C8B9EB6137 group/grid grid w-full h-auto mt-10 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 grid-rows-auto gap-x-4 gap-y-md grid-flow-row auto-cols-max justify-items-normal justify-normal items-start content-start" data-filter-tags="" id=""> 
      <div class="rw14455D78_81A8_40B8_98D7_7B7E5CE6036D group/container group/rw14455D78_81A8_40B8_98D7_7B7E5CE6036D grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-auto h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer w-auto h-auto self-start justify-self-start gap-auto pt-auto pb-auto pl-auto pr-auto">
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> <span class="text-lg"><u><strong>Qu'apporte la discipline</strong></u></span><span class="text-lg"><strong> ?</strong></span><span class="text-lg"> (avec une pratique régulière)</span><br /><span class="text-lg"></span><br /><span class="text-lg">- La coordination gestuelle et le contrôle du corps dans l'espace</span><br /><span class="text-lg">- Le calme, la lucidité, le sens de l'observation et de l'analyse</span><br /><span class="text-lg">- La stabilité, l'équilibre (physique &amp; psychique)</span><br /><span class="text-lg">- La souplesse dans la dynamique</span><br /><span class="text-lg">- La force mentale et le sens de l'initiative</span><br /><span class="text-lg">- Le partage et l’échange</span><br /><span class="text-lg">- Une bonne santé, une condition physique et le plaisir de la pratique</span> </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> <span class="text-lg"><u><strong>Qu'apporte la discipline</strong></u></span><span class="text-lg"><strong>&nbsp;?</strong></span><span class="text-lg">&nbsp;(avec une pratique régulière)</span><br /><span class="text-lg"></span><br /><span class="text-lg">- La coordination gestuelle et le contrôle du corps dans l'espace</span><br /><span class="text-lg">- Le calme, la lucidité, le sens de l'observation et de l'analyse</span><br /><span class="text-lg">- La stabilité, l'équilibre (physique &amp; psychique)</span><br /><span class="text-lg">- La souplesse dans la dynamique</span><br /><span class="text-lg">- La force mentale et le sens de l'initiative</span><br /><span class="text-lg">- Le partage et l’échange</span><br /><span class="text-lg">- Une bonne santé, une condition physique et le plaisir de la pratique</span> </p>
       </div> 
-      <div class="z-0 transform-gpu bg-[url(undefined)] bg-cover bg-no-repeat bg-center overflow-hidden"> 
+      <div class="z-0 transform-gpu bg-cover bg-no-repeat bg-center overflow-hidden"> 
       </div> 
      </div>
      <div class="rw5ACC885D_962F_4952_BF91_E9042A72D2A8 group/container group/rw5ACC885D_962F_4952_BF91_E9042A72D2A8 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> <span class="text-lg"><u><strong>Qui peut pratiquer L'Aikido</strong></u></span><span class="text-lg"><strong> ?</strong></span><br /><span class="text-lg"></span><br /><span class="text-lg">L'Aïkido peut correspondre et être pratiqué par tout un chacun, quel que soit son age et son sexe ; le fondateur pratiqua jusqu'à sa mort, il avait alors 86 ans.</span> </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> <span class="text-lg"><u><strong>Qui peut pratiquer L'Aikido</strong></u></span><span class="text-lg"><strong>&nbsp;?</strong></span><br /><span class="text-lg"></span><br /><span class="text-lg">L'Aïkido peut correspondre et être pratiqué par tout un chacun, quel que soit son age et son sexe ; le fondateur pratiqua jusqu'à sa mort, il avait alors 86 ans.</span> </p>
       </div> 
       <div class="z-0 transform-gpu overflow-hidden"> 
       </div> 
@@ -185,11 +175,11 @@
   </div>
   <div class="rw40C8FF15_B56C_404B_BD33_50592A666980 group/container group/rw40C8FF15_B56C_404B_BD33_50592A666980 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-2 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-3 pb-3 pl-0 pr-0">
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id="Professeur"> Le professeur </p>
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id="Professeur"> Le professeur </p>
     <div class="group/rw034D69C4_2E35_4D56_8A39_2B51EE4F8FFD group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
      <div class="rw87C03B4E_AE27_42E5_8027_08EF69347C55 group/container group/rw87C03B4E_AE27_42E5_8027_08EF69347C55 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> <span class="text-lg">André Palmeri, 6ème dan, débute l'Aïkido dans les années 70. Élève de Claude Pellerin, il suit l’enseignement de Tamura Shihan ainsi que de Chiba Shihan.</span><br /><span class="text-lg"></span><br /><span class="text-lg">À partir de 1985, il se consacre à l’enseignement de l’Aïkido en créant le Dojo Makoto. Ce nom témoigne de son intention : imprimer, dans la mesure de ses moyens, une orientation la plus traditionnelle possible au Dojo.</span> </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> <span class="text-lg">André Palmeri, 6ème dan, débute l'Aïkido dans les années 70. Élève de Claude Pellerin, il suit l’enseignement de Tamura Shihan ainsi que de Chiba Shihan.</span><br /><span class="text-lg"></span><br /><span class="text-lg">À partir de 1985, il se consacre à l’enseignement de l’Aïkido en créant le Dojo Makoto. Ce nom témoigne de son intention : imprimer, dans la mesure de ses moyens, une orientation la plus traditionnelle possible au Dojo.</span> </p>
       </div> 
       <div class="z-0 transform-gpu overflow-hidden"> 
       </div> 
@@ -197,14 +187,14 @@
      <div class="rw5E845044_BBB7_4C0D_8209_8B05C1D23E23 group/container group/rw5E845044_BBB7_4C0D_8209_8B05C1D23E23 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-auto mb-auto ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-4 pl-4 pr-4">
        <div class="transform-gpu block w-[85%] h-auto mt-auto mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-        <picture> 
+        <picture class="block"> 
          <!-- Fallback img element --> 
          <img class="max-w-[100%] w-full object-center aspect-[1.3661202192306519]" src="../resources/photo_andre.jpg" alt="" width="500" height="366" decoding="async" /> 
         </picture> 
        </div>
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>André Palmeri - 6ème dan</strong></span> </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>André Palmeri - 6ème dan</strong></span> </p>
       </div> 
-      <div class="z-0 transform-gpu bg-[url(undefined)] bg-cover bg-no-repeat bg-center overflow-hidden"> 
+      <div class="z-0 transform-gpu bg-cover bg-no-repeat bg-center overflow-hidden"> 
       </div> 
      </div> 
     </div>
@@ -214,17 +204,17 @@
   </div>
   <div class="rw50C42B03_31C4_4398_A918_6FA9A0B5F03F group/container group/rw50C42B03_31C4_4398_A918_6FA9A0B5F03F grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto" data-filter-tags="" id=""> 
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md">
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id=""> Les assistants </p>
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id=""> Les assistants </p>
     <div class="group/rwE1C12FE0_C5BD_4281_8143_4C2EFE692683 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
      <div class="rw66871475_ABA4_4C2B_A0D7_CBC051BFDA19 group/container group/rw66871475_ABA4_4C2B_A0D7_CBC051BFDA19 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
        <div class="transform-gpu block w-[50%] h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-        <picture> 
+        <picture class="block"> 
          <!-- Fallback img element --> 
-         <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-sm opacity-[100%] hover:shadow hover:opacity-[100%] brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[0.75]" src="../resources/laurent_bruasse.jpg" alt="" width="768" height="1024" decoding="async" /> 
+         <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-sm shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] hover:shadow hover:shadow--500/(--box-shadow-opacity) hover:[--box-shadow-opacity:100%] hover:opacity-[100%] brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[0.75]" src="../resources/laurent_bruasse.jpg" alt="" width="768" height="1024" decoding="async" /> 
         </picture> 
        </div>
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>Laurent - 5ème dan</strong></span> </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>Laurent - 5ème dan</strong></span> </p>
       </div> 
       <div class="z-0 transform-gpu overflow-hidden"> 
       </div> 
@@ -232,12 +222,12 @@
      <div class="rwAE94784B_C558_4451_A23A_CBA2646FD920 group/container group/rwAE94784B_C558_4451_A23A_CBA2646FD920 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
        <div class="transform-gpu block w-[50%] h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-        <picture> 
+        <picture class="block"> 
          <!-- Fallback img element --> 
-         <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow opacity-[100%] hover:shadow hover:opacity-[100%] brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[0.75]" src="../resources/alexandra_bac.jpg" alt="" width="768" height="1024" decoding="async" /> 
+         <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] hover:shadow hover:shadow--500/(--box-shadow-opacity) hover:[--box-shadow-opacity:100%] hover:opacity-[100%] brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[0.75]" src="../resources/alexandra_bac.jpg" alt="" width="768" height="1024" decoding="async" /> 
         </picture> 
        </div>
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>Alexandra - 5ème dan</strong></span> </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>Alexandra - 5ème dan</strong></span> </p>
       </div> 
       <div class="z-0 transform-gpu overflow-hidden"> 
       </div> 
@@ -247,12 +237,12 @@
      <div class="rw763ADC0C_4C2A_4ACB_BA56_0B775B3C7D61 group/container group/rw763ADC0C_4C2A_4ACB_BA56_0B775B3C7D61 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
        <div class="transform-gpu block w-[50%] h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-        <picture> 
+        <picture class="block"> 
          <!-- Fallback img element --> 
          <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[0.75]" src="../resources/fabrice_gianardi.jpg" alt="" width="768" height="1024" decoding="async" /> 
         </picture> 
        </div>
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>Fabrice - 5ème dan</strong></span> </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>Fabrice - 5ème dan</strong></span> </p>
       </div> 
       <div class="z-0 transform-gpu overflow-hidden"> 
       </div> 
@@ -260,12 +250,12 @@
      <div class="rw1D94136E_1504_4256_9485_7D971F0D2832 group/container group/rw1D94136E_1504_4256_9485_7D971F0D2832 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
        <div class="transform-gpu block w-[50%] h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-        <picture> 
+        <picture class="block"> 
          <!-- Fallback img element --> 
          <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[0.75]" src="../resources/gabriel_parzy.jpg" alt="" width="768" height="1024" decoding="async" /> 
         </picture> 
        </div>
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>Gabriel - 4ème dan</strong></span> </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>Gabriel - 4ème dan</strong></span> </p>
       </div> 
       <div class="z-0 transform-gpu overflow-hidden"> 
       </div> 
@@ -275,12 +265,12 @@
      <div class="rwCC495447_2E59_4C81_B209_DB4813914C0C group/container group/rwCC495447_2E59_4C81_B209_DB4813914C0C grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
        <div class="transform-gpu block w-[50%] h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-        <picture> 
+        <picture class="block"> 
          <!-- Fallback img element --> 
          <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[0.75]" src="../resources/nicolas_bonnet.jpg" alt="" width="768" height="1024" decoding="async" /> 
         </picture> 
        </div>
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>Nicolas - 4ème dan</strong></span> </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-5 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="font-body text-xl"><strong>Nicolas - 4ème dan</strong></span> </p>
       </div> 
       <div class="z-0 transform-gpu overflow-hidden"> 
       </div> 
@@ -297,23 +287,23 @@
   </div>
   <div class="rwB96C8A42_ECF0_43B4_AFE0_657A02117416 group/container group/rwB96C8A42_ECF0_43B4_AFE0_657A02117416 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto" data-filter-tags="" id=""> 
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md">
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id="Dojo"> Le Dojo </p>
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id="Dojo"> Le Dojo </p>
     <div class="group/rwF90B5153_DEB8_4B0B_86E2_3F5162FF131C group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
      <div class="rw400D3702_02D5_4919_B66F_B4E1C211D707 group/container group/rw400D3702_02D5_4919_B66F_B4E1C211D707 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-4 pl-4 pr-4">
        <div class="transform-gpu block w-[85%] h-auto" id="" rwresourcedropzone="image"> 
-        <picture> 
+        <picture class="block"> 
          <!-- Fallback img element --> 
          <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out brightness-[100%] drop-shadow-none saturate-[100%] hover:brightness-[70%] hover:drop-shadow-none hover:saturate-[100%] object-center aspect-[1.3333333730697632]" src="../resources/20181204_195446.jpg" alt="" width="4032" height="3024" decoding="async" /> 
         </picture> 
        </div>
       </div> 
-      <div class="z-0 transform-gpu bg-[url(undefined)] bg-cover bg-no-repeat bg-center overflow-hidden"> 
+      <div class="z-0 transform-gpu bg-cover bg-no-repeat bg-center overflow-hidden"> 
       </div> 
      </div>
      <div class="rwE6EA6187_FA05_4472_AC49_D9259C88C1CE group/container group/rwE6EA6187_FA05_4472_AC49_D9259C88C1CE grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-lg font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Littéralement, DO (道) voie - JO (場) lieu, le Dojo est donc le lieu où l'on recherche la Voie, bien loin de l'idée de gymnase. C'est un lieu de respect, d'harmonie, d'échange, de calme et d’effort. Un Dojo est une école.<br /><br />Le Dojo Makoto a été fondé par André Palmeri en 1985 avec l’intention de préserver et développer ces dimensions d’école et de transmission. </p>
+       <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-lg font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Littéralement, DO (道) voie - JO (場) lieu, le Dojo est donc le lieu où l'on recherche la Voie, bien loin de l'idée de gymnase. C'est un lieu de respect, d'harmonie, d'échange, de calme et d’effort. Un Dojo est une école.<br /><br />Le Dojo Makoto a été fondé par André Palmeri en 1985 avec l’intention de préserver et développer ces dimensions d’école et de transmission. </p>
       </div> 
       <div class="z-0 transform-gpu overflow-hidden"> 
       </div> 
@@ -335,19 +325,19 @@
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
     <div class="group/rw176FDF14_3934_4F83_AA7F_5B64D3F29F83 group/flex transform flex w-full h-auto gap-x-4 gap-y-2 flex-row flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
      <div class="transform-gpu block w-[150px] h-auto mt-0 mb-0 ml-3 mr-3 pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-      <picture> 
+      <picture class="block"> 
        <!-- Fallback img element --> 
        <img class="max-w-[100%] w-full object-center aspect-[0.8823529481887817]" src="../resources/makoto_red.png" alt="" width="960" height="1088" decoding="async" /> 
       </picture> 
      </div>
      <div class="group/rwE153FB8F_36CF_4AC2_9BAB_446016AE8D81 group/flex transform flex w-full h-auto gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-[normal] content-normal justify-center" data-filter-tags="" id=""> 
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[800] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Dojo d’Aïkido Makoto </p>
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> 47, avenue de Lattre de Tassigny - 13009 Marseille<br />Mail : <a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a> </p> 
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[800] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Dojo d’Aïkido Makoto </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> 47, avenue de Lattre de Tassigny - 13009 Marseille<br />Mail :&nbsp;<a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a> </p> 
      </div> 
     </div>
     <div class="rwD6D0BC44_BFF8_4697_9AD0_AA5AEC728F72 group/container group/rwD6D0BC44_BFF8_4697_9AD0_AA5AEC728F72 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-3 ml-auto mr-auto" data-filter-tags="" id=""> 
      <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-      <div class="group/rwFB17317D_A560_49D3_BBCE_FB4EE9957962 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
+      <div class="group/rwFB17317D_A560_49D3_BBCE_FB4EE9957962 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
        <a class="w-10 h-auto block mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0" href="https://www.youtube.com/@MakotoDojoAikidoMarseille" id="" rwresourcedropzone="svg" target=""> 
         <svg class="w-10 h-auto" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
          <path d="M31.331,8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673,0,0-10.007,0-12.502,.673-1.377,.37-2.461,1.462-2.829,2.848-.669,2.512-.669,7.752-.669,7.752,0,0,0,5.241,.669,7.752,.368,1.386,1.452,2.477,2.829,2.847,2.496,.673,12.502,.673,12.502,.673,0,0,10.007,0,12.502-.673,1.377-.37,2.461-1.462,2.829-2.847,.669-2.512,.669-7.752,.669-7.752,0,0,0-5.24-.669-7.752ZM12.727,20.758V11.242l8.364,4.758-8.364,4.758Z"></path>
@@ -362,120 +352,13 @@
         </svg> </a> 
       </div>
      </div> 
-     <div class="z-0 transform-gpu bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+     <div class="z-0 transform-gpu bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] overflow-hidden"> 
      </div> 
     </div>
    </div> 
-   <div class="z-0 transform-gpu bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+   <div class="z-0 transform-gpu bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] overflow-hidden"> 
    </div> 
   </div> 
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-    document.addEventListener("DOMContentLoaded", () => {
-        const revealElements = document.querySelectorAll("[data-reveal]");
-        revealElements.forEach((element, index) => {
-            element.style.visibility = "hidden";
-            element.style.transitionProperty = "none";
-
-            const {
-                revealAnimation: animation = "fadeUpIn",
-                revealExitAnimation: exitAnimation = "fadeUpOut",
-                revealPlay: play = "enter-exit",
-                revealStart: start = "top bottom",
-                revealEnd: end = "top top",
-                revealDelay: delay = 0,
-                revealDuration: duration = 0.5,
-                revealEasing: easing = "power1.out",
-                revealDistance: distance = 200,
-                revealDegrees: degrees = 90,
-                revealScrub: scrub = false,
-                revealDebug: debug = false,
-                revealId,
-            } = element.dataset;
-
-            const id = `${revealId}-${index}`;
-            const wantsScrub = scrub === "true";
-            const wantsDebug = debug === "true";
-            const wantsExitAnimation = play == "enter-exit";
-            const playOnce = play == "enter-once";
-            const durationNumber = parseFloat(duration);
-            const delayNumber = parseFloat(delay);
-            const degreesNumber = parseFloat(degrees);
-            const degreesNumberOut = degreesNumber * -1;
-            
-            let triggeredOnce = false;
-            
-            const config = {
-                duration: durationNumber,
-                ease: easing,
-                delay: delayNumber,
-                distance: distance,
-                degrees: degreesNumber,
-                degreesOut: degreesNumberOut,
-                clearProps: "auto",
-                onComplete: () => {
-                    element.style.transitionProperty = "";
-                },
-            }
-
-            const markers = wantsDebug
-                ? {
-                    startColor: "green",
-                    endColor: "red",
-                    fontSize: "12px",
-                    fontWeight: "bold",
-                    indent: 20,
-                }
-                : false;
-
-            if (wantsScrub) {
-                gsap.effects[animation](element, {
-                    scrollTrigger: {
-                        trigger: element,
-                        start: start,
-                        end: end,
-                        scrub: true,
-                        markers,
-                        id,
-                    },
-                    ...config
-                });
-            } else {
-                ScrollTrigger.create({
-                    trigger: element,
-                    start: start,
-                    end: end,
-                    markers,
-                    id,
-                    onEnter: () => {
-                        if (playOnce && triggeredOnce) return;
-                        element.style.transitionProperty = "none";
-                        triggeredOnce = true;
-                        gsap.effects[animation](element, config);
-                    },
-                    onLeave: () => {
-                        if (wantsExitAnimation) {
-                            element.style.transitionProperty = "none";
-                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
-                        }
-                    },
-                    onEnterBack: () => {
-                        if (wantsExitAnimation) {
-                            element.style.transitionProperty = "none";
-                            gsap.effects[animation](element, config);
-                        }
-                    },
-                    onLeaveBack: () => {
-                        if (wantsExitAnimation) {
-                            element.style.transitionProperty = "none";
-                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
-                        }
-                    },
-                });
-            }
-        });
-    });
-</script> 
   <script>
     document.addEventListener("alpine:init", () => {
         Alpine.data("desktopSubmenu", () => ({

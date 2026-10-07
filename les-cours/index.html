@@ -1,15 +1,11 @@
 <!doctype html>
 <html class="scroll-smooth" lang="fr">
  <head> 
-  <script defer src="../rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=810411156"></script> 
-  <script defer src="../rw/elements/com.realmac.corepack/alpine-focus.js?rwcache=810411156"></script> 
-  <script defer src="../rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=810411156"></script> 
-  <script defer src="../rw/elements/com.realmac.corepack/alpine-ui.js?rwcache=810411156"></script> 
-  <script defer src="../rw/elements/com.realmac.corepack/alpine.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/smoothscroll.min.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/gsap.min.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/ScrollTrigger.min.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/gsap-effects.js?rwcache=810411156"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=813051031"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=813051031"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=813051031"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=813051031"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine.js?rwcache=813051031"></script> 
   <meta charset="utf-8" /> 
   <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
   <meta name="viewport" content="width=device-width" /> 
@@ -18,7 +14,7 @@
   <meta name="keywords" content="Administration, Tarifs, Visiteurs, Cours d'essai, Mazargue, 13009, Marseille, Budokan, Parking" /> 
   <meta name="description" content="Information pratique sur le détails des cours, les horaires et les conditions d'accèès." /> 
   <meta name="robots" content="index, follow" /> 
-  <meta name="formatter" content="RapidWeaver Elements (Pro license) 2.4.4 (24287)" /> 
+  <meta name="formatter" content="RapidWeaver Elements (Pro license) 3.1.1 (24668)" /> 
   <meta property="og:type" content="website" /> 
   <meta property="og:site_name" content="Dojo Makoto" /> 
   <meta property="og:title" content="Les cours" /> 
@@ -26,7 +22,7 @@
   <meta property="og:image" content="https://www.aikido-marseille-makoto.fr/resources/img_3082.HEIC" /> 
   <meta property="og:url" content="https://www.aikido-marseille-makoto.fr/les-cours/" /> 
   <title>Les cours</title> 
-  <link href="index.css?rwcache=810411156" media="all" rel="stylesheet" type="text/css" /> 
+  <link href="index.css?rwcache=813051031" media="all" rel="stylesheet" type="text/css" /> 
   <style lang="css">
     /* Required for alpine.js x-cloak directive to work */
     [x-cloak] {
@@ -52,12 +48,6 @@
         /* Firefox */
     }
 </style> 
-  <script src="../rw/elements/com.realmac.corepack/effectsTransforms.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/modal.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/alpine-exit-intent.js?rwcache=810411156"></script> 
-  <script src="../rw/elements/com.realmac.corepack/image-lightbox.js?rwcache=810411156"></script> 
   <script>
     (function () {
         // Check if Google Maps API is already loaded
@@ -86,12 +76,12 @@
         document.head.appendChild(script);
     })();
 </script> 
-  <link rel="stylesheet" type="text/css" media="all" href="../rw/styles/consolidated.css?rwcache=810411156" /> 
+  <link rel="stylesheet" type="text/css" media="all" href="../rw/styles/consolidated.css?rwcache=813051031" /> 
  </head> 
  <body class="bg-white-900 dark:bg-white-500"> 
   <div x-data="navigationStandard('mobile-menu-rw1ACC949F_F387_4FD1_A7BF_F270BBC4E542')" class="relative z-50"> 
-   <div style="display: none" x-bind="backdrop" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 duration-150 pointer-events-none bg-surface-900 bg-opacity-[38%] dark:bg-opacity-[38%] backdrop-blur-[0px]" aria-hidden="true"></div> 
-   <div style="display: none" x-bind="menu" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full" class="fixed z-50 origin-top p-8 ring-1 ring-zinc-900/5 duration-150 overflow-y-auto bg-surface-50 bg-opacity-[88%] dark:bg-opacity-[88%] backdrop-blur-[0px] shadow-none rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none border-t-0 border-r-0 border-b-0 border-l-0 border-surface-900 inset-6" tabindex="-1"> 
+   <div style="display: none" x-bind="backdrop" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 duration-150 pointer-events-none bg-surface-900/(--mobile-backdrop-bg-opacity) [--mobile-backdrop-bg-opacity:38%] backdrop-blur-[0px]" aria-hidden="true"></div> 
+   <div style="display: none" x-bind="menu" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full" class="fixed z-50 origin-top p-8 ring-1 ring-zinc-900/5 duration-150 overflow-y-auto bg-surface-50/(--mobile-menu-bg-opacity) [--mobile-menu-bg-opacity:88%] backdrop-blur-[0px] shadow-none rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none border-t-0 border-r-0 border-b-0 border-l-0 border-surface-900 inset-6" tabindex="-1"> 
     <div class="flex items-center justify-between"> 
      <button aria-label="Close menu" type="button" @click="open = false" class="transition-all duration-[300ms] delay-[0ms] ease-in-out absolute inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer text-text-100 hover:text-red-700 top-8 right-8"> 
       <svg viewbox="0 0 24 24" aria-hidden="true" class="size-6 transition-colors duration-300 text-text-50 hover:text-text-50"> 
@@ -101,26 +91,26 @@
     <nav> 
      <ul class=""> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
         <a class="flex justify-between items-center" href="../">Accueil</a> 
        </div> </li> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
         <a class="flex justify-between items-center" href="../le-dojo/">Le Dojo</a> 
        </div> </li> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open" aria-current="page"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open" aria-current="page"> 
         <a class="flex justify-between items-center" href="../les-cours/" aria-current="page">Les cours</a> 
        </div> </li> 
       <li x-data="{ open: false }" class="cursor-pointer"> 
-       <div class="block my-2 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+       <div class="block my-2 text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
         <a class="flex justify-between items-center" href="../galerie/">Galerie</a> 
        </div> </li> 
      </ul> 
     </nav> 
    </div> 
   </div> 
-  <header class="group/rw1ACC949F_F387_4FD1_A7BF_F270BBC4E542 group/navbar items-center flex w-full h-auto mt-0 mb-0 ml-auto mr-auto bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%]" id=""> 
+  <header class="group/rw1ACC949F_F387_4FD1_A7BF_F270BBC4E542 group/navbar items-center flex w-full h-auto mt-0 mb-0 ml-auto mr-auto bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%]" id=""> 
    <nav class="mx-auto flex items-center justify-between container w-full h-auto pt-1 pb-2 pl-0 pr-0"> 
     <!-- Logo --> 
     <div class="flex md:flex-1 pt-0 pb-0 pl-4 pr-0"> 
@@ -137,16 +127,16 @@
     <!-- Desktop items --> 
     <div class="hidden md:flex gap-4 md:gap-7 lg:gap-12"> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="../" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Accueil </a> 
+      <a href="../" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Accueil </a> 
      </div> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="../le-dojo/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Le Dojo </a> 
+      <a href="../le-dojo/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Le Dojo </a> 
      </div> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="../les-cours/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out" aria-current="page"> Les cours </a> 
+      <a href="../les-cours/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out" aria-current="page"> Les cours </a> 
      </div> 
      <div x-data="desktopSubmenu" class="relative"> 
-      <a href="../galerie/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700 aria-[current=page]:text-red-700 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] aria-[current=page]:text-opacity-[100%] dark:aria-[current=page]:text-opacity-[100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg hover: aria-[current=page]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Galerie </a> 
+      <a href="../galerie/" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-50/(--nav-item-text-opacity) [--nav-item-text-opacity:100%] font-heading text-xl lg:text-2xl text-shadow-none font-[400] tracking-normal md:tracking-wider lg:tracking-widest hover:text-red-700/(--nav-item-text-opacity) aria-[current=page]:text-red-700/(--nav-item-text-opacity) data-[active-child]:text-red-700/(--nav-item-text-opacity) hover:[--nav-item-text-opacity:100%] aria-[current=page]:[--nav-item-text-opacity:100%] data-[active-child]:[--nav-item-text-opacity:100%] hover:text-shadow-lg aria-[current=page]:text-shadow-lg data-[active-child]:text-shadow-lg hover: aria-[current=page]: data-[active-child]: pt-0 pb-0 pl-0 pr-0 rounded-tl-none rounded-tr-none rounded-bl-none rounded-br-none transition-all duration-[300ms] delay-[0ms] ease-in-out"> Galerie </a> 
      </div> 
     </div> 
     <!-- Desktop right items --> 
@@ -161,7 +151,7 @@
    </div> 
    <div class="rwCFC1F736_EEBC_4475_AB0E_D6234A73C009 group/container group/rwCFC1F736_EEBC_4475_AB0E_D6234A73C009 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-full" data-filter-tags="" id=""> 
     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-0">
-     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-white-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-6xl font-[600] tracking-normal leading-normal not-italic text-shadow-xl [font-variant-caps:small-caps] whitespace-none text-center" id=""> Les cours </p>
+     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-white-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-6xl font-[600] tracking-normal leading-normal not-italic text-shadow-xl [font-variant-caps:small-caps] whitespace-none text-center" id=""> Les cours </p>
     </div> 
     <div class="z-0 transform-gpu overflow-hidden"> 
     </div> 
@@ -169,57 +159,57 @@
   </div>
   <div class="rw43FC57D1_44D4_4BFB_92CD_3FCF1E68BB8F group/container group/rw43FC57D1_44D4_4BFB_92CD_3FCF1E68BB8F grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 group/Aikido grid w-full h-auto" data-filter-tags="" id="Aikido"> 
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md">
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id=""> Horaires </p>
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Merci de vous présenter <strong>15 minutes avant le début des cours &nbsp;</strong> </p>
-    <div class="group/rwF34049AA_0957_4A9D_9CC8_12C41C1CF5C2 group/grid grid w-full h-auto mt-0 mb-3 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 transform origin-center scale-[100%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[0px] grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 grid-rows-auto gap-x-3 gap-y-3 grid-flow-row justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
-     <div class="group/rwCE26B57D_DFC7_4D59_A760_A4C8915FBE77 group/flex transform flex w-full h-auto mt-[0px] mb-[0px] ml-[0px] mr-[0px] pt-2 pb-2 pl-2 pr-2 shadow-lg opacity-[100%] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-red-800 font-heading text-xl"><strong>LUNDI</strong></span> </p>
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] shadow opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] dark:border-surface-300/[100%] text-center" id=""> <strong>5h15-5h45</strong><br /><em><strong>Zazen</strong></em> </p>
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] shadow opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] dark:border-surface-300/[100%] text-center" id=""> <strong>5h45-6h15</strong><br /><em><strong>Iaïdo (pratique libre)*</strong></em> </p>
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] shadow opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] dark:border-surface-300/[100%] text-center" id=""> <strong>6h30-7h30</strong><br /><span class="text-brand-600"><em><strong>ARMES:</strong></em></span><br /><span class="text-brand-600"><em><strong>Bokken et jo</strong></em></span> </p> 
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id=""> Horaires </p>
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Merci de vous présenter&nbsp;<strong>15 minutes avant le début des cours &nbsp;</strong> </p>
+    <div class="group/rwF34049AA_0957_4A9D_9CC8_12C41C1CF5C2 group/grid grid w-full h-auto mt-0 mb-3 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 transform origin-center scale-x-[100%] scale-y-[100%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[0px] grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 grid-rows-auto gap-x-3 gap-y-3 grid-flow-row justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
+     <div class="group/rwCE26B57D_DFC7_4D59_A760_A4C8915FBE77 group/flex transform flex w-full h-auto mt-[0px] mb-[0px] ml-[0px] mr-[0px] pt-2 pb-2 pl-2 pr-2 shadow-lg shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-red-800 font-heading text-xl"><strong>LUNDI</strong></span> </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] shadow shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] dark:border-surface-300/[100%] text-center" id=""> <strong>5h15-5h45</strong><br /><em><strong>Zazen</strong></em> </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] shadow shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] dark:border-surface-300/[100%] text-center" id=""> <strong>5h45-6h15</strong><br /><em><strong>Iaïdo (pratique libre)*</strong></em> </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] shadow shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] dark:border-surface-300/[100%] text-center" id=""> <strong>6h30-7h30</strong><br /><span class="text-brand-600"><em><strong>ARMES:</strong></em></span><br /><span class="text-brand-600"><em><strong>Bokken et jo</strong></em></span> </p> 
      </div>
-     <div class="group/rw620C90B2_B1AA_4BA4_80AB_CA9B9000DC4F group/flex transform flex w-full h-auto mt-[0px] mb-[0px] ml-[0px] mr-[0px] pt-2 pb-2 pl-2 pr-2 shadow-lg opacity-[100%] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-red-800 font-heading text-xl"><strong>MARDI</strong></span> </p>
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] shadow opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] dark:border-surface-300/[100%] text-center" id=""> <strong>18h-19h30&nbsp;</strong> </p> 
+     <div class="group/rw620C90B2_B1AA_4BA4_80AB_CA9B9000DC4F group/flex transform flex w-full h-auto mt-[0px] mb-[0px] ml-[0px] mr-[0px] pt-2 pb-2 pl-2 pr-2 shadow-lg shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-red-800 font-heading text-xl"><strong>MARDI</strong></span> </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] shadow shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] dark:border-surface-300/[100%] text-center" id=""> <strong>18h-19h30&nbsp;</strong> </p> 
      </div>
-     <div class="group/rw48A5A07C_B6C1_4866_8C2A_AFB933A933D0 group/flex transform flex w-full h-auto mt-[0px] mb-[0px] ml-[0px] mr-[0px] pt-2 pb-2 pl-2 pr-2 shadow-lg opacity-[100%] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-red-800 font-heading text-xl"><strong>JEUDI</strong></span> </p>
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-3 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] shadow opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] text-center" id=""> <strong>18h-19h&nbsp;</strong> </p>
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] shadow opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] text-center" id=""> <strong>19h-20h&nbsp;</strong> </p> 
+     <div class="group/rw48A5A07C_B6C1_4866_8C2A_AFB933A933D0 group/flex transform flex w-full h-auto mt-[0px] mb-[0px] ml-[0px] mr-[0px] pt-2 pb-2 pl-2 pr-2 shadow-lg shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-red-800 font-heading text-xl"><strong>JEUDI</strong></span> </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-3 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] shadow shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] text-center" id=""> <strong>18h-19h&nbsp;</strong> </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] shadow shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] text-center" id=""> <strong>19h-20h&nbsp;</strong> </p> 
      </div>
-     <div class="group/rw5817A410_E764_4D7A_BA55_31894071DA89 group/flex transform flex w-full h-auto mt-[0px] mb-[0px] ml-[0px] mr-[0px] pt-2 pb-2 pl-2 pr-2 transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-lg opacity-[100%] transform origin-center scale-[100%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[0px] hover:scale-[100%] hover:rotate-[0deg] hover:skew-x-[0deg] hover:skew-y-[0deg] hover:translate-x-[0px] hover:translate-y-[0px] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-red-800 font-heading text-xl"><strong>SAMEDI</strong></span> </p>
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] shadow opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] dark:border-surface-300/[100%] text-center" id=""> <strong>9h30-11h&nbsp;</strong> </p> 
+     <div class="group/rw5817A410_E764_4D7A_BA55_31894071DA89 group/flex transform flex w-full h-auto mt-[0px] mb-[0px] ml-[0px] mr-[0px] pt-2 pb-2 pl-2 pr-2 transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-lg shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] transform origin-center scale-x-[100%] scale-y-[100%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[0px] hover:scale-x-[100%] hover:scale-y-[100%] hover:rotate-[0deg] hover:skew-x-[0deg] hover:skew-y-[0deg] hover:translate-x-[0px] hover:translate-y-[0px] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-red-800 font-heading text-xl"><strong>SAMEDI</strong></span> </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] shadow shadow--500/(--box-shadow-opacity) [--box-shadow-opacity:100%] opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none border-t-1 border-r-1 border-b-1 border-l-1 border-dotted rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] dark:border-surface-300/[100%] text-center" id=""> <strong>9h30-11h&nbsp;</strong> </p> 
      </div> 
     </div>
    </div> 
    <div class="z-0 transform-gpu overflow-hidden"> 
    </div> 
   </div>
-  <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> * Attention, pas de cours de Iaïdo mais seulement pratique libre </p>
+  <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> * Attention, pas de cours de Iaïdo mais seulement pratique libre </p>
   <div class="rwA9EB4D7E_6B9A_46A3_B5E8_0C4D5284DEFE group/container group/rwA9EB4D7E_6B9A_46A3_B5E8_0C4D5284DEFE grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-[75px] mt-3 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
     <div class="transform-gpu block w-[50px] h-auto mt-0 mb-0 ml-3 mr-3 pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-     <picture> 
+     <picture class="block"> 
       <!-- Fallback img element --> 
       <img class="max-w-[100%] w-full object-center aspect-[0.8823529481887817]" src="../resources/makoto_red.png" alt="" width="960" height="1088" decoding="async" /> 
      </picture> 
     </div>
    </div> 
-   <div class="z-0 transform-gpu bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+   <div class="z-0 transform-gpu bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] overflow-hidden"> 
    </div> 
   </div>
   <div class="rwC884F9E6_C6B6_45C2_947A_9A61B53BF77C group/container group/rwC884F9E6_C6B6_45C2_947A_9A61B53BF77C grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto" data-filter-tags="" id=""> 
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md">
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id=""> Contact et Accès </p>
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id=""> Contact et Accès </p>
     <div class="group/rwBFFE637D_45F6_48C8_9B27_FFE18A62DCB6 group/grid grid w-full h-auto mt-3 mb-3 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 lg:grid-cols-2 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
      <div class="group/rw64E3688D_4ACE_4CC6_809D_DEE06CB3831D group/flex transform flex w-full h-auto gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-0 mr-0 pt-0 pb-3 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <strong>DOJO d'AIKIDO MAKOTO</strong><br />Budokan de Mazargues<br />47, avenue de Lattre de Tassigny<br />13009 Marseille<br /><br /><a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a><br />Tél : 06 03 83 22 86&nbsp; </p> 
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-0 mr-0 pt-0 pb-3 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <strong>DOJO d'AIKIDO MAKOTO</strong><br />Budokan de Mazargues<br />47, avenue de Lattre de Tassigny<br />13009 Marseille<br /><br /><a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a><br />Tél : 06 03 83 22 86&nbsp; </p> 
      </div>
      <div class="group/rw8833672C_6246_4808_BB26_9DFE92307DA4 group/flex transform flex w-full h-auto gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <strong>Parking disponible entrée stade Eynaud, parking moto intérieur </strong> </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <strong>Parking disponible entrée stade Eynaud, parking moto intérieur&nbsp;</strong> </p>
       <div class="transform-gpu block w-[100%] h-auto" id="" rwresourcedropzone="image"> 
-       <picture> 
+       <picture class="block"> 
         <!-- Fallback img element --> 
         <img class="max-w-[100%] w-full object-center aspect-[2.489028215408325]" src="../resources/plan.png" alt="" width="794" height="319" decoding="async" /> 
        </picture> 
@@ -248,20 +238,20 @@
   <div class="rw245A9FA2_8999_457A_9EAB_53A637621343 group/container group/rw245A9FA2_8999_457A_9EAB_53A637621343 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-[75px] mt-4 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-end gap-md pt-0 pb-0 pl-0 pr-0">
     <div class="transform-gpu block w-[50px] h-auto mt-0 mb-0 ml-auto mr-3 pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-     <picture> 
+     <picture class="block"> 
       <!-- Fallback img element --> 
       <img class="max-w-[100%] w-full object-center aspect-[0.8823529481887817]" src="../resources/makoto_red.png" alt="" width="960" height="1088" decoding="async" /> 
      </picture> 
     </div>
    </div> 
-   <div class="z-0 transform-gpu bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+   <div class="z-0 transform-gpu bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] overflow-hidden"> 
    </div> 
   </div>
   <div class="rw296C76A0_B8F7_4ABE_9264_19B47AE025F4 group/container group/rw296C76A0_B8F7_4ABE_9264_19B47AE025F4 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 group/Dojo grid w-full h-auto" data-filter-tags="" id="Dojo"> 
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md">
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id=""> Cours d'essai </p>
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Si vous souhaitez découvrir l'Aïkido en prenant part à un cours d'essai, nous seront très heureux de vous accueillir.<br /><br />Pour tout cours d’essai, une licence "cours d’essais", gratuite, sera souscrite (pour vous couvrir en cas de problème).<br />Pour faciliter le fonctionnement des cours, prière de venir 20 min avant l’horaire du cours pour cet enregistrement.<br />Aucun essai ne sera accepté sans cette licence<br /><br />Veuillez apporter des habits souples et amples. Pantalon long, t-shirt long et une paire de tong&nbsp;pour rejoindre le tatami. </p>
-    <a class="group/button group/rw28D5AE04_B5E0_477D_AFD9_465F8AC82F07 flex items-center cursor-pointer gap-x-2 flex w-auto h-auto mt-3 mb-3 ml-auto mr-auto pt-2 pb-2 pl-3.5 pr-3.5 transition-all duration-[300ms] delay-[0ms] ease-in-out transform origin-center scale-[95%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[0px] hover:scale-[100%] hover:rotate-[0deg] hover:skew-x-[0deg] hover:skew-y-[0deg] hover:translate-x-[0px] hover:translate-y-[0px] bg-gray-500 bg-opacity-[100%] dark:bg-opacity-[100%] hover:bg-red-700 hover:bg-opacity-[100%] dark:hover:bg-opacity-[100%] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full border-gray-500/[100%] justify-center text-surface-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base text-shadow-none font-[400] leading-normal tracking-normal normal-case hover:text-surface-50 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none" href="mailto:makoto.dojo@free.fr" id="" target=""> <strong>Contactez nous </strong> 
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id=""> Cours d'essai </p>
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Si vous souhaitez découvrir l'Aïkido en prenant part à un cours d'essai, nous seront très heureux de vous accueillir.<br /><br />Pour tout cours d’essai, une licence "cours d’essais", gratuite, sera souscrite (pour vous couvrir en cas de problème).<br />Pour faciliter le fonctionnement des cours, prière de venir 20 min avant l’horaire du cours pour cet enregistrement.<br />Aucun essai ne sera accepté sans cette licence<br /><br />Veuillez apporter des habits souples et&nbsp; amples. Pantalon long, t-shirt long et une paire de tong&nbsp;pour rejoindre le tatami. </p>
+    <a class="group/button group/rw28D5AE04_B5E0_477D_AFD9_465F8AC82F07 flex items-center cursor-pointer gap-x-2 flex w-auto h-auto mt-3 mb-3 ml-auto mr-auto pt-2 pb-2 pl-3.5 pr-3.5 transition-all duration-[300ms] delay-[0ms] ease-in-out transform origin-center scale-x-[95%] scale-y-[95%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[0px] hover:scale-x-[100%] hover:scale-y-[100%] hover:rotate-[0deg] hover:skew-x-[0deg] hover:skew-y-[0deg] hover:translate-x-[0px] hover:translate-y-[0px] bg-gray-500/(--bgColorOpacity) [--bgColorOpacity:100%] hover:bg-red-700/(--bgColorOpacityEnd) hover:[--bgColorOpacityEnd:100%] border-t-2 border-r-2 border-b-2 border-l-2 border-solid rounded-tl-full rounded-tr-full rounded-bl-full rounded-br-full border-gray-500/[100%] justify-center text-center text-surface-50/(--buttonFontAndTextStylesColorOpacity) [--buttonFontAndTextStylesColorOpacity:100%] font-body text-base text-shadow-none font-[400] leading-normal tracking-normal normal-case hover:text-surface-50/(--buttonFontAndTextStylesColorOpacityHover) hover:[--buttonFontAndTextStylesColorOpacityHover:100%] hover:text-shadow-none" href="mailto:makoto.dojo@free.fr" id="" target=""> <strong>Contactez nous&nbsp;&nbsp;&nbsp;</strong> 
      <div class="order-last"> 
       <div class="w-8 h-auto block" id="" rwresourcedropzone="svg"> 
        <svg class="w-8 h-auto" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" fill="currentColor">
@@ -275,27 +265,29 @@
   </div>
   <div class="rw6EE0C20B_B561_4A7B_81B9_FDD93E2FC295 group/container group/rw6EE0C20B_B561_4A7B_81B9_FDD93E2FC295 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 group/Dojo grid w-full h-auto" data-filter-tags="" id="Dojo"> 
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md">
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-right" id=""> Tarifs/Inscription </p>
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-right" id=""> Tarifs/Inscription&nbsp; </p>
     <div class="group/rwD2D93D6E_1020_473A_8F89_F285762AF4A7 group/flex transform flex w-full h-auto gap-x-2 gap-y-2 flex-col flex-nowrap items-center justify-items-normal content-center justify-normal" data-filter-tags="" id=""> 
      <div class="block w-96 h-auto mt-3 mb-3 ml-0 mr-0 pt-0 pb-0 pl-2 pr-2 brightness-[100%] drop-shadow-md saturate-[100%]" id="rw0CDEE792_F040_4239_BEAF_0BD9E4A6561D"> 
-      <table class="min-w-full w-full border-collapse border-t-2 border-r-2 border-b-2 border-l-2 border-solid border-surface-500/[100%]"> 
-       <tbody class=""> 
-        <tr class="bg-surface-100"> 
-         <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 text-left font-body text-text-50 text-base font-[400] tracking-normal "> <strong>Adhésion annuelle</strong> </td> 
-         <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 text-left font-body text-text-50 text-base font-[400] tracking-normal "> 50 € </td> 
-        </tr> 
-        <tr class="bg-surface-100"> 
-         <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 text-left font-body text-text-50 text-base font-[400] tracking-normal "> <strong>Cotisation mensuelle</strong> </td> 
-         <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 text-left font-body text-text-50 text-base font-[400] tracking-normal "> 50 € </td> 
-        </tr> 
-        <tr class="bg-surface-100"> 
-         <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 text-left font-body text-text-50 text-base font-[400] tracking-normal "> <strong>Assurance annuelle</strong> </td> 
-         <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 text-left font-body text-text-50 text-base font-[400] tracking-normal "> 40 € </td> 
-        </tr> 
-       </tbody> 
-      </table> 
+      <div x-data="elementsTable('rw0CDEE792_F040_4239_BEAF_0BD9E4A6561D', {'search':false,'pagination':false,'rowsPerPage':10,'totalRows':3,'sortable':false})" data-page-text="Page {{page}} of {{total}}"> 
+       <table class="min-w-full w-full border-collapse border-t-2 border-r-2 border-b-2 border-l-2 border-solid border-surface-500/[100%]"> 
+        <tbody class=""> 
+         <tr class="bg-surface-100" x-ref="row0" x-show="isRowVisible($el)"> 
+          <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-solid border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 font-body text-text-50 text-base font-[400] tracking-normal  text-left  "> <strong>Adhésion annuelle</strong> </td> 
+          <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-solid border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 font-body text-text-50 text-base font-[400] tracking-normal  text-left  "> 50 € </td> 
+         </tr> 
+         <tr class="bg-surface-100" x-ref="row1" x-show="isRowVisible($el)"> 
+          <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-solid border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 font-body text-text-50 text-base font-[400] tracking-normal  text-left  "> <strong>Cotisation mensuelle</strong> </td> 
+          <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-solid border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 font-body text-text-50 text-base font-[400] tracking-normal  text-left  "> 50 € </td> 
+         </tr> 
+         <tr class="bg-surface-100" x-ref="row2" x-show="isRowVisible($el)"> 
+          <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-solid border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 font-body text-text-50 text-base font-[400] tracking-normal  text-left  "> <strong>Assurance annuelle</strong> </td> 
+          <td class="pt-2 pb-2 pl-2 pr-2 align-middle border-solid border-t-2 border-r-2 border-b-2 border-l-2 border-surface-300 font-body text-text-50 text-base font-[400] tracking-normal  text-left  "> 40 € </td> 
+         </tr> 
+        </tbody> 
+       </table> 
+      </div> 
      </div>
-     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Un certificat medical est requis pour l'inscription </p> 
+     <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Un certificat medical est requis pour l'inscription </p> 
     </div>
    </div> 
    <div class="z-0 transform-gpu overflow-hidden"> 
@@ -303,8 +295,8 @@
   </div>
   <div class="rw8C9EFCEC_F51C_4873_B812_2390B835243F group/container group/rw8C9EFCEC_F51C_4873_B812_2390B835243F grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 group/Dojo grid w-full h-auto" data-filter-tags="" id="Dojo"> 
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md">
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id=""> Visiteurs </p>
-    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Les pratiquants d’Aïkido de passage sont les bienvenus. <br />Si vous souhaitez participer à l’entrainement, merci d’envoyer un email à l’adresse du dojo (cf ci-dessus).<br /> Pensez à apporter votre licence/assurance annuelle (passeport fédéral) et le certificat médical le jour de votre venue.<br /><br />La participation pour les visiteurs est de 10€ (forfait journalier).&nbsp; </p>
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-red-700/(--textColorOpacity) [--textColorOpacity:100%] font-heading text-2xl font-[700] tracking-normal leading-loose not-italic text-shadow-none [font-variant-caps:small-caps] whitespace-none text-left" id=""> Visiteurs </p>
+    <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-3 mb-3 ml-2 mr-2 pt-0 pb-0 pl-0 pr-0 text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Les pratiquants d’Aïkido de passage sont les bienvenus.&nbsp;<br />Si vous souhaitez participer à l’entrainement, merci d’envoyer un email à l’adresse du dojo (cf ci-dessus).<br />&nbsp;Pensez à apporter votre licence/assurance annuelle (passeport fédéral) et le certificat médical le jour de votre venue.<br /><br />La participation pour les visiteurs est de 10€ (forfait journalier).&nbsp; </p>
    </div> 
    <div class="z-0 transform-gpu overflow-hidden"> 
    </div> 
@@ -321,19 +313,19 @@
    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
     <div class="group/rwE8C569DF_E06B_4DFD_8F87_E40D8C69FD00 group/flex transform flex w-full h-auto gap-x-4 gap-y-2 flex-row flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
      <div class="transform-gpu block w-[150px] h-auto mt-0 mb-0 ml-3 mr-3 pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
-      <picture> 
+      <picture class="block"> 
        <!-- Fallback img element --> 
        <img class="max-w-[100%] w-full object-center aspect-[0.8823529481887817]" src="../resources/makoto_red.png" alt="" width="960" height="1088" decoding="async" /> 
       </picture> 
      </div>
      <div class="group/rw8220AA06_EDCA_4B48_AB38_AF5592BBE6FB group/flex transform flex w-full h-auto gap-x-2 gap-y-2 flex-col flex-nowrap items-[normal] justify-items-[normal] content-normal justify-center" data-filter-tags="" id=""> 
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[800] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Dojo d’Aïkido Makoto </p>
-      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> 47, avenue de Lattre de Tassigny - 13009 Marseille<br />Mail : <a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a> </p> 
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[800] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Dojo d’Aïkido Makoto </p>
+      <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50/(--textColorOpacity) [--textColorOpacity:100%] font-body text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> 47, avenue de Lattre de Tassigny - 13009 Marseille<br />Mail :&nbsp;<a href="mailto:makoto.dojo@free.fr">makoto.dojo@free.fr</a> </p> 
      </div> 
     </div>
     <div class="rw5101F9C4_CE36_444C_957E_AE7A3540ABB1 group/container group/rw5101F9C4_CE36_444C_957E_AE7A3540ABB1 grid-cols-1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 [&amp;>*]:min-w-0 grid w-full h-auto mt-0 mb-3 ml-auto mr-auto" data-filter-tags="" id=""> 
      <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
-      <div class="group/rwE7D43A9E_63DF_400C_AAFE_998B2D091A63 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
+      <div class="group/rwE7D43A9E_63DF_400C_AAFE_998B2D091A63 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] grid-cols-3 grid-rows-auto gap-x-md gap-y-md grid-flow-row justify-items-center justify-center items-center content-center" data-filter-tags="" id=""> 
        <a class="w-10 h-auto block mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0" href="https://www.youtube.com/@MakotoDojoAikidoMarseille" id="" rwresourcedropzone="svg" target=""> 
         <svg class="w-10 h-auto" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
          <path d="M31.331,8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673,0,0-10.007,0-12.502,.673-1.377,.37-2.461,1.462-2.829,2.848-.669,2.512-.669,7.752-.669,7.752,0,0,0,5.241,.669,7.752,.368,1.386,1.452,2.477,2.829,2.847,2.496,.673,12.502,.673,12.502,.673,0,0,10.007,0,12.502-.673,1.377-.37,2.461-1.462,2.829-2.847,.669-2.512,.669-7.752,.669-7.752,0,0,0-5.24-.669-7.752ZM12.727,20.758V11.242l8.364,4.758-8.364,4.758Z"></path>
@@ -348,120 +340,13 @@
         </svg> </a> 
       </div>
      </div> 
-     <div class="z-0 transform-gpu bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+     <div class="z-0 transform-gpu bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] overflow-hidden"> 
      </div> 
     </div>
    </div> 
-   <div class="z-0 transform-gpu bg-gray-300 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+   <div class="z-0 transform-gpu bg-gray-300/(--bgColorOpacity) [--bgColorOpacity:100%] overflow-hidden"> 
    </div> 
   </div> 
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-    document.addEventListener("DOMContentLoaded", () => {
-        const revealElements = document.querySelectorAll("[data-reveal]");
-        revealElements.forEach((element, index) => {
-            element.style.visibility = "hidden";
-            element.style.transitionProperty = "none";
-
-            const {
-                revealAnimation: animation = "fadeUpIn",
-                revealExitAnimation: exitAnimation = "fadeUpOut",
-                revealPlay: play = "enter-exit",
-                revealStart: start = "top bottom",
-                revealEnd: end = "top top",
-                revealDelay: delay = 0,
-                revealDuration: duration = 0.5,
-                revealEasing: easing = "power1.out",
-                revealDistance: distance = 200,
-                revealDegrees: degrees = 90,
-                revealScrub: scrub = false,
-                revealDebug: debug = false,
-                revealId,
-            } = element.dataset;
-
-            const id = `${revealId}-${index}`;
-            const wantsScrub = scrub === "true";
-            const wantsDebug = debug === "true";
-            const wantsExitAnimation = play == "enter-exit";
-            const playOnce = play == "enter-once";
-            const durationNumber = parseFloat(duration);
-            const delayNumber = parseFloat(delay);
-            const degreesNumber = parseFloat(degrees);
-            const degreesNumberOut = degreesNumber * -1;
-            
-            let triggeredOnce = false;
-            
-            const config = {
-                duration: durationNumber,
-                ease: easing,
-                delay: delayNumber,
-                distance: distance,
-                degrees: degreesNumber,
-                degreesOut: degreesNumberOut,
-                clearProps: "auto",
-                onComplete: () => {
-                    element.style.transitionProperty = "";
-                },
-            }
-
-            const markers = wantsDebug
-                ? {
-                    startColor: "green",
-                    endColor: "red",
-                    fontSize: "12px",
-                    fontWeight: "bold",
-                    indent: 20,
-                }
-                : false;
-
-            if (wantsScrub) {
-                gsap.effects[animation](element, {
-                    scrollTrigger: {
-                        trigger: element,
-                        start: start,
-                        end: end,
-                        scrub: true,
-                        markers,
-                        id,
-                    },
-                    ...config
-                });
-            } else {
-                ScrollTrigger.create({
-                    trigger: element,
-                    start: start,
-                    end: end,
-                    markers,
-                    id,
-                    onEnter: () => {
-                        if (playOnce && triggeredOnce) return;
-                        element.style.transitionProperty = "none";
-                        triggeredOnce = true;
-                        gsap.effects[animation](element, config);
-                    },
-                    onLeave: () => {
-                        if (wantsExitAnimation) {
-                            element.style.transitionProperty = "none";
-                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
-                        }
-                    },
-                    onEnterBack: () => {
-                        if (wantsExitAnimation) {
-                            element.style.transitionProperty = "none";
-                            gsap.effects[animation](element, config);
-                        }
-                    },
-                    onLeaveBack: () => {
-                        if (wantsExitAnimation) {
-                            element.style.transitionProperty = "none";
-                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
-                        }
-                    },
-                });
-            }
-        });
-    });
-</script> 
   <script>
     document.addEventListener("alpine:init", () => {
         Alpine.data("desktopSubmenu", () => ({
@@ -735,6 +620,169 @@
                     position: location,
                     map: this.map,
                 });
+            },
+        }));
+    });
+</script> 
+  <script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("elementsTable", (id, config) => ({
+            search: "",
+            sortCol: null,
+            sortDir: "asc",
+            page: 1,
+            config: typeof config === "string" ? JSON.parse(config.replace(/'/g, '"')) : config,
+            allRows: [],
+            filteredIndices: [],
+
+            init() {
+                const tbody = this.$el.querySelector("tbody");
+                if (!tbody) return;
+
+                this.allRows = Array.from(tbody.querySelectorAll("tr"));
+                this.filteredIndices = this.allRows.map((_, i) => i);
+                this.updateVisibility();
+            },
+
+            get totalVisible() {
+                return this.filteredIndices.length;
+            },
+
+            get totalPages() {
+                if (!this.config.pagination) return 1;
+                return Math.max(1, Math.ceil(this.totalVisible / this.config.rowsPerPage));
+            },
+
+            onSearchInput() {
+                this.page = 1;
+                this.filterRows();
+                this.updateVisibility();
+            },
+
+            filterRows() {
+                const query = this.search.toLowerCase().trim();
+                if (!query) {
+                    this.filteredIndices = this.allRows.map((_, i) => i);
+                    return;
+                }
+
+                this.filteredIndices = [];
+                this.allRows.forEach((row, i) => {
+                    const text = row.innerText.toLowerCase();
+                    if (text.includes(query)) {
+                        this.filteredIndices.push(i);
+                    }
+                });
+            },
+
+            sort(colIdx) {
+                if (this.sortCol === colIdx) {
+                    this.sortDir = this.sortDir === "asc" ? "desc" : "asc";
+                } else {
+                    this.sortCol = colIdx;
+                    this.sortDir = "asc";
+                }
+
+                // Use document.getElementById(id) instead of this.$el, because
+                // this.$el resolves to the element that triggered the event (the <th>),
+                // not the component root element.
+                const wrapper = document.getElementById(id);
+                const tbody = wrapper ? wrapper.querySelector("tbody") : null;
+                if (!tbody) return;
+
+                const dir = this.sortDir === "asc" ? 1 : -1;
+
+                // Extract text values upfront to avoid any proxy/DOM issues during sort
+                const rowData = [];
+                tbody.querySelectorAll(":scope > tr").forEach((tr) => {
+                    const cell = tr.cells[colIdx];
+                    rowData.push({
+                        el: tr,
+                        text: cell ? cell.innerText.trim() : "",
+                    });
+                });
+
+                rowData.sort((a, b) => {
+                    const numA = parseFloat(a.text);
+                    const numB = parseFloat(b.text);
+                    if (!isNaN(numA) && !isNaN(numB)) {
+                        return (numA - numB) * dir;
+                    }
+                    return a.text.localeCompare(b.text, undefined, { numeric: true, sensitivity: "base" }) * dir;
+                });
+
+                // Reorder DOM
+                const sortedEls = rowData.map((r) => r.el);
+                sortedEls.forEach((row) => tbody.appendChild(row));
+
+                // Update the reactive tracked array to match the new sort order
+                this.allRows = sortedEls;
+
+                // A new sort order makes the current page position meaningless,
+                // so jump back to the first page (same as onSearchInput)
+                this.page = 1;
+
+                // Re-filter after sort
+                this.filterRows();
+                this.updateVisibility();
+            },
+
+            isRowVisible(el) {
+                const idx = this.allRows.indexOf(el);
+                if (idx === -1) return true;
+
+                // Check if row passes filter
+                const filteredPos = this.filteredIndices.indexOf(idx);
+                if (filteredPos === -1) return false;
+
+                // Check pagination
+                if (!this.config.pagination) return true;
+                const start = (this.page - 1) * this.config.rowsPerPage;
+                const end = start + this.config.rowsPerPage;
+                return filteredPos >= start && filteredPos < end;
+            },
+
+            updateVisibility() {
+                // Trigger Alpine reactivity by touching page
+                this.page = this.page;
+            },
+
+            prevPage() {
+                if (this.page > 1) {
+                    this.page--;
+                }
+            },
+
+            nextPage() {
+                if (this.page < this.totalPages) {
+                    this.page++;
+                }
+            },
+
+            firstPage() {
+                if (this.page > 1) {
+                    this.page = 1;
+                }
+            },
+
+            lastPage() {
+                if (this.page < this.totalPages) {
+                    this.page = this.totalPages;
+                }
+            },
+
+            pageText() {
+                // The page/total placeholder tokens must never appear verbatim in
+                // this file (the template engine consumes them), backslash escape
+                // sequences break the edit-mode renderer, and the raw directive is
+                // no escape hatch either: it parses fine but the literal brace
+                // tokens it preserves kill the edit-mode canvas, blanking the
+                // whole table (see the 8e5dafa revert). Runtime token construction
+                // is the only formulation every pipeline stage tolerates — do not
+                // "clean up". Even comments here are lexed for directives/tokens.
+                const token = (name) => "{" + "{" + name + "}" + "}";
+                const fmt = this.$root.dataset.pageText || "Page " + token("page") + " of " + token("total");
+                return fmt.split(token("page")).join(this.page).split(token("total")).join(this.totalPages);
             },
         }));
     });
